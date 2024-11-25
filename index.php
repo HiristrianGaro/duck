@@ -7,6 +7,7 @@ include "common/funzioni.php";
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
 <?php include "common/header.php"; ?>
+<?php include "common/errorModal.php"; ?>
 
 <body>
   <main class="main" style="height: 100% !important;">
@@ -19,7 +20,7 @@ include "common/funzioni.php";
 
         <?php
         if (isset($_SESSION["Email"]) && $_SESSION["Status"] == 'ok') {
-          echo "<div class=\"alert alert-success\"><strong>Benvenuto " . $_SESSION["Email"] . "</strong></div>";
+          echo "<div class=\"alert alert-success\"><strong>Benvenuto " . $_POST["Username"] . "</strong></div>";
         } else {
           if (isset($_GET["op"])) {
             if ($_GET["op"] == 'loginPage') {
@@ -70,12 +71,8 @@ include "common/funzioni.php";
 
   </main>
   <?php include "common/footer.php"; ?>
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/c-s-c.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  
- 
-  
+
+
 </body>
 
 </html>
