@@ -1,6 +1,6 @@
 <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 shadow-sm bg-blue">
   <div class="col-md-3 mb-2 mb-md-0">
-    <a href="./index.php"><img class="me-3" src="assets/brand/duck.png" alt="" width="30" height="30" style="margin-left: 30px;"></a>
+    <a href="./index.php"><img class="mx-md-5" src="assets/brand/duck.png" alt="" width="30" height="30"></a>
   </div>
 
 
@@ -16,7 +16,7 @@
     </ul>
 
     <div class="col-md-3 text-end">
-      <a href="backend/logout.php"><button type="button" class="btn btn-primary btn-round mr-1">Logout</button></a>
+      <a href="backend/logout.php"><button type="button" class="btn btn-primary btn-round mr-md-1">Logout</button></a>
     </div>
 
   <?php } else { ?>
@@ -25,7 +25,7 @@
     </ul>
 
     <div class="col-md-3 text-end">
-      <a href="index.php?op=loginPage"><button type="button" class="btn btn-primary btn-round mr-1">Login</button></a>
+      <a href="index.php?op=loginPage"><button type="button" class="btn btn-primary btn-round mr-md-1">Login</button></a>
     </div>
 
 
@@ -35,7 +35,7 @@
     </ul>
 
     <div class="col-md-3 text-end">
-      <a href="index.php?op=registerPage"><button type="button" class="btn btn-primary btn-round mr-1">Register</button></a>
+      <a href="index.php?op=registerPage"><button type="button" class="btn btn-primary btn-round mr-md-1">Register</button></a>
     </div>
       
 
@@ -43,13 +43,15 @@
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
     </ul>
 
-    <div class="col-md-3 text-end">
-    <a href="index.php?op=loginPage"><button type="button" class="btn btn-primary btn-round mr-1">Login</button></a>
-      <a href="index.php?op=registerPage"><button type="button" class="btn btn-primary btn-round mr-1">Register</button></a>
+    <div class="col-md-3 ml-1 text-end">
+    <a href="index.php?op=loginPage"><button type="button" class="btn btn-primary btn-round">Login</button></a>
+      <a href="index.php?op=registerPage"><button type="button" class="btn btn-primary btn-round mr-md-1">Register</button></a>
     </div>
 
   <?php }} ?>
 
   </div>
 </header>
+
+<?php include("../backend/logout.php")?>
 <!-- end navbar -->
