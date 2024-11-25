@@ -1,0 +1,99 @@
+:root {
+  --bs-yellow-duck: #FFD43B;
+  --bs-blue-duck: #87CEEB;
+  --bs-white-duck: #F8F8F8;
+  --bs-gray-duck: #A6A6A6;
+  --bs-pink-duck: #FF6F61;
+  --bs-body-bg: #D6D6D6;
+}
+
+html{ 
+  height: 100%;
+ } 
+ 
+body{
+height: 100%;
+position: relative;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+main {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.text-primary {
+  color: #000000;
+}
+
+.form-text {
+  color: #000000;
+}
+
+.form-control {
+  color: #000000;
+
+}
+
+.form-control::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.mr-1 {
+  margin-right: 1rem !important;
+}
+
+.mr-2 {
+  margin-right: 2rem !important;
+}
+
+.mr-3 {
+  margin-right: 3rem !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: #000000;
+}
+
+p {
+  color: #000000;
+}
+
+.btn-primary {
+  color: #000000;
+  background-color: #FFD43B;
+}
+
+.btn-primary:hover {
+  color: #000000;
+  background-color: #E0B82D;
+}
+
+.bg-yellow {
+  --bs-bg-opacity: 1;
+  background-color:#FFD43B !important;
+}
+
+.bg-blue {
+  --bs-bg-opacity: 1;
+  background-color: #87CEEB !important;
+}
+
+.bg-white {
+  --bs-bg-opacity: 1;
+  background-color:#F8F8F8 !important;
+}
+
+.bg-gray {
+  --bs-bg-opacity: 1;
+  background-color: #D6D6D6 !important;
+}
+
+.bg-pink {
+  --bs-bg-opacity: 1;
+  background-color: #FF6F61 !important;
+}
