@@ -21,7 +21,7 @@ include "common/funzioni.php";
 
       <div class="well">
 
-      <?php include "common/friends.php"; ?>
+      <?php include "frontend/post.html"; ?>
 
       </div> 
 
