@@ -1,9 +1,10 @@
 <?php
-    session_start(); 
+    if(session_status() !== PHP_SESSION_ACTIVE) session_start();
     session_unset();
-    require_once("./common/connection.php");
-    require_once("./backend/register.php");
+    require_once("../common/connection.php");
+    require_once("../backend/register.php");
 ?>
+
 <div class="d-flex justify-content-center px-lg-3">
     <div class="p-3 p-md-4 border rounded-3 bg-white">
         <div class="pb-5 text-center">
@@ -15,7 +16,7 @@
             <div class="row">
                 <div class="form-floating mb-3 col col-sm-6">
                     <input type="text" class="form-control" id="RegisterUsername" name="RegisterUsername" placeholder="" required>
-                    <label for="username" class="form-label mx-2">Username</label>
+                    <label for="RegisterUsername" class="form-label mx-2">Username</label>
                     <div class="invalid-feedback">
                         Valid username is required.
                     </div>
@@ -60,7 +61,7 @@
 
                 <div class="form-floating mb-3  col-sm-6">
                     <input type="password" class="form-control" id="ConfirmRegisterPassword" name="ConfirmRegisterPassword" placeholder="Password123" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
-                    <label for="ConfirmPassword" class="form-label mx-2">Confirm Password</label>
+                    <label for="ConfirmRegisterPassword" class="form-label mx-2">Confirm Password</label>
                     <div class="invalid-feedback">
                         Password is required.
                     </div>
@@ -74,9 +75,9 @@
     </div>
 </div>
 
-<?php include("./common/modalErrore.php")?>
+<?php include("../common/modalErrore.php")?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<?php include("./common/errorModal.php")?>
+<?php include("../common/errorModal.php")?>

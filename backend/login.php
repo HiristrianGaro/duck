@@ -1,11 +1,10 @@
 <script>
 <?php
-    include "../common/connection.php";
-    include "../common/funzioni.php";
 
     if($_SERVER["REQUEST_METHOD"]== "POST"){
 
         if(isset($_POST["Login"])){
+            error_log('User has Started Logging in!');
             if(empty($_POST["Login_Email"])){
                 $errore= "Inserire un indirizzo email";
                 $showModal = "true";
@@ -21,16 +20,16 @@
                             WHERE IndirizzoEmail = '$Email'";
                 $findResults = mysqli_query($cid, $findUtente);
                 
-                echo 'ciaoooo';
 
                 if($findResults){
+                    error_log('User Found');
                     echo mysqli_num_rows($findResults);
                     if(mysqli_num_rows($findResults)==1){
                         $row = mysqli_fetch_assoc($findResults);
                         $hashed = $row["Password"];
                         if(password_verify($Password,$hashed)){
-                            $_SESSION["Email"]= $Email;
-                            $_SESSION["Status"]= 'ok';
+                            $_SESSION["Status"] = 'ok';
+                            error_log('User has logged in successfully!');
                             header("Location: ./index.php");
                             exit();
                         }
