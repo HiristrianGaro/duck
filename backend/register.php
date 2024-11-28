@@ -1,11 +1,10 @@
 <script>
     <?php
-    include "../common/connection.php";
-    include "../common/funzioni.php";
 
 if($_SERVER["REQUEST_METHOD"]== "POST"){
 
     if(isset($_POST["Register"])){
+        error_log('User has Started Registering in!');
 
         if(empty($_POST["RegisterUsername"])){
             $errore= "Please Insert a Username";
@@ -43,14 +42,14 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
 
             if (checkEmailExist($cid, $Email)["status"] == "ko") {
                 echo "Email does not exist. Proceeding with insertion...\n";
-                echo "Email does not exist. Proceeding with insertion...\n";
+                error_log('Email does not exist. Proceeding with insertion...');
                 $registration = "INSERT INTO utente (Username, IndirizzoEmail, Nome, Cognome, Password)
                                 VALUES ('$Username','$Email','$Nome','$Cognome','$hashed')";
                 if (mysqli_query($cid, $registration)) {
-                    $_SESSION["Email"]= $Email;
-                    $_SESSION["Status"]= "ok";
+                    $_SESSION["Status"] = "ok";
                     header("Location: ./index.php");
                     echo "Registration successful.\n";
+                    error_log('Registration successful.');
                 } else {
                     echo "Error during registration: " . mysqli_error($cid) . "\n";
                 }

@@ -314,3 +314,28 @@ main {
   overflow: hidden;
 
 }
+
+@media (min-width: 992px) {
+  .gedf-card {
+      margin-bottom: 2.77rem;
+  }
+}
+
+.post-page {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 10px auto;
+  position: relative;
+  text-align:center;
+}
+
+.time {
+  margin-left: auto;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+}

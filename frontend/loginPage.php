@@ -1,12 +1,13 @@
 <?php
-    session_start(); 
+    if(session_status() !== PHP_SESSION_ACTIVE) session_start();
     session_unset();
-    require_once("./common/connection.php");
-    require_once("./backend/login.php");
+    require_once("../common/connection.php");
+    require_once("../backend/login.php");
 ?>
-<div class="d-flex justify-content-center">
-    <div class="p-3 px-md-5 border rounded-3 bg-white">
-        <div class="pb-2 text-center">
+
+<div class="d-flex justify-content-center px-lg-3">
+    <div class="p-3 p-md-4 border rounded-3 bg-white">
+        <div class="pb-3 text-center">
         <img class="d-block mx-auto mb-3" src="assets/brand/duck.png" alt="" width="72" height="57">
         <h2 class="text-blue mb-3">Login</h2>    
         <p class="lead">Welcome back to <span class="text-yellow fw-bold">Duck</span></p>
@@ -26,9 +27,9 @@
     </form>
 </div>
 
-<?php include("./common/modalErrore.php")?>
+<?php include("../common/modalErrore.php")?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<?php include("./common/errorModal.php")?>
+<?php include("../common/errorModal.php")?>
