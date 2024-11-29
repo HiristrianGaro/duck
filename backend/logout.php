@@ -1,8 +1,7 @@
-<?php
-include '../config.php';
-session_unset();
-session_destroy();
-error_log('I am trying to log out');
-header("location: ". SITE_HOME);
 
+<?php
+    session_start();
+    session_destroy();
+    header("location:../index.php");
+    
 ?>

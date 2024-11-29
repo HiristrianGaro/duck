@@ -1,29 +1,15 @@
 
 <?php
-session_start();
 include "../common/connection.php";
 include "../common/funzioni.php";
 ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<?php include "../common/header.php"; ?>
-
-<body>
-  <?php include "../common/w3.php"; ?>
-
-  <main class="main" style="height: 100% !important;">
-
-
-    <?php include "../common/navbar.php"; ?>
-        <div class="container">
-        <div class="container mt-4">
-    <div class="row">
-        <!-- Suggested Friends Column -->
-        <div class="col-md-6">
-            <h3>Suggested Friends</h3>
-            <ul class="list-group">
+<div class="d-flex justify-content-center px-lg-3">
+    <div class="p-3 p-md-4 border rounded-3 bg-white">
+        <div class="row">
+            <!-- Suggested Friends Column -->
+            <div class="col-md-6">
+                <h3>Suggested Friends</h3>
+                <ul class="list-group">
                 <?php
                 // Example array of suggested friends with placeholder images
                 $suggestedFriends = [
@@ -41,47 +27,31 @@ include "../common/funzioni.php";
                         '</li>';
                 }
                 ?>
-            </ul>
-        </div>
+                </ul>
+            </div>
 
-        <!-- Your Current Friends Column -->
-        <div class="col-md-6">
-            <h3>Your Current Friends</h3>
-            <ul class="list-group">
-                <?php
-                // Example array of current friends with placeholder images
-                $currentFriends = [
-                    ['name' => 'Current Friend 1', 'image' => 'https://via.placeholder.com/50'],
-                    ['name' => 'Current Friend 2', 'image' => 'https://via.placeholder.com/50'],
-                    ['name' => 'Current Friend 3', 'image' => 'https://via.placeholder.com/50'],
-                ];
+            <!-- Your Current Friends Column -->
+            <div class="col-md-6">
+                <h3>Your Friends</h3>
+                <ul class="list-group">
+                    <?php
+                    // Example array of current friends with placeholder images
+                    $currentFriends = [
+                        ['name' => 'Current Friend 1', 'image' => 'https://via.placeholder.com/50'],
+                        ['name' => 'Current Friend 2', 'image' => 'https://via.placeholder.com/50'],
+                        ['name' => 'Current Friend 3', 'image' => 'https://via.placeholder.com/50'],
+                    ];
 
-                foreach ($currentFriends as $friend) {
-                    echo '<li class="list-group-item d-flex justify-content-start align-items-center">' .
-                        '<img src="' . $friend['image'] . '" alt="Profile Image" class="rounded-circle me-2" style="width: 30px; height: 30px;">' .
-                        '<span class="me-auto">' . $friend['name'] . '</span>' .
-                        '<button class="btn btn-danger btn-sm ms-2">Remove</button>' .
-                        '</li>';
-                }
-                ?>
-            </ul>
+                    foreach ($currentFriends as $friend) {
+                        echo '<li class="list-group-item d-flex justify-content-start align-items-center">' .
+                            '<img src="' . $friend['image'] . '" alt="Profile Image" class="rounded-circle me-2" style="width: 30px; height: 30px;">' .
+                            '<span class="me-auto">' . $friend['name'] . '</span>' .
+                            '<button class="btn btn-danger btn-sm ms-2">Remove</button>' .
+                            '</li>';
+                    }
+                    ?>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
-        </div> <!-- /container -->
-
-
-
-
-
-  </main>
-  <?php include "../common/footer.php"; ?>
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/js/c-s-c.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  
- 
-  
-</body>
-
-</html>
