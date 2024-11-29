@@ -5,19 +5,19 @@
 
         if(isset($_POST["Login"])){
             error_log('User has Started Logging in!');
-            if(empty($_POST["Login_Email"])){
+            if(empty($_POST["Login_Id"])){
                 $errore= "Inserire un indirizzo email";
                 $showModal = "true";
             }elseif (empty($_POST["Login_Password"])){
                 $errore= "Inserire una password";
                 $showModal = "true";
             }else{
-                $Email = filter_input(INPUT_POST, "Login_Email", FILTER_SANITIZE_EMAIL);
+                $LoginId = filter_input(INPUT_POST, "Login_Id", FILTER_SANITIZE_EMAIL);
 
                 $Password = filter_input(INPUT_POST, "Login_Password", FILTER_SANITIZE_SPECIAL_CHARS);
 
                 $findUtente = "SELECT * FROM utente 
-                            WHERE IndirizzoEmail = '$Email'";
+                            WHERE IndirizzoEmail = '$LoginId' OR username = '$LoginId'";
                 $findResults = mysqli_query($cid, $findUtente);
                 
 

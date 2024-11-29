@@ -15,7 +15,7 @@
     </div>
     <form method="POST" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>" class="needs-validation">
         <div class="form-floating">
-            <input type="email" name="Login_Email" class="form-control mb-1" id="Login_Email" placeholder="name@example.com">
+            <input type="text" name="Login_Id" class="form-control mb-1" id="Login_Email" placeholder="name@example.com">
             <label for="Login_Email" class="pb-4">Email address</label>
         </div>
         <div class="form-floating">
