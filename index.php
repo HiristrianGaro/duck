@@ -25,6 +25,7 @@ if (isset($_SESSION['Status'])) {
     <?php include "common/navbar.php"; ?>
 
       <div class="container" id="main-page">
+        <?php if(!isset($_SESSION['Status'])) {include 'frontend/landingPage.html';}?>
         
       </div>
     
