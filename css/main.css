@@ -124,6 +124,10 @@ main {
     margin-left: 3rem !important;
   }
 
+  .ml-md-4 {
+    margin-left: 4rem !important;
+  }
+
   .pr-md-1 {
     padding-right: 1rem !important;
   }
@@ -148,7 +152,19 @@ main {
     padding-left: 3rem !important;
   }
 
+
+
+
   
+}
+.usernameNav {
+  border: #000000;
+}
+
+@media (max-width: 768px) {
+  .usernameNav {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {

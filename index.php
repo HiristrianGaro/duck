@@ -25,6 +25,16 @@ if (isset($_SESSION['Status'])) {
     <?php include "common/navbar.php"; ?>
 
       <div class="container" id="main-page">
+        <div class="collapse" id="collapseExample">
+          <div class="d-flex justify-content-center px-lg-3">
+            <div class="p-3 p-md-4 border rounded-3 bg-white">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
         <?php if(!isset($_SESSION['Status'])) {include 'frontend/landingPage.html';}?>
         
       </div>

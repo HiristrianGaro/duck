@@ -1,6 +1,6 @@
 <script>
 <?php
-
+    include '../config.php';
     if($_SERVER["REQUEST_METHOD"]== "POST"){
 
         if(isset($_POST["Login"])){
@@ -28,6 +28,7 @@
                         $row = mysqli_fetch_assoc($findResults);
                         $hashed = $row["Password"];
                         if(password_verify($Password,$hashed)){
+                            $_SESSION["Username"] = $row["Username"];
                             $_SESSION["Status"] = 'ok';
                             error_log('User has logged in successfully!');
                             header("Location: ./index.php");
