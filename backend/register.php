@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
 
             $Username = filter_input(INPUT_POST, "RegisterUsername", FILTER_SANITIZE_SPECIAL_CHARS);
             $Nome = filter_input(INPUT_POST, "RegisterName", FILTER_SANITIZE_SPECIAL_CHARS);
-            $Cognome = filter_input(INPUT_POST, "lastName", FILTER_SANITIZE_SPECIAL_CHARS);
+            $Cognome = filter_input(INPUT_POST, "RegisterSurname", FILTER_SANITIZE_SPECIAL_CHARS);
             $Email = filter_input(INPUT_POST, "RegisterEmail", FILTER_SANITIZE_EMAIL);
             $Password = filter_input(INPUT_POST, "RegisterPassword", FILTER_SANITIZE_SPECIAL_CHARS);
             $ConfirmPassword = filter_input(INPUT_POST, "ConfirmRegisterPassword", FILTER_SANITIZE_SPECIAL_CHARS);
