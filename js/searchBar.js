@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function searchUsersByEmail(searchTerm) {
     const filters = getSelectedFilters(); // Raccogli i filtri selezionati
-    fetch('../backend/search.php', {
+    fetch('../backend/searchUsers.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
