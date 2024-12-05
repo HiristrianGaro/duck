@@ -967,3 +967,378 @@
 [04-Dec-2024 19:39:58 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
 [04-Dec-2024 19:40:26 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
 [04-Dec-2024 19:40:26 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 14:54:25 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 14:54:25 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 14:56:35 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 14:56:35 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 14:58:01 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 14:58:01 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 14:58:02 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 14:58:02 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 14:58:34 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 14:58:34 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:01:22 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:01:22 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:02:00 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:02:00 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:02:10 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:02:10 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:03:55 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:03:55 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:17:07 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:17:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:17:07 Europe/Berlin] User has Started Logging in!
+[05-Dec-2024 15:17:07 Europe/Berlin] User Found
+[05-Dec-2024 15:17:07 Europe/Berlin] User has logged in successfully!
+[05-Dec-2024 15:17:07 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:17:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:17:13 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:17:13 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:30:01 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:30:01 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:40:18 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:40:18 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:40:28 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:40:28 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:41:51 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:41:51 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:42:00 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:42:00 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:43:45 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:43:45 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:45:18 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:45:18 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:45:18 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:45:18 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:47:18 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:47:18 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:47:19 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:47:19 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:47:28 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:47:28 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:50:17 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:50:17 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:53:33 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:53:33 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:56:42 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:56:42 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:56:43 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:56:43 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:57:00 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:57:00 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:57:00 Europe/Berlin] User has Started Registering in!
+[05-Dec-2024 15:57:00 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[05-Dec-2024 15:57:00 Europe/Berlin] Registration successful.
+[05-Dec-2024 15:57:00 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:57:00 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:57:20 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:57:20 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:57:50 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:57:50 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:57:50 Europe/Berlin] User has Started Registering in!
+[05-Dec-2024 15:57:50 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[05-Dec-2024 15:57:50 Europe/Berlin] Registration successful.
+[05-Dec-2024 15:57:50 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:57:50 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:59:24 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 15:59:24 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:01:21 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:01:21 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:01:35 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:01:35 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:02:23 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:02:23 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:04:13 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:04:13 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:05:04 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:05:04 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:06:22 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:06:22 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:06:31 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:06:31 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:06:31 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:06:31 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:06:34 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:06:34 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:12:41 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:12:41 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:13:08 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:13:08 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:14:57 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:14:57 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:14:59 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:14:59 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:16:54 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:16:54 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:17:34 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:17:34 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:17:34 Europe/Berlin] User has Started Registering in!
+[05-Dec-2024 16:17:34 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[05-Dec-2024 16:17:34 Europe/Berlin] Registration successful.
+[05-Dec-2024 16:17:34 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:17:34 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:17:36 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:17:36 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:17:59 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:17:59 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:17:59 Europe/Berlin] User has Started Registering in!
+[05-Dec-2024 16:17:59 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[05-Dec-2024 16:17:59 Europe/Berlin] Registration successful.
+[05-Dec-2024 16:17:59 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:17:59 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:00 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:00 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:28 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:28 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:28 Europe/Berlin] User has Started Registering in!
+[05-Dec-2024 16:18:28 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[05-Dec-2024 16:18:28 Europe/Berlin] Registration successful.
+[05-Dec-2024 16:18:28 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:28 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:34 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:34 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:46 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:46 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:49 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:49 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:53 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:18:53 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:16 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:22 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:22 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:23 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:23 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:23 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:23 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:28 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:28 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:29 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:29 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:29 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:29 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:29 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:29 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:29 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:29 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:37 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:19:37 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:28:33 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:28:33 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:28:33 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:28:33 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:28:34 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:28:34 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:30:59 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:30:59 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:01 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:01 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:02 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:02 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:13 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:13 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:13 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:13 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:15 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:15 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:16 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:31:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:01 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:01 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:03 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:03 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:03 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:03 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:03 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:03 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:04 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:04 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:04 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:04 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:05 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:33:05 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:04 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:04 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:06 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:06 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:07 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:07 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:07 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:08 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:08 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:13 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:13 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:50 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:50 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:52 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:52 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:52 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:52 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:52 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:52 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:52 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:52 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:53 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:53 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:53 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:34:53 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:45:15 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:45:15 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:46:09 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:46:09 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:47:49 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:47:49 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:48:22 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:48:22 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:51:10 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:51:10 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:51:43 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:51:43 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:52:07 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:52:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:52:28 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:52:28 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:57:09 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:57:09 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:58:59 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:58:59 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:07 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:16 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:19 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:19 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:20 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:20 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:21 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:21 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:22 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 16:59:22 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:00:21 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:00:21 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:00:53 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:00:53 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:01:48 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:01:48 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:08:36 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:08:36 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:09:06 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:09:06 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:09:35 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:09:35 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:09:37 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:09:37 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:09:43 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:09:43 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:09:52 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:09:52 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:57:16 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:57:16 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:57:22 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:57:22 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:57:22 Europe/Berlin] User has Started Logging in!
+[05-Dec-2024 17:57:22 Europe/Berlin] User Found
+[05-Dec-2024 17:57:22 Europe/Berlin] User has logged in successfully!
+[05-Dec-2024 17:57:22 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 17:57:22 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:07:45 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:07:45 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:07:47 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:07:47 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:09:33 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:09:33 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:13:12 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:13:12 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:14:12 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:14:12 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:14:50 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:14:50 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:17:43 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:17:43 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:18:00 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:18:00 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:18:07 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:18:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:18:07 Europe/Berlin] User has Started Logging in!
+[05-Dec-2024 18:18:07 Europe/Berlin] User Found
+[05-Dec-2024 18:18:07 Europe/Berlin] User has logged in successfully!
+[05-Dec-2024 18:18:07 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:18:07 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:18:10 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:18:10 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:18:12 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:18:12 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:19:30 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:19:30 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:19:36 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:19:36 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:20:34 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:20:34 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:32:35 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:32:35 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:33:35 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:33:35 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:34:30 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:34:30 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:36:13 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:36:13 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:37:30 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:37:30 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:38:00 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:38:00 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:38:33 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:38:33 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:39:18 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:39:18 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:39:48 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 18:39:48 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:03:15 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:03:15 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:03:29 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:03:29 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:11:10 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:11:10 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:12:59 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:12:59 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:14:33 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:14:33 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:18:08 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:18:08 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:22:32 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:22:32 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:24:03 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:24:03 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:25:47 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:25:47 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:26:56 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:26:56 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:27:02 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:27:02 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:27:02 Europe/Berlin] User has Started Logging in!
+[05-Dec-2024 19:27:02 Europe/Berlin] User Found
+[05-Dec-2024 19:27:02 Europe/Berlin] User has logged in successfully!
+[05-Dec-2024 19:27:02 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:27:02 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:27:13 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:27:13 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:29:35 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:29:35 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:29:47 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:29:47 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:33:21 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\duck\backend\login.php on line 3
+[05-Dec-2024 19:33:21 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\duck\backend\login.php on line 3

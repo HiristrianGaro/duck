@@ -1,23 +1,5 @@
 console.log('Script is loaded.');
 
-let myDictionary = {
-	"frontend/loginPage.php": "Login",
-  	"frontend/registerPage.php": "Register",
-	"frontend/pond.php": "Pond",
-    "frontend/friends.php": "Friends",
-    "frontend/profilePage.php": "Profile"
-};
-
-function convertToNiceLink(internalLink) {
-    return myDictionary[internalLink] || internalLink; // Fallback to the original if not found
-}
-
-// Function to convert a nicer-looking link back to the internal one
-function convertToInternalLink(niceLink) {
-    return Object.keys(myDictionary).find(key => myDictionary[key] === niceLink) || niceLink;
-}
-
-
 $(document).ready(function () {
     console.log('Script is loaded.');
     console.log(window.location.pathname);
@@ -49,7 +31,7 @@ window.addEventListener('popstate', function (event) {
         const targetFile = event.state.targetFile;
 
         // Load the page from the state
-       loadPage(targetFile);
+        loadPage(targetFile);
     }
 });
 
@@ -67,12 +49,11 @@ function loadPage(targetFile) {
     });
 }
 
-
 function toggleButtons(targetFile) {
     // Example logic: adjust visibility based on the page
-        $('#login-button').show();
-        $('#signup-button').show();
-        $('#logout-button').show();
+    $('#login-button').show();
+    $('#signup-button').show();
+    $('#logout-button').show();
 
     if (targetFile === 'frontend/loginPage.php') {
         $('#login-button').hide();

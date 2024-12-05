@@ -3,5 +3,5 @@ let myDictionary = {
   	"frontend/registerPage.php": "Register",
 	"frontend/pond.php": "Pond",
     "frontend/friends.php": "Friends",
-    "frontend/profilePage.php": "Profile"
+    "frontend/profilePage.html": "Profile"
 };
