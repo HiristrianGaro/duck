@@ -22,14 +22,6 @@ $(document).ready(function () {
     console.log('Script is loaded.');
     console.log(window.location.pathname);
 
-    // Check if the current page is index.php
-    if (window.location.pathname === 'duck/index.php') {
-        console.log('index state');
-        // Clear the browser's history for back navigation
-        history.replaceState(null, '', '/duck/index.php');
-        console.log('Back button cleared for index.php');
-    }
-
     // Handle navigation clicks
     $('.nav-load').on('click', function (event) {
         event.preventDefault(); // Prevent default link behavior
