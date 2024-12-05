@@ -15,48 +15,37 @@
     }
 
 ?>
+<div class="card gedf-card">
+    <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                </div>
+                <div class="ml-1">
+                    <div class="h5 m-0">@LeeCross</div>
+                    <div class="h7 text-muted">Miracles Lee Cross</div>
+                </div>
+                <div class="text-muted h7 mb-2 ml-auto"> <i class="fa fa-clock-o"></i>10 min ago</div>
+            </div>
+    </div>
+    <div class="container-sm card-body">
+        <div class="d-flex justify-content-center align-items-center mx-1">
+            <img src="./assets/images/post/pfp1.jpg" class="img-fluid w-100 post-image" alt="">
+        </div>
 
-<div class="container-fluid my-3 pb-1 border-bottom border-2 postContainer" data-postId="<?php echo $postId;?>" data-EmailAutore= "<?php echo $emailAutore;?>" data-pubblicazione="<?php echo $dataPubblicazione;?>" data-orario="<?php echo $orario;?>">
-    <div class="row justify-content-start ">
-        <div class="col border-bottom border-1 border-top-0 border-dark rounded-3 ps-3 shadow">
-            <?php 
-            if ($emailAutore == $emailUtente){
-                $link = '<a href= "userPage.php" class="fs-4 text-primary text-decoration-none pt-2">'.$NomeAutore.'</a>';
-                echo $link;
-            }else{
-                $htmlLinkPost = '<form action="../common/impostaAmicoSessione.php" method="post">';
-                $htmlLinkPost .= '<button type="submit" class="btn fs-4 ps-0 text-decoration-none btn-link" name="emailAmico" value="'.htmlspecialchars($emailAutore).'">'.$NomeAutore.'</button>';
-                $htmlLinkPost.='</form>';
-                echo $htmlLinkPost;
-            }
-            echo '<p class="text-secondary">'.$displayData.'</p>';
-            ?>
-            
+        <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae nulla rem eos ipsa praesentium esse magnam nemo dolor
+            sequi fuga quia quaerat cum, obcaecati hic, molestias minima iste voluptates.
+        </p>
+    </div>
+    <div class="card-footer">
+        <div class="d-flex justify-content-left">
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-link bi bi-chat" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <?php include './common/commenti.php'; ?>
+            </div>
         </div>
     </div>
-    <div class="row justify-content-start border-bottom border-primary pb-3 pt-2">
-        <?php if(empty($foto)): ?>
-            <div class="col-12 pt-2">
-                <?php echo $Post['Contenuto']; ?>
-            </div>
-        <?php else : ?>
-            <div class="col-12 pt-2 text-center">
-                <?php echo $foto['Descrizione']; ?>
-                <div class="m-2 p-2">
-                    <img src="<?php echo $foto['Path']; ?>" alt="Foto messaggio" class="img-fluid"> 
-                    <br>
-                    <small class="text-secondary"> <?php echo $luogoFoto ?></small>
-                </div>
-            </div>
-        <?php endif?>
-    </div>
-    <?php
-        if ($idPage == "Home"){
-            include("../common/buttonsMexHome.php");
-        }else{
-            include("../common/buttonsMexVis.php");
-        }     
-    ?>  
 </div>
-
-<script src="../js/inviaValutazione.js"></script>
