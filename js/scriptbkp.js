@@ -1,5 +1,4 @@
 console.log('Script is loaded.');
-
 let myDictionary = {
 	"frontend/loginPage.php": "Login",
   	"frontend/registerPage.php": "Register",
@@ -8,59 +7,52 @@ let myDictionary = {
     "frontend/profilePage.php": "Profile"
 };
 
-function convertToNiceLink(internalLink) {
-    return myDictionary[internalLink] || internalLink; // Fallback to the original if not found
-}
-
-// Function to convert a nicer-looking link back to the internal one
-function convertToInternalLink(niceLink) {
-    return Object.keys(myDictionary).find(key => myDictionary[key] === niceLink) || niceLink;
-}
-
-
 $(document).ready(function () {
-    console.log('Script is loaded.');
-    console.log(window.location.pathname);
-
-    // Check if the current page is index.php
-    if (window.location.pathname === 'duck/index.php') {
-        console.log('index state');
-        // Clear the browser's history for back navigation
-        history.replaceState(null, '', '/duck/index.php');
-        console.log('Back button cleared for index.php');
-    }
-
-    // Handle navigation clicks
+    // Navigation handler for links
     $('.nav-load').on('click', function (event) {
         event.preventDefault(); // Prevent default link behavior
 
-        const targetFile = $(this).data('target'); // Get the target file from the data attribute
+        const targetFile = $(this).data('target'); // Get the target file
         console.log(targetFile);
+        const pageName = myDictionary[targetFile]; // Get the friendly page name
 
-        history.pushState({ targetFile: targetFile }, '', `?page=${targetFile}`);
+        if (pageName) {
+            // Update the URL without reloading the page
+            history.pushState(
+                { targetFile: targetFile },
+                '', // Title (optional)
+                `/${pageName}` // Clean URL
+            );
 
-        // Make the AJAX call
-        loadPage(targetFile);
+            // Dynamically load the content
+            loadPage(targetFile);
+        }
     });
 
-    // Handle refresh or direct access
-    const params = new URLSearchParams(window.location.search);
-    const page = params.get('page');
-    if (page) {
-        // Load the page specified in the URL
-        loadPage(page);
+    // On page load or refresh, handle the URL
+    const currentPath = window.location.pathname.slice(1); // Remove leading '/'
+    if (currentPath) {
+        // Map the clean path to the corresponding file
+        const targetFile = Object.keys(myDictionary).find(
+            key => myDictionary[key] === currentPath
+        );
+
+        if (targetFile) {
+            loadPage(targetFile);
+        } else {
+            $('#main-page').html('<p>Page not found.</p>');
+        }
     }
+
+    // Handle back/forward navigation
+    window.addEventListener('popstate', function (event) {
+        if (event.state && event.state.targetFile) {
+            loadPage(event.state.targetFile);
+        }
+    });
 });
 
-window.addEventListener('popstate', function (event) {
-    if (event.state && event.state.targetFile) {
-        const targetFile = event.state.targetFile;
-
-        // Load the page from the state
-       loadPage(targetFile);
-    }
-});
-
+// Function to load content via AJAX
 function loadPage(targetFile) {
     $.ajax({
         url: targetFile,
@@ -74,6 +66,7 @@ function loadPage(targetFile) {
         }
     });
 }
+
 
 
 function toggleButtons(targetFile) {
