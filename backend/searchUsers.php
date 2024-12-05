@@ -8,9 +8,6 @@ $emailUtente = $_SESSION['Username'];
 if ($cid->connect_error) {
     die("Connessione fallita: " . $cid->connect_error);
 }
-
-
-
 header('Content-Type: application/json');
 
 $input = json_decode(file_get_contents('php://input'), true);
