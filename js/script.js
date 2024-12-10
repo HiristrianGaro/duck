@@ -15,6 +15,9 @@ $(document).ready(function () {
 
         // Make the AJAX call
         loadPage(targetFile);
+
+        // Hide the search bar
+        hideSearchBar();
     });
 
     // Handle refresh or direct access
@@ -24,7 +27,28 @@ $(document).ready(function () {
         // Load the page specified in the URL
         loadPage(page);
     }
+
+    // Restore the profile page state
+    const savedUsername = localStorage.getItem('savedUsername');
+    if (savedUsername) {
+        loadProfilePage(savedUsername);
+    }
+
+    // Hide search bar when clicking outside
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.searchCollapse, #search-input').length) {
+            hideSearchBar();
+        }
+    });
+
+    // Hide search bar function
+    function hideSearchBar() {
+        $('#SeachCollapse').collapse('hide');
+    }
 });
+
+// Other existing functions...
+
 
 window.addEventListener('popstate', function (event) {
     if (event.state && event.state.targetFile) {

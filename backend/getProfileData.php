@@ -11,7 +11,7 @@ if ($searchTerm==='CurrentUser') {
 }
     if ($searchTerm !== '') {
         // Prepare the SQL statement with placeholders
-        $sql = "SELECT username, IndirizzoEmail, Nome, Cognome, fotoprofilo
+        $sql = "SELECT username, Nome, Cognome, Genere, fotoprofilo
                 FROM utente 
                 WHERE username LIKE ? 
                 OR IndirizzoEmail LIKE ? 

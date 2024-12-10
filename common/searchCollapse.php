@@ -8,5 +8,3 @@
         </div>
     </div>
 </div>
-
-<script src="../js/userData.js"></script>

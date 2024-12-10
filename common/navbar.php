@@ -13,7 +13,7 @@
       <li><a href="#" class="nav-load nav-link text-body" data-target="#"><i class="bi bi-egg h4"></i></a></li>
       <li><a href="#" class="nav-link text-body" data-bs-toggle="collapse" data-bs-target="#SeachCollapse" aria-expanded="false" aria-controls="SeachCollapse" data-target="#"><i class="bi bi-search h4"></i></a></li>
       <li><a href="#" class="nav-load nav-link text-body" data-target="frontend/friends.php"><i class="bi bi-activity h4"></i></a></li>
-      <li><a href="#" class="nav-load nav-link text-body" data-target="frontend/profilePage.html" id="UserID"><i class="bi bi-feather h4"></i></a></li>
+      <li><a href="#" class="nav-load nav-link text-body" id="user-profile" data-target="frontend/profilePage.html" data-username="<?php echo  $_SESSION["Username"];?>" ><i class="bi bi-feather h4"></i></a></li>
     </ul>
 
     <div class="col-md-3 text-end">
