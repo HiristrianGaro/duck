@@ -1,7 +1,11 @@
 
 <?php
+if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 include "../common/connection.php";
 include "../common/funzioni.php";
+
+
+if(isset($_SESSION['Status'])) {
 ?>
 <div class="d-flex justify-content-center px-lg-3">
     <div class="p-3 p-md-4 border rounded-3 bg-white">
@@ -55,3 +59,4 @@ include "../common/funzioni.php";
         </div>
     </div>
 </div>
+<?php } else {include("../common/UnauthorizedAllert.html");}?>

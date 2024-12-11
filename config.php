@@ -10,10 +10,9 @@ define('SITE_DIR', '/duck');
 
 define('CONTENT_DIR', SITE_DIR . '/assets/brand');
 
-
 ini_set("log_errors", TRUE); 
 
-$log_file = './phplog.log';
+$log_file = 'phplog.log';
 
 ini_set('error_log', $log_file);
 

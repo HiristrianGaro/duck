@@ -1,102 +1,83 @@
-function debounce(func, wait) {
-    let timeout;
+function searchUsers() {
+    const searchTerm = document.getElementById('search-input').value.trim();
+    console.log('Search term:', searchTerm); // Log the search term
 
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
+    // Set minimum number of characters for the search term
+    const minChars = 4;
 
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
+    if (searchTerm.length >= minChars) {
+        fetch('backend/searchUsers.php?term=' + encodeURIComponent(searchTerm))
+            .then(response => {
+                console.log('Response status:', response.status); // Log the response status
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Received data:', data); // Log the received data
+                // Display the received data
+                displayUserResults(data);
+            })
+            .catch(error => {
+                console.error('Error fetching search results:', error);
+            });
+    } else {
+        // Clear results if search term is too short
+        console.log(`Search term must be at least ${minChars} characters long.`);
+        displayUserResults([]);
+    }
 }
 
-// function getSelectedFilters() {
-//     const filters = [];
-//     document.querySelectorAll('.dropdown-menu .form-check-input:checked').forEach(checkbox => {
-//         filters.push(checkbox.value);
-//     });
-//     return filters;
-// }
+// Function to display search results for users using a template
+async function displayUserResults(data) {
+    const resultsDiv = document.getElementById('search-results');
+    resultsDiv.innerHTML = ''; // Clear previous results
+    console.log('Displaying results:', data); // Log the data being displayed
 
-document.querySelectorAll('.dropdown-menu .form-check-input').forEach(checkbox => {
-    checkbox.addEventListener('change', () => {
-        const searchTerm = document.getElementById('searchInput').value;
-        debouncedSearchUsersByEmail(searchTerm); // Ricerca con i filtri aggiornati
-    });
-});
+    // Fetch the template
+    const template = await fetchTemplate('common/searchItem.html');
 
+    if (data.length > 0) {
+        data.forEach(user => {
+            // Log the username being replaced
+            console.log('Replacing {{Username}} with:', user.username);
 
+            let userHtml = template;
+            userHtml = userHtml.replace(/{{Username}}/g, user.username)
+                               .replace(/{{profilepicture}}/g, user.fotoprofilo);
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Chiamata iniziale per caricare i primi 10 utenti
-    searchUsersByEmail('');
-});
+            // Log the final HTML
+            console.log('Final Search Item HTML:', userHtml);
 
+            const userElement = document.createElement('div');
+            userElement.innerHTML = userHtml;
 
-function searchUsersByEmail(searchTerm) {
-    const filters = getSelectedFilters(); // Raccogli i filtri selezionati
-    fetch('../backend/search.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ searchTerm: searchTerm, filters: filters })
-    })
-    .then(response => response.text()) // Ottieni la risposta come testo
-    .then(text => {
-        try {
-            // Tenta di analizzare il testo come JSON
-            const data = JSON.parse(text);
-            updateSearchResults(data);
-        } catch (error) {
-            // Se il parsing JSON fallisce, logga l'errore e il testo della risposta
-            console.error('JSON parsing error:', error);
-            console.error('Response text:', text);
-            throw error; // Rilancia l'errore per eventuali ulteriori gestioni
-        } 
-    })
-    .catch(error => console.error('Error:', error));
-}
+            // Attach click event to the user element
+            //Need to modify this to load the profile page
+            userElement.querySelector('.user-result').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                hideSearchBar();
+                targetFile = 'frontend/profilepage.php';
+                username = this.getAttribute('data-username');
+                console.log('Trying to add param:', username, targetFile);
+                history.pushState({ targetFile: targetFile }, '', `?page=${targetFile}&username=${username}`);
+                loadPage(targetFile);
 
-const debouncedSearchUsersByEmail = debounce(searchUsersByEmail, 500);
+            });
 
-// Event listener sull'input di ricerca
-document.getElementById('searchInput').addEventListener('input', function(e) {
-    debouncedSearchUsersByEmail(e.target.value);
-});
-
-function updateSearchResults(users) {
-    const resultsContainer = document.getElementById('searchResults');
-    resultsContainer.innerHTML = ''; 
-
-    users.forEach(user => {
-        // Crea un form per ogni utente
-        const form = document.createElement('form');
-        form.action = '../common/impostaAmicoSessione.php'; 
-        form.method = 'POST';
-
-        // Aggiungi un campo nascosto per l'email dell'utente
-        const hiddenEmailInput = document.createElement('input');
-        hiddenEmailInput.type = 'hidden';
-        hiddenEmailInput.name = 'emailAmico';
-        hiddenEmailInput.value = user.email;
-        
-        // Crea il contenuto cliccabile, come un pulsante o un div
-        const userElement = document.createElement('div');
-        userElement.className = 'list-group-item rounded bg-light py-2 my-1 clickable';
-        userElement.innerHTML = `<div class="row">
-                                    <div class="col text-primary align-self-center fw-bold text-decoration-none">${user.name}</div>
-                                 </div>`;
-
-        // Quando il div viene cliccato, il form viene inviato
-        userElement.addEventListener('click', function() {
-            form.submit();
+            resultsDiv.appendChild(userElement.firstChild);
         });
-
-        form.appendChild(hiddenEmailInput);
-        form.appendChild(userElement);
-        resultsContainer.appendChild(form);
-    });
+    } else if (document.getElementById('search-input').value.trim().length >= 4) {
+        resultsDiv.textContent = 'No users found.';
+        console.log('No users found'); // Log no users found case
+    }
 }
+
+
+
+document.getElementById('search-input').addEventListener('input', searchUsers);
+document.getElementById('SeachCollapse').addEventListener('hidden.bs.collapse', function () {
+    document.getElementById('search-input').value = '';
+    document.getElementById('search-results').innerHTML = '';
+});
