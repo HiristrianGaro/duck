@@ -16,3 +16,23 @@ function getFriendsPosts() {
             console.error('Error fetching search results:', error);
         });
 }
+
+function displayFriendsPostResults(data) {
+    const postsContainer = document.getElementById('LetTheEggsSwim');
+    postsContainer.innerHTML = ''; // Clear the existing content
+    data.forEach(post => {
+        const postElement = document.createElement('div');
+        postElement.classList.add('post');
+        postElement.innerHTML = `
+            <div class="postHeader">
+                <img src="images/profile.png" alt="Profile Picture" class="profilePicture">
+                <div class="postInfo">
+                    <h3>${post.username}</h3>
+                    <p>${post.date}</p>
+                </div>
+            </div>
+            <p>${post.content}</p>
+        `;
+        postsContainer.appendChild(postElement);
+    });
+}

@@ -8,3 +8,5 @@
         </div>
     </div>
 </div>
+
+<script src="js/searchBar.js"></script>

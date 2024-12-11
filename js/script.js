@@ -1,7 +1,7 @@
 console.log('Script is loaded.');
 
 $(document).ready(function () {
-    console.log('Script is loaded.');
+    console.log('Script Started');
     console.log(window.location.pathname);
 
     // Handle navigation clicks
@@ -9,15 +9,21 @@ $(document).ready(function () {
         event.preventDefault(); // Prevent default link behavior
 
         const targetFile = $(this).data('target'); // Get the target file from the data attribute
-        console.log(targetFile);
+        console.log(targetFile, 'clicked'); // Log the clicked target
 
-        history.pushState({ targetFile: targetFile }, '', `?page=${targetFile}`);
+        if (targetFile === 'frontend/profilepage.php') {
 
-        // Make the AJAX call
+            targetUser = $(this).data('username');
+            history.pushState({ targetFile: targetFile }, '', `?page=${targetFile}&username=${targetUser}`);
+        }else{
+
+            history.pushState({ targetFile: targetFile }, '', `?page=${targetFile}`);
+        }
+
         loadPage(targetFile);
 
-        // Hide the search bar
         hideSearchBar();
+
     });
 
     // Handle refresh or direct access
@@ -29,10 +35,6 @@ $(document).ready(function () {
     }
 
     // Restore the profile page state
-    const savedUsername = localStorage.getItem('savedUsername');
-    if (savedUsername) {
-        loadProfilePage(savedUsername);
-    }
 
     // Hide search bar when clicking outside
     $(document).on('click', function (event) {
@@ -59,6 +61,14 @@ window.addEventListener('popstate', function (event) {
     }
 });
 
+function hideSearchBar() { $('#SeachCollapse').collapse('hide'); }
+
+$(document).on('click', function (event) { 
+    if (!$(event.target).closest('.searchCollapse, #search-input').length) { 
+        hideSearchBar(); 
+    } 
+});
+
 function loadPage(targetFile) {
     $.ajax({
         url: targetFile,
@@ -71,6 +81,11 @@ function loadPage(targetFile) {
             $('#main-page').html('<p>Error loading content. Please try again later.</p>');
         }
     });
+}
+
+async function fetchTemplate(url) {
+    const response = await fetch(url);
+    return response.text();
 }
 
 function toggleButtons(targetFile) {
