@@ -1,7 +1,7 @@
 <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 shadow-sm bg-blue">
   <div class="col-md-3 mb-2 mb-md-0">
-    <ul class="nav col-12 col-md-auto mb-2 mb-md-0">
-      <li><a href="<?= SITE_HOME ?>"><img class="ml-md-2" src="<?= CONTENT_DIR ?>/duck.png" alt="" width="30" height="30"></a></li>
+    <ul class="nav col col-md-auto mb-2 mb-md-0">
+      <li><a href="<?= SITE_HOME ?>"><img class="duckNavHide ml-md-2" src="<?= CONTENT_DIR ?>/duck.png" alt="" width="30" height="30"></a></li>
       <li><p class="usernameNav text-yellow fw-bold col ml-md-1 mb-0 "><?php if (isset($_SESSION["Username"])) { echo  $_SESSION["Username"];}?></p></li>
     </ul>
   </div>
@@ -17,14 +17,14 @@
 
     </ul>
 
-    <div class="col-3 text-end">
-      <a href="#" data-target="common/addPost.php" class="nav-load"><button type="button" class="justify-content-left btn btn-primary btn-round mr-md-1"><i class="bi bi-plus-square h4"></i></button></a>
+    <div class="col-sm-3 text-sm-end mr-sm-3">
+      <a href="#" data-target="common/addPost.php" class="nav-load"><button type="button" class="btn btn-primary btn-round mr-md-1"><i class="bi bi-plus-square h4"></i></button></a>
       <a href="<?= SITE_DOMAIN?>/backend/logout.php"><button type="button" class="btn btn-primary btn-round mr-md-1">Logout</button></a>
     </div>
 
   <?php } else { ?>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <ul class="nav col col-md-auto mb-2 justify-content-center mb-md-0">
     </ul>
 
     <div class="col-md-3 ml-1 text-end">

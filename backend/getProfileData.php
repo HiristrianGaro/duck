@@ -5,17 +5,14 @@ include '../common/connection.php';
 error_log("Received search term: " . $_GET['term']);
 // Retrieve the search term from the AJAX request
 $searchTerm = isset($_GET['term']) ? $_GET['term'] : '';
-if ($searchTerm==='CurrentUser') {
-    $searchTerm = $_SESSION['Username'];
-    error_log($searchTerm);
-}
+
     if ($searchTerm !== '') {
         // Prepare the SQL statement with placeholders
         $sql = "SELECT username, Nome, Cognome, Genere, fotoprofilo
                 FROM utente 
-                WHERE username LIKE ? 
-                OR IndirizzoEmail LIKE ? 
-                OR Nome LIKE ? 
+                WHERE username LIKE ?
+                OR IndirizzoEmail LIKE ?
+                OR Nome LIKE ?
                 OR Cognome LIKE ?";
 
         $stmt = $cid->prepare($sql);
