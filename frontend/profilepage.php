@@ -6,6 +6,7 @@
 <div class="container mt-5">
     <div class="card mb-4">
         <div class="card-body d-flex align-items-center" id="profile-header">
+            
         </div>
         <div class="card-footer text-end">
             <button class="btn btn-primary btn-block float-right">Follow</button>

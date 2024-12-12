@@ -1,3 +1,5 @@
+console.log('Pond Functionality JS Loaded');
+
 function getFriendsPosts() {
     fetch('backend/getFriendsPosts.php')
         .then(response => {
@@ -17,22 +19,44 @@ function getFriendsPosts() {
         });
 }
 
-function displayFriendsPostResults(data) {
+async function displayFriendsPostResults(data) {
     const postsContainer = document.getElementById('LetTheEggsSwim');
     postsContainer.innerHTML = ''; // Clear the existing content
-    data.forEach(post => {
-        const postElement = document.createElement('div');
-        postElement.classList.add('post');
-        postElement.innerHTML = `
-            <div class="postHeader">
-                <img src="images/profile.png" alt="Profile Picture" class="profilePicture">
-                <div class="postInfo">
-                    <h3>${post.username}</h3>
-                    <p>${post.date}</p>
-                </div>
-            </div>
-            <p>${post.content}</p>
-        `;
-        postsContainer.appendChild(postElement);
-    });
+    const template = await fetchTemplate('common/postContent.html');
+    if (data.length > 0) {
+        data.forEach(post => {
+            // Log the postname being replaced
+            console.log('Replacing {{Username}} with:', post.username);
+        
+            let postHtml = template;
+            console.log('template:', postHtml);
+            postHtml = postHtml.replace(/{{profilepicture}}/g, post.fotoprofilo)
+                               .replace(/{{postname}}/g, post.postname)
+                               .replace(/{{Gender}}/g, post.gendere)
+            
+            // Log the final HTML
+        
+            const postElement = document.createElement('div');
+            postElement.innerHTML = postHtml;
+            resultsDiv.innerHTML = postElement.innerHTML;
+        });
+        
+    } else if (document.getElementById('profile-header').textContent.trim().length >= 4) {
+        resultsDiv.textContent = 'No posts found.';
+        console.log('No posts found'); // Log no posts found case
+    }
 }
+
+// // Activate Carousel
+// $("CarouselName").carousel();
+
+// // Enable Carousel Indicators
+// $(".item").click(function(){
+//   $("CarouselName").carousel(1);
+//   console.log('clicked');
+// });
+
+// // Enable Carousel Controls
+// $(".left").click(function(){
+//   $("CarouselName").carousel("prev");
+// });

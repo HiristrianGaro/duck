@@ -113,7 +113,7 @@ async function displayPostResults(data) {
             resultsDiv.appendChild(postElement.firstChild);
         });
     } else {
-        resultsDiv.textContent = 'No posts from this user';
+        resultsDiv.innerHTML = '<p class=\'text-center m-0 p-0\'>No posts found.</p>';
         console.log('No posts found'); // Log no posts found case
     }
 }
