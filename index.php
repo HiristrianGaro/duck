@@ -20,10 +20,8 @@
     <?php include "common/navbar.php"; ?>
     <?php include "common/searchCollapse.php"; ?>
     <div class="container" id="main-page">
-
-      
+    <?php echo "print " . SITE_DOMAIN;?>
       <?php if(!isset($_SESSION['Status'])) {include 'frontend/landingPage.html';}?>
-        
     </div>
     
   </main>

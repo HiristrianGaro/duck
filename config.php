@@ -16,4 +16,6 @@ $log_file = 'phplog.log';
 
 ini_set('error_log', $log_file);
 
+//echo "test in echo" . ROOT_DIR;
+
 ?>
