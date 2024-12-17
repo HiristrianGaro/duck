@@ -47,6 +47,12 @@ $(document).ready(function () {
     function hideSearchBar() {
         $('#SeachCollapse').collapse('hide');
     }
+    
+    $('.noEnterSubmit').keypress(function(e){
+        if ( e.which == 13 ) return false;
+        //or...
+        if ( e.which == 13 ) e.preventDefault();
+    });
 });
 
 // Other existing functions...
@@ -76,6 +82,7 @@ function loadPage(targetFile) {
         success: function (data) {
             $('#main-page').html(data); // Inject the content into #main-page
             toggleButtons(targetFile); // Update buttons or UI if needed
+            console.log('Page loaded:', targetFile);
         },
         error: function () {
             $('#main-page').html('<p>Error loading content. Please try again later.</p>');
