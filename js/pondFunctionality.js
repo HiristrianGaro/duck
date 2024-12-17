@@ -22,9 +22,9 @@ function getFriendsPosts() {
 async function displayFriendsPostResults(data) {
     const postsContainer = document.getElementById('LetTheEggsSwim');
     postsContainer.innerHTML = ''; // Clear the existing content
-    const template = await fetchTemplate('common/postContent.html');
+    const template = await fetchTemplate('common/egg.html');
     if (data.length > 0) {
-        data.forEach(post => {
+        data.forEach(post, index => {
             // Log the postname being replaced
             console.log('Replacing {{Username}} with:', post.username);
         
@@ -46,17 +46,3 @@ async function displayFriendsPostResults(data) {
         console.log('No posts found'); // Log no posts found case
     }
 }
-
-// // Activate Carousel
-// $("CarouselName").carousel();
-
-// // Enable Carousel Indicators
-// $(".item").click(function(){
-//   $("CarouselName").carousel(1);
-//   console.log('clicked');
-// });
-
-// // Enable Carousel Controls
-// $(".left").click(function(){
-//   $("CarouselName").carousel("prev");
-// });

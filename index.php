@@ -1,10 +1,8 @@
 <?php
   session_start();
-  include "config.php";
+  require_once "config.php";
   include "common/connection.php";
   include "common/funzioni.php";
-  include "backend/login.php";
-  include "backend/register.php";
 ?>
 
 

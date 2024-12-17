@@ -5,10 +5,7 @@ include '../common/connection.php';
 error_log("Received search term: " . $_GET['term']);
 // Retrieve the search term from the AJAX request
 $searchTerm = isset($_GET['term']) ? $_GET['term'] : '';
-if ($searchTerm==='CurrentUser') {
-    $searchTerm = $_SESSION['Username'];
-    error_log($searchTerm);
-}
+
     if ($searchTerm !== '') {
         // Prepare the SQL statement with placeholders
         $sql = "SELECT username, IndirizzoEmail, Nome, Cognome, fotoprofilo, Genere

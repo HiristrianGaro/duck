@@ -1,0 +1,217 @@
+[17-Dec-2024 17:46:03 Europe/Berlin] Registering...
+[17-Dec-2024 17:46:03 Europe/Berlin] User has Started Registering in!
+[17-Dec-2024 17:46:03 Europe/Berlin] Checking if email already exists...
+[17-Dec-2024 17:46:03 Europe/Berlin] Email already exists, Please login or use another email
+[17-Dec-2024 17:46:03 Europe/Berlin] [{"status":"error","Message":"Email already exists, Please login or use another email"}]
+[17-Dec-2024 17:47:42 Europe/Berlin] Registering...
+[17-Dec-2024 17:47:42 Europe/Berlin] User has Started Registering in!
+[17-Dec-2024 17:47:42 Europe/Berlin] Checking if email already exists...
+[17-Dec-2024 17:47:42 Europe/Berlin] Email already exists, Please login or use another email
+[17-Dec-2024 17:47:42 Europe/Berlin] [{"status":"error","Message":"Email already exists, Please login or use another email"}]
+[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
+[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
+[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
+[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
+[17-Dec-2024 17:48:55 Europe/Berlin] Registering...
+[17-Dec-2024 17:48:55 Europe/Berlin] User has Started Registering in!
+[17-Dec-2024 17:48:55 Europe/Berlin] Checking if email already exists...
+[17-Dec-2024 17:48:55 Europe/Berlin] Chiamata funzione checkEmailExist
+[17-Dec-2024 17:48:55 Europe/Berlin] Email already exists, Please login or use another email
+[17-Dec-2024 17:48:55 Europe/Berlin] [{"status":"error","Message":"Email already exists, Please login or use another email"}]
+[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
+[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
+[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
+[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
+[17-Dec-2024 17:49:25 Europe/Berlin] Registering...
+[17-Dec-2024 17:49:25 Europe/Berlin] User has Started Registering in!
+[17-Dec-2024 17:49:25 Europe/Berlin] Checking if email already exists...
+[17-Dec-2024 17:49:25 Europe/Berlin] Chiamata funzione checkEmailExist
+[17-Dec-2024 17:49:25 Europe/Berlin] Connessione al db effettuata con successo
+[17-Dec-2024 17:49:25 Europe/Berlin] Email already exists, Please login or use another email
+[17-Dec-2024 17:49:25 Europe/Berlin] [{"status":"error","Message":"Email already exists, Please login or use another email"}]
+[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
+[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
+[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
+[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
+[17-Dec-2024 17:50:02 Europe/Berlin] Registering...
+[17-Dec-2024 17:50:02 Europe/Berlin] User has Started Registering in!
+[17-Dec-2024 17:50:02 Europe/Berlin] Checking if email already exists...
+[17-Dec-2024 17:50:02 Europe/Berlin] Chiamata funzione checkEmailExist
+[17-Dec-2024 17:50:02 Europe/Berlin] Connessione al db effettuata con successo
+[17-Dec-2024 17:50:02 Europe/Berlin] 0
+[17-Dec-2024 17:50:02 Europe/Berlin] Email already exists, Please login or use another email
+[17-Dec-2024 17:50:02 Europe/Berlin] [{"status":"error","Message":"Email already exists, Please login or use another email"}]
+[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
+[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
+[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
+[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
+[17-Dec-2024 17:50:50 Europe/Berlin] Registering...
+[17-Dec-2024 17:50:50 Europe/Berlin] User has Started Registering in!
+[17-Dec-2024 17:50:50 Europe/Berlin] Checking if email already exists...
+[17-Dec-2024 17:50:50 Europe/Berlin] Chiamata funzione checkEmailExist
+[17-Dec-2024 17:50:50 Europe/Berlin] Connessione al db effettuata con successo
+[17-Dec-2024 17:50:50 Europe/Berlin] 0
+[17-Dec-2024 17:50:50 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[17-Dec-2024 17:50:50 Europe/Berlin] Chiamata funzione checkUsernameExist
+[17-Dec-2024 17:50:50 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[17-Dec-2024 17:50:50 Europe/Berlin] Registration successful.
+
+[17-Dec-2024 17:50:50 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:52:17 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:52:17 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
+[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
+[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
+[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
+[17-Dec-2024 17:52:32 Europe/Berlin] Registering...
+[17-Dec-2024 17:52:32 Europe/Berlin] User has Started Registering in!
+[17-Dec-2024 17:52:32 Europe/Berlin] afasfa
+[17-Dec-2024 17:52:32 Europe/Berlin] Checking if email already exists...
+[17-Dec-2024 17:52:32 Europe/Berlin] Chiamata funzione checkEmailExist
+[17-Dec-2024 17:52:32 Europe/Berlin] Connessione al db effettuata con successo
+[17-Dec-2024 17:52:32 Europe/Berlin] 0
+[17-Dec-2024 17:52:32 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[17-Dec-2024 17:52:32 Europe/Berlin] Chiamata funzione checkUsernameExist
+[17-Dec-2024 17:52:32 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[17-Dec-2024 17:52:32 Europe/Berlin] Registration successful.
+
+[17-Dec-2024 17:52:32 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:53:33 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:53:33 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
+[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
+[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
+[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
+[17-Dec-2024 17:54:08 Europe/Berlin] Registering...
+[17-Dec-2024 17:54:08 Europe/Berlin] User has Started Registering in!
+[17-Dec-2024 17:54:08 Europe/Berlin] Billy
+[17-Dec-2024 17:54:08 Europe/Berlin] Checking if email already exists...
+[17-Dec-2024 17:54:08 Europe/Berlin] Chiamata funzione checkEmailExist
+[17-Dec-2024 17:54:08 Europe/Berlin] Connessione al db effettuata con successo
+[17-Dec-2024 17:54:08 Europe/Berlin] 0
+[17-Dec-2024 17:54:08 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[17-Dec-2024 17:54:08 Europe/Berlin] Chiamata funzione checkUsernameExist
+[17-Dec-2024 17:54:08 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[17-Dec-2024 17:54:08 Europe/Berlin] Registration successful.
+
+[17-Dec-2024 17:54:08 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:31 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:31 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:35 Europe/Berlin] User has Started Logging in!
+[17-Dec-2024 17:54:35 Europe/Berlin] Checking if user exists...
+[17-Dec-2024 17:54:35 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[17-Dec-2024 17:54:35 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:35 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:36 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:36 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:40 Europe/Berlin] User has Started Logging in!
+[17-Dec-2024 17:54:40 Europe/Berlin] Checking if user exists...
+[17-Dec-2024 17:54:40 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[17-Dec-2024 17:54:40 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:40 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:54:42 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 17:54:42 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 17:54:42 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
+[17-Dec-2024 17:54:42 Europe/Berlin] Returning data: [{"OraDiPubblicazione":"22:00:00","DataDiPubblicazione":"2023-10-25","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Late-night gaming session with friends.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-28.jpg","PosizioneFile":"assets\/images\/post\/image-28.jpg"},{"OraDiPubblicazione":"20:00:00","DataDiPubblicazione":"2023-10-24","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Dinner at a new Italian restaurant.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-27.jpg","PosizioneFile":"assets\/images\/post\/image-27.jpg"},{"OraDiPubblicazione":"18:00:00","DataDiPubblicazione":"2023-10-23","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Evening walk by the river.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-26.jpg","PosizioneFile":"assets\/images\/post\/image-26.jpg"},{"OraDiPubblicazione":"15:00:00","DataDiPubblicazione":"2023-10-22","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Coding session at the university.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-25.jpg","PosizioneFile":"assets\/images\/post\/image-25.jpg"},{"OraDiPubblicazione":"12:30:00","DataDiPubblicazione":"2023-10-21","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Lunch with friends at a local cafe.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-24.jpg","PosizioneFile":"assets\/images\/post\/image-24.jpg"},{"OraDiPubblicazione":"10:00:00","DataDiPubblicazione":"2023-10-20","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Morning run in the park!","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-23.jpg","PosizioneFile":"assets\/images\/post\/image-23.jpg"}]
+[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"LucaS","fotoprofilo":"assets\/images\/profile_picture\/pfp3.jpg"},{"username":"MartinaB","fotoprofilo":"assets\/images\/profile_picture\/pfp4.jpg"}]
+[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"SuggestedEmail":"annad@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"elisag@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"chiaras@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"daviden@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"giovannir@example.com","FriendsCount":1,"MutualFriends":"lucas@example.com"}]
+[17-Dec-2024 17:54:43 Europe/Berlin] Received search term: annad@example.com
+[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"AnnaD","IndirizzoEmail":"annad@example.com","Nome":"Anna","Cognome":"De Luca","fotoprofilo":"assets\/images\/profile_picture\/pfp10.jpg","Genere":"Femmina"}]
+[17-Dec-2024 17:54:43 Europe/Berlin] Received search term: chiaras@example.com
+[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"ChiaraS","IndirizzoEmail":"chiaras@example.com","Nome":"Chiara","Cognome":"Sartori","fotoprofilo":"assets\/images\/profile_picture\/pfp12.jpg","Genere":"Femmina"}]
+[17-Dec-2024 17:54:43 Europe/Berlin] Received search term: elisag@example.com
+[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"ElisaG","IndirizzoEmail":"elisag@example.com","Nome":"Elisa","Cognome":"Greco","fotoprofilo":"assets\/images\/profile_picture\/pfp8.jpg","Genere":"Femmina"}]
+[17-Dec-2024 17:54:43 Europe/Berlin] Received search term: daviden@example.com
+[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"DavideN","IndirizzoEmail":"daviden@example.com","Nome":"Davide","Cognome":"Neri","fotoprofilo":"assets\/images\/profile_picture\/pfp13.jpg","Genere":"Maschio"}]
+[17-Dec-2024 17:54:43 Europe/Berlin] Received search term: giovannir@example.com
+[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"GiovanniR","IndirizzoEmail":"giovannir@example.com","Nome":"Giovanni","Cognome":"Rossi","fotoprofilo":"assets\/images\/profile_picture\/pfp5.jpg","Genere":"Maschio"}]
+[17-Dec-2024 17:54:47 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 17:54:47 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 17:54:47 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
+[17-Dec-2024 17:54:47 Europe/Berlin] Returning data: [{"OraDiPubblicazione":"22:00:00","DataDiPubblicazione":"2023-10-25","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Late-night gaming session with friends.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-28.jpg","PosizioneFile":"assets\/images\/post\/image-28.jpg"},{"OraDiPubblicazione":"20:00:00","DataDiPubblicazione":"2023-10-24","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Dinner at a new Italian restaurant.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-27.jpg","PosizioneFile":"assets\/images\/post\/image-27.jpg"},{"OraDiPubblicazione":"18:00:00","DataDiPubblicazione":"2023-10-23","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Evening walk by the river.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-26.jpg","PosizioneFile":"assets\/images\/post\/image-26.jpg"},{"OraDiPubblicazione":"15:00:00","DataDiPubblicazione":"2023-10-22","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Coding session at the university.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-25.jpg","PosizioneFile":"assets\/images\/post\/image-25.jpg"},{"OraDiPubblicazione":"12:30:00","DataDiPubblicazione":"2023-10-21","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Lunch with friends at a local cafe.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-24.jpg","PosizioneFile":"assets\/images\/post\/image-24.jpg"},{"OraDiPubblicazione":"10:00:00","DataDiPubblicazione":"2023-10-20","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Morning run in the park!","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-23.jpg","PosizioneFile":"assets\/images\/post\/image-23.jpg"}]
+[17-Dec-2024 17:54:48 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 17:54:48 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 17:54:48 Europe/Berlin] Returning data: [{"OraDiPubblicazione":"22:00:00","DataDiPubblicazione":"2023-10-25","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Late-night gaming session with friends.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-28.jpg","PosizioneFile":"assets\/images\/post\/image-28.jpg"},{"OraDiPubblicazione":"20:00:00","DataDiPubblicazione":"2023-10-24","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Dinner at a new Italian restaurant.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-27.jpg","PosizioneFile":"assets\/images\/post\/image-27.jpg"},{"OraDiPubblicazione":"18:00:00","DataDiPubblicazione":"2023-10-23","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Evening walk by the river.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-26.jpg","PosizioneFile":"assets\/images\/post\/image-26.jpg"},{"OraDiPubblicazione":"15:00:00","DataDiPubblicazione":"2023-10-22","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Coding session at the university.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-25.jpg","PosizioneFile":"assets\/images\/post\/image-25.jpg"},{"OraDiPubblicazione":"12:30:00","DataDiPubblicazione":"2023-10-21","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Lunch with friends at a local cafe.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-24.jpg","PosizioneFile":"assets\/images\/post\/image-24.jpg"},{"OraDiPubblicazione":"10:00:00","DataDiPubblicazione":"2023-10-20","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Morning run in the park!","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-23.jpg","PosizioneFile":"assets\/images\/post\/image-23.jpg"}]
+[17-Dec-2024 17:54:48 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
+[17-Dec-2024 17:54:50 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 17:54:50 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 17:54:50 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
+[17-Dec-2024 17:54:50 Europe/Berlin] Returning data: [{"OraDiPubblicazione":"22:00:00","DataDiPubblicazione":"2023-10-25","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Late-night gaming session with friends.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-28.jpg","PosizioneFile":"assets\/images\/post\/image-28.jpg"},{"OraDiPubblicazione":"20:00:00","DataDiPubblicazione":"2023-10-24","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Dinner at a new Italian restaurant.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-27.jpg","PosizioneFile":"assets\/images\/post\/image-27.jpg"},{"OraDiPubblicazione":"18:00:00","DataDiPubblicazione":"2023-10-23","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Evening walk by the river.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-26.jpg","PosizioneFile":"assets\/images\/post\/image-26.jpg"},{"OraDiPubblicazione":"15:00:00","DataDiPubblicazione":"2023-10-22","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Coding session at the university.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-25.jpg","PosizioneFile":"assets\/images\/post\/image-25.jpg"},{"OraDiPubblicazione":"12:30:00","DataDiPubblicazione":"2023-10-21","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Lunch with friends at a local cafe.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-24.jpg","PosizioneFile":"assets\/images\/post\/image-24.jpg"},{"OraDiPubblicazione":"10:00:00","DataDiPubblicazione":"2023-10-20","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Morning run in the park!","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-23.jpg","PosizioneFile":"assets\/images\/post\/image-23.jpg"}]
+[17-Dec-2024 17:55:00 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 17:55:00 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:19 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:19 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:20 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:20 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:21 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:21 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:22 Europe/Berlin] User has Started Logging in!
+[17-Dec-2024 18:19:22 Europe/Berlin] Checking if user exists...
+[17-Dec-2024 18:19:22 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[17-Dec-2024 18:19:22 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:22 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:23 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:23 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:27 Europe/Berlin] User has Started Logging in!
+[17-Dec-2024 18:19:27 Europe/Berlin] Checking if user exists...
+[17-Dec-2024 18:19:27 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[17-Dec-2024 18:19:27 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:27 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
+[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"LucaS","fotoprofilo":"assets\/images\/profile_picture\/pfp3.jpg"},{"username":"MartinaB","fotoprofilo":"assets\/images\/profile_picture\/pfp4.jpg"}]
+[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"SuggestedEmail":"annad@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"elisag@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"chiaras@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"daviden@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"giovannir@example.com","FriendsCount":1,"MutualFriends":"lucas@example.com"}]
+[17-Dec-2024 18:19:30 Europe/Berlin] Received search term: annad@example.com
+[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"AnnaD","IndirizzoEmail":"annad@example.com","Nome":"Anna","Cognome":"De Luca","fotoprofilo":"assets\/images\/profile_picture\/pfp10.jpg","Genere":"Femmina"}]
+[17-Dec-2024 18:19:30 Europe/Berlin] Received search term: elisag@example.com
+[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"ElisaG","IndirizzoEmail":"elisag@example.com","Nome":"Elisa","Cognome":"Greco","fotoprofilo":"assets\/images\/profile_picture\/pfp8.jpg","Genere":"Femmina"}]
+[17-Dec-2024 18:19:30 Europe/Berlin] Received search term: daviden@example.com
+[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"DavideN","IndirizzoEmail":"daviden@example.com","Nome":"Davide","Cognome":"Neri","fotoprofilo":"assets\/images\/profile_picture\/pfp13.jpg","Genere":"Maschio"}]
+[17-Dec-2024 18:19:30 Europe/Berlin] Received search term: giovannir@example.com
+[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"GiovanniR","IndirizzoEmail":"giovannir@example.com","Nome":"Giovanni","Cognome":"Rossi","fotoprofilo":"assets\/images\/profile_picture\/pfp5.jpg","Genere":"Maschio"}]
+[17-Dec-2024 18:19:30 Europe/Berlin] Received search term: chiaras@example.com
+[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"ChiaraS","IndirizzoEmail":"chiaras@example.com","Nome":"Chiara","Cognome":"Sartori","fotoprofilo":"assets\/images\/profile_picture\/pfp12.jpg","Genere":"Femmina"}]
+[17-Dec-2024 18:19:33 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 18:19:33 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 18:19:33 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'DataDiPubblicazione' in 'order clause' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php on line 14
+[17-Dec-2024 18:19:33 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
+[17-Dec-2024 18:19:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php:17
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php on line 17
+[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"SuggestedEmail":"annad@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"elisag@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"chiaras@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"daviden@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"giovannir@example.com","FriendsCount":1,"MutualFriends":"lucas@example.com"}]
+[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"LucaS","fotoprofilo":"assets\/images\/profile_picture\/pfp3.jpg"},{"username":"MartinaB","fotoprofilo":"assets\/images\/profile_picture\/pfp4.jpg"}]
+[17-Dec-2024 18:19:34 Europe/Berlin] Received search term: elisag@example.com
+[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"ElisaG","IndirizzoEmail":"elisag@example.com","Nome":"Elisa","Cognome":"Greco","fotoprofilo":"assets\/images\/profile_picture\/pfp8.jpg","Genere":"Femmina"}]
+[17-Dec-2024 18:19:34 Europe/Berlin] Received search term: annad@example.com
+[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"AnnaD","IndirizzoEmail":"annad@example.com","Nome":"Anna","Cognome":"De Luca","fotoprofilo":"assets\/images\/profile_picture\/pfp10.jpg","Genere":"Femmina"}]
+[17-Dec-2024 18:19:34 Europe/Berlin] Received search term: giovannir@example.com
+[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"GiovanniR","IndirizzoEmail":"giovannir@example.com","Nome":"Giovanni","Cognome":"Rossi","fotoprofilo":"assets\/images\/profile_picture\/pfp5.jpg","Genere":"Maschio"}]
+[17-Dec-2024 18:19:34 Europe/Berlin] Received search term: chiaras@example.com
+[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"ChiaraS","IndirizzoEmail":"chiaras@example.com","Nome":"Chiara","Cognome":"Sartori","fotoprofilo":"assets\/images\/profile_picture\/pfp12.jpg","Genere":"Femmina"}]
+[17-Dec-2024 18:19:34 Europe/Berlin] Received search term: daviden@example.com
+[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"DavideN","IndirizzoEmail":"daviden@example.com","Nome":"Davide","Cognome":"Neri","fotoprofilo":"assets\/images\/profile_picture\/pfp13.jpg","Genere":"Maschio"}]
+[17-Dec-2024 18:19:35 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 18:19:35 Europe/Berlin] Received search term: HiristrianGaro
+[17-Dec-2024 18:19:35 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'DataDiPubblicazione' in 'order clause' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php on line 14
+[17-Dec-2024 18:19:35 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
+[17-Dec-2024 18:19:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php:17
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php on line 17

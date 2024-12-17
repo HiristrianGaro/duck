@@ -2,7 +2,6 @@
     if(session_status() !== PHP_SESSION_ACTIVE) session_start();
     session_unset();
     require_once("../common/connection.php");
-    require_once("../backend/login.php");
     include("../common/modalErrore.php");
     include("../common/errorModal.php");
 ?>
@@ -15,16 +14,18 @@
         <p class="lead">Welcome back to <span class="text-yellow fw-bold">Duck</span></p>
         <p class="lead mb-3">Login to <span class="text-blue fw-bold">Quack</span> with your friends!</p>
     </div>
-    <form method="POST" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>" class="needs-validation">
+    <form method="POST" id="loginForm" enctype="text/plain" class="needs-validation" novalidate>
         <div class="form-floating">
-            <input type="text" name="Login_Id" class="form-control mb-1" id="Login_Email" placeholder="name@example.com">
-            <label for="Login_Email" class="pb-4">Email address</label>
+            <input type="text" name="Login_Id" class="form-control mb-1" id="Login_Id" autocomplete="email" placeholder="name@example.com" required>
+            <label for="Login_Id" class="pb-4">Email address</label>
         </div>
         <div class="form-floating">
-            <input type="password" name="Login_Password" class="form-control" id="Login_Password" placeholder="Password">
+            <input type="password" name="Login_Password" class="form-control" id="Login_Password" autocomplete="current-password" placeholder="Password" required>
             <label for="Login_Password">Password</label>
         </div>  
         <button class="btn btn-primary w-100 py-1 mt-4" type="submit" name= "Login" value= "Login">Login</button>
         <p class="mt-5 mb-3 text-body-secondary">&copy; Duck–2024</p>
     </form>
 </div>
+
+<script src="js/loginRegister.js"></script>
