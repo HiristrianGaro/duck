@@ -1,7 +1,5 @@
 <?php
-
-
-/* Funzioni relative alla gestione degli utenti */
+include("../config.php");
 
 
 function checkDB($cid){
@@ -18,69 +16,52 @@ function checkDB($cid){
 }
 
 
-function isUser($cid, $Email, $Password){
-	$check = array("msg" => "", "status" => "ok");
-
-	if ($cid == null || $cid->connect_errno) {
-		$check["status"] = "ko";
-		$check["msg"] = $cid ? "Errore nella connessione al db: " . $cid->connect_error : "Errore nella connessione al db";
-		return $check;
-	}
-
-	// Use prepared statements to prevent SQL injection
-	$stmt = $cid->prepare("SELECT * FROM utente WHERE IndirizzoEmail = ? AND Password = ?");
-	if ($stmt) {
-		$stmt->bind_param("ss", $Email, $Password);
-		$stmt->execute();
-		$res = $stmt->get_result();
-
-		if ($res->num_rows == 1) {
-			$check["status"] = "ok";
-			$check["msg"] = "Login effettuato con successo";
-		} else {
-			$check["status"] = "ko";
-			$check["msg"] = "Email o password sbagliate";
-		}
-
-		$stmt->close();
-	} else {
-		$check["status"] = "ko";
-		$check["msg"] = "Errore nella preparazione della query: " . $cid->error;
-	}
-
-	return $check;
-}
-
-
 
 
 
 function checkEmailExist($cid, $Email){
-	$check = array("msg" => "", "status" => "ko");
-	
+	error_log("Chiamata funzione checkEmailExist");
 	if (checkDB($cid)["status"] != "ko") {
+		error_log("Connessione al db effettuata con successo");
+		$stmt = $cid->prepare("SELECT * FROM utente WHERE IndirizzoEmail = ?");
+		if ($stmt) {
+			$stmt->bind_param("s", $Email);
+			$stmt->execute();
+			$res = $stmt->get_result();
+			error_log($res->num_rows);
 
-	// Use prepared statements to prevent SQL injection
-	$stmt = $cid->prepare("SELECT * FROM utente WHERE IndirizzoEmail = ?");
-	if ($stmt) {
-		$stmt->bind_param("s", $Email);
-		$stmt->execute();
-		$res = $stmt->get_result();
 
-		echo $res->num_rows;
+			if ($res->num_rows > 0) {
+				return true;
+			} else {
+				return false;
+			}
 
-		if ($res->num_rows > 0) {
-			$check["status"] = "ok";
-			$check["msg"] = "Indirizzo già esistente";
+			$stmt->close();
 		}
-
-		$stmt->close();
-	} else {
-		$check["status"] = "ko";
-		$check["msg"] = "Errore nella preparazione della query: " . $cid->error;
-	}
-
-	return $check;
 	}
 }
+
+
+function checkUsernameExist($cid, $Username){
+	error_log("Chiamata funzione checkUsernameExist");
+	
+	if (checkDB($cid)["status"] != "ko") {
+		$stmt = $cid->prepare("SELECT * FROM utente WHERE Username = ?");
+		if ($stmt) {
+			$stmt->bind_param("s", $Username);
+			$stmt->execute();
+			$res = $stmt->get_result();
+
+			if ($res->num_rows > 0) {
+				return true;
+			} else {
+				return false;
+			}
+
+			$stmt->close();
+		}
+	}
+}
+
 
