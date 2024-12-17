@@ -3,7 +3,7 @@ function searchUsers() {
     console.log('Search term:', searchTerm); // Log the search term
 
     // Set minimum number of characters for the search term
-    const minChars = 4;
+    const minChars = 3;
 
     if (searchTerm.length >= minChars) {
         fetch('backend/searchUsers.php?term=' + encodeURIComponent(searchTerm))
