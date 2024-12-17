@@ -10,10 +10,17 @@ define('SITE_DIR', '/duck');
 
 define('CONTENT_DIR', SITE_DIR . '/assets/brand');
 
-ini_set("log_errors", TRUE); 
+define('POST_DIR', __DIR__ . '/assets/images/post');
 
-$log_file = 'phplog.log';
+ini_set("log_errors", 1); 
 
-ini_set('error_log', $log_file);
+ini_set('error_log', '/Applications/XAMPP/xamppfiles/htdocs/duck/phplog.log');
+
+// if (function_exists('gd_info')) {
+//     $gdInfo = gd_info();
+//     print_r($gdInfo);
+// } else {
+//     echo "GD library is not enabled.";
+// }
 
 ?>
