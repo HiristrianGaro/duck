@@ -9,7 +9,7 @@ if ($searchTerm !== '') {
     // Prepare the SQL statement with placeholders
     $sql = "SELECT * FROM post NATURAL JOIN foto 
             WHERE AutorePostEmail = (SELECT IndirizzoEmail FROM utente WHERE username = ?) 
-            ORDER BY DataDiPubblicazione DESC";
+            ORDER BY TimestampPubblicazione DESC";
 
     $stmt = $cid->prepare($sql);
 

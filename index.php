@@ -17,7 +17,7 @@
 
     <?php include "common/navbar.php"; ?>
     <?php include "common/searchCollapse.php"; ?>
-    <div class="container" id="main-page">
+    <div class="container-fluid container-z-index" id="main-page">
 
       
       <?php if(!isset($_SESSION['Status'])) {include 'frontend/landingPage.html';}?>

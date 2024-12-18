@@ -1,17 +1,21 @@
 :root {
-  --bs-yellow-duck: #FFD43B;
-  --bs-yellow-duck-dark: #E0B82D;
-  --bs-blue-duck: #87CEEB;
+  --bs-yellow-duck: #ffcc00;
+  --bs-yellow-duck-dark: #A88410;
+  --bs-blue-duck: #0e98a4;
   --bs-white-duck: #F8F8F8;
   --bs-gray-duck: #A6A6A6;
   --bs-pink-duck: #FF6F61;
-  --bs-body-bg: #E6E6E6;
+  --bs-body-bg: #F2EFEA;
   --bs-body-bg-secondary: #F8F8F8;
 }
 
 html{ 
   height: 100%;
- } 
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+
  
 body{
 height: 100%;
@@ -26,6 +30,16 @@ main {
   flex-grow: 1;
   overflow: auto;
 }
+
+.navbar-sticky {
+  z-index: 1030;
+  position: sticky;
+  top: 0;
+}
+.container-z-index {
+  z-index: 1;
+}
+
 
 .form-control {
   background-color: var(--bs-body-bg-secondary);
@@ -305,8 +319,9 @@ main {
 
 .btn-primary {
   color: #000000;
-  background-color: #FFD43B;
+  background-color: #ffcc00;
 }
+
 
 .btn-primary:hover {
   color: #000000;
@@ -315,12 +330,12 @@ main {
 
 .bg-yellow {
   --bs-bg-opacity: 1;
-  background-color:#FFD43B !important;
+  background-color: #F8E16C!important;
 }
 
 .bg-blue {
   --bs-bg-opacity: 1;
-  background-color: #87CEEB !important;
+  background-color: #333232!important;
 }
 
 .bg-white {
@@ -330,12 +345,17 @@ main {
 
 .bg-gray {
   --bs-bg-opacity: 1;
-  background-color: #D6D6D6 !important;
+  background-color: #ffffff !important;
 }
 
 .bg-pink {
   --bs-bg-opacity: 1;
   background-color: #FF6F61 !important;
+}
+
+.bg-black {
+  --bs-bg-opacity: 1;
+  background-color: #000000 !important;
 }
 
 .text-blue {
@@ -452,3 +472,15 @@ main {
   padding-bottom: 4px;
 }
 
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.white {
+  color:white;
+}

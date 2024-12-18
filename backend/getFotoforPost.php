@@ -2,23 +2,17 @@
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../config.php';
 include '../common/connection.php';
-$searchParam = $_SESSION['IndirizzoEmail'];
+$Timestamp = isset($_GET['Timestamp']) ? $_GET['Timestamp'] : '';
+$IndirizzoAutore = isset($_GET['IndirizzoAutore']) ? $_GET['IndirizzoAutore'] : '';
 // Prepare the SQL statement with placeholders
-$sql = "SELECT idPost, u.Username, IndirizzoEmail, TimestampPubblicazione, Descrizione, NomeCitta, StatoCitta, ProvinciaCitta, fotoprofilo
-        FROM Post p
-        JOIN Utente u ON p.AutorePostEmail = u.IndirizzoEmail
-        JOIN RichiedeAmicizia r ON (
-            (r.RichiedenteEmail = ? AND r.RiceventeEmail = u.IndirizzoEmail)
-            OR
-            (r.RiceventeEmail = ? AND r.RichiedenteEmail = u.IndirizzoEmail)
-        )
-        WHERE r.Accettazione = 'Accettato'
-        ORDER BY p.TimestampPubblicazione DESC;";
+$sql = "SELECT IdFoto, NomeFile, PosizioneFile FROM foto
+        WHERE TimestampPubblicazione = ? AND AutorePostEmail = ?
+        ORDER BY IdFoto DESC;";
 
 $stmt = $cid->prepare($sql);
 
 // Bind parameters for all fields
-$stmt->bind_param('ss', $searchParam, $searchParam);
+$stmt->bind_param('ss', $Timestamp, $IndirizzoAutore);
 
 // Execute the statement
 $stmt->execute();

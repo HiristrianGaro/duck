@@ -9,9 +9,17 @@
         <div class="form-floating">
             <input type="file" class="p-2 mb-2" name="filesToUpload[]" id="filesToUpload" multiple="multiple">
         </div>
+        <div class="form-floating">
+            <textarea class="form-control" name="postDesc" id="postDesc" placeholder="Post text"></textarea>
+            <label for="postDesc">Add a Description to your Egg! 💃💃💃</label>
+        </div>
+        <div>
+        <input type="text" id="searchInput" placeholder="Type to search..."><select id="myDropdown"></select>
+        </div>
         <button class="btn btn-primary w-100 py-1 mt-4" type="submit">Post</button>
         <p class="text-center mt-3" id="addPostAlertP"></p>
     </form>
 </div>
 
 <script src="js/addPost.js"></script>
+<script src="js/citiesAPI.js"></script>

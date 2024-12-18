@@ -20,6 +20,10 @@ $(document).ready(function () {
             history.pushState({ targetFile: targetFile }, '', `?page=${targetFile}`);
         }
 
+        if (targetFile === 'home') {
+            loadPage(targetFile);
+        }
+
         loadPage(targetFile);
 
         hideSearchBar();
@@ -70,7 +74,7 @@ window.addEventListener('popstate', function (event) {
 function hideSearchBar() { $('#SeachCollapse').collapse('hide'); }
 
 $(document).on('click', function (event) { 
-    if (!$(event.target).closest('.searchCollapse, #search-input').length) { 
+    if (!$(event.target).closest('.SearchCollapse, #search-input').length) { 
         hideSearchBar(); 
     } 
 });
