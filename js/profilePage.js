@@ -2,7 +2,7 @@ console.log('Loading profilePage.js');
 
 $(document).ready(function () {
     const params = new URLSearchParams(window.location.search);
-    const username = params.get('username');
+    const username = sanitizeInput(params.get('username'));
     if (username) {
         initializeProfilePage(username);
     }
@@ -11,6 +11,8 @@ $(document).ready(function () {
 
 // Initialize the profile page
 function initializeProfilePage(username) {
+    showLoadingIndicator('profile-container');
+
     loadProfilePage(username);
     checkFriendship(username);
     loadProfilePosts(username);
@@ -25,18 +27,24 @@ function loadProfilePage(username) {
             displayProfileResults(userData);
             localStorage.setItem('savedUsername', username);
         })
-        .catch(error => console.error('Error fetching profile data:', error));
+        .catch(error => {
+            console.error('Error fetching profile data:', error);
+            displayErrorMessage('profile-header', 'Failed to load profile. Please try again later.');
+        });
 }
 
 // Fetch and display the user's posts
 function loadProfilePosts(username) {
-    fetch(`backend/getUserPosts.php?term=${encodeURIComponent(username)}`)
+    fetch(`backend/getFriendsPosts.php?user=${encodeURIComponent(username)}&term=User`)
         .then(response => response.json())
         .then(postData => {
             console.log('Received post data:', postData);
             displayPostResults(postData);
         })
-        .catch(error => console.error('Error fetching post data:', error));
+        .catch(error => {
+            console.error('Error fetching post data:', error);
+            displayErrorMessage('grid-item', 'Failed to load posts. Please try again later.');
+        });
 }
 
 // Check and display the friendship status
@@ -44,10 +52,12 @@ function checkFriendship(username) {
     fetch(`backend/checkFriendship.php?username=${encodeURIComponent(username)}`)
         .then(response => response.json())
         .then(followData => {
-            console.log('Received follow data:', followData);
             displayFollowResults(followData);
         })
-        .catch(error => console.error('Error fetching follow data:', error));
+        .catch(error => {
+            console.error('Error fetching follow data:', error);
+            displayErrorMessage('follow-btn', 'Unable to fetch follow status.');
+        });
 }
 
 // Display the user's profile data
@@ -60,9 +70,9 @@ async function displayProfileResults(data) {
         const user = data[0]; // Assuming only one user profile is fetched
 
         const userHtml = template
-            .replace(/{{profilepicture}}/g, user.fotoprofilo)
-            .replace(/{{Username}}/g, user.username)
-            .replace(/{{Gender}}/g, user.gender);
+            .replace(/{{profilepicture}}/g, sanitizeInput(user.fotoprofilo))
+            .replace(/{{Username}}/g, sanitizeInput(user.username))
+            .replace(/{{Gender}}/g, sanitizeInput(user.gender));
 
         resultsDiv.innerHTML = userHtml;
         console.log('Profile header populated.');
@@ -80,7 +90,7 @@ async function displayPostResults(data) {
     if (data.length > 0) {
         const template = await fetchTemplate('common/postGridItem.html');
         data.forEach(post => {
-            const postHtml = template.replace(/{{postlocation}}/g, post.PosizioneFile);
+            const postHtml = template.replace(/{{postlocation}}/g, sanitizeInput(post.PosizioneFile));
             const postElement = document.createElement('div');
             postElement.innerHTML = postHtml;
             resultsDiv.appendChild(postElement.firstChild);
@@ -98,26 +108,47 @@ function displayFollowResults(data) {
     followBtn.innerHTML = ''; // Clear previous content
 
     if (data.length > 0) {
-        const status = data[0].Accettazione;
+        const status = sanitizeInput(data[0].Accettazione);
 
-        if (status === 'Accettato' || status === 'Rifiutato') {
-            followBtn.textContent = 'Follow';
-            followBtn.className = 'btn btn-primary';
-        } else if (status === 'In Attesa') {
-            followBtn.textContent = 'Requested';
-            followBtn.className = 'btn btn-primary-darker';
+        if (status === 'Accettato' || status === 'In Attesa') {
+            followBtn.textContent = 'Unfollow';
+            followBtn.className = 'btn btn-danger';
+            followBtn.setAttribute('data-action', 'Remove')
         } else if (status === 'Self') {
             followBtn.textContent = 'Edit Profile';
             followBtn.className = 'btn btn-primary';
-        } else {
-            followBtn.textContent = 'Follow';
-            followBtn.className = 'btn btn-primary';
+            followBtn.removeAttribute('data-action')
         }
     } else {
         followBtn.textContent = 'Follow';
         followBtn.className = 'btn btn-primary';
+        followBtn.setAttribute('data-action', 'Add')
     }
     console.log('Follow button updated.');
+}
+
+function addRemoveFriend(username, action) {
+    if (!username.length) return;
+
+    fetch(`backend/addRemoveFriend.php?ricevente=${encodeURIComponent(username)}&action=${encodeURIComponent(action)}`)
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
+        .then(data => {
+            checkFriendship(username);
+        
+        })
+        .catch(error => console.error('Error adding/removing friend:', error));
+}
+
+function followAction(event) {
+    const button = event.target;
+    const params = new URLSearchParams(window.location.search);
+    const username = sanitizeInput(params.get('username'));
+    const action = button.getAttribute('data-action');
+    console.log(`${action} friend:`, username);
+    addRemoveFriend(username, action)
 }
 
 // Utility function to fetch an HTML template
@@ -130,4 +161,20 @@ async function fetchTemplate(templatePath) {
         console.error('Error fetching template:', error);
         return '';
     }
+}
+
+
+// Display error message
+function displayErrorMessage(elementId, message) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.innerHTML = `<p class='text-center text-danger'>${message}</p>`;
+    }
+}
+
+// Sanitize input to prevent XSS attacks
+function sanitizeInput(input) {
+    const div = document.createElement('div');
+    div.textContent = input;
+    return div.innerHTML;
 }

@@ -26,7 +26,6 @@ ini_set("log_errors", 1);
 
 ini_set('error_log', '/Applications/XAMPP/xamppfiles/htdocs/duck/phplog.log');
 
-error_log(POST_DIR);
 
 // if (function_exists('gd_info')) {
 //     $gdInfo = gd_info();

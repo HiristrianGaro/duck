@@ -2,7 +2,6 @@
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../config.php';
 include '../common/connection.php';
-error_log("Received search term: " . $_GET['term']);
 // Retrieve the search term from the AJAX request
 $searchTerm = isset($_GET['term']) ? $_GET['term'] : '';
 
@@ -38,7 +37,6 @@ $searchTerm = isset($_GET['term']) ? $_GET['term'] : '';
         // Return data as JSON
         header('Content-Type: application/json');
         echo json_encode($data);
-        error_log("Returning data: " . json_encode($data));
 
         // Close the statement
         $stmt->close();

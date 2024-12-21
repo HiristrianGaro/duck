@@ -17,13 +17,9 @@
 
     <?php include "common/navbar.php"; ?>
     <?php include "common/searchCollapse.php"; ?>
+    <div class="container-fluid container-z-index" id="main-page">
 
-    <div class="parallax-container">
-      <div class="layer scrolling-background"></div>
-      <div class="layer"></div>
-      <div class="container-fluid container-z-index" id="main-page">
-    </div>
-
+      <?php include "frontend/comments.php"; ?>
       <?php if(!isset($_SESSION['Status'])) {include 'frontend/landingPage.html';}?>
         
     </div>

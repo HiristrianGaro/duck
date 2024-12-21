@@ -1,13 +1,14 @@
 console.log('Pond Functionality JS Loaded');
 
 $(document).ready(() => {
+    showLoadingIndicator('LetTheEggsSwim');
     fetchFriendsPosts();
 });
 
 async function fetchFriendsPosts() {
     console.log('Loading friends posts');
     try {
-        const response = await fetch('backend/getFriendsPosts.php');
+        const response = await fetch('backend/getFriendsPosts.php?term=Friends');
         if (!response.ok) throw new Error('Network response was not ok');
 
         const data = await response.json();
@@ -43,6 +44,7 @@ async function fetchPhotosForPost(timestamp, email) {
 
 async function displayPost(post, container, templateHead, templateBody) {
     try {
+        container.innerHTML = ''; // Clear previous results
         // Format the timestamp
         const formattedTimestamp = formatTimestamp(post.TimestampPubblicazione);
 
@@ -52,7 +54,8 @@ async function displayPost(post, container, templateHead, templateBody) {
                                        .replace(/{{citta}}/g, post.NomeCitta)
                                        .replace(/{{provincia}}/g, post.ProvinciaCitta)
                                        .replace(/{{stato}}/g, post.StatoCitta)
-                                       .replace(/{{Timestamp}}/g, formattedTimestamp);
+                                       .replace(/{{Timestamp}}/g, formattedTimestamp)
+                                       .replace(/{{IdPost}}/g, post.IdPost)
 
         // Create a container for the post
         const postContainer = document.createElement('div');
@@ -75,7 +78,6 @@ async function displayPost(post, container, templateHead, templateBody) {
 
         // Append the complete post to the results container
         container.appendChild(postContainer);
-        console.log('Post appended:', postContainer.innerHTML);
     } catch (error) {
         console.error('Error displaying post:', post, error);
     }
@@ -128,6 +130,26 @@ function populateCarousel(templateBody, photos) {
     return carouselElement.outerHTML;
 }
 
+function addRemoveLike(IdPost) {
+    if (!IdPost.length) return;
+
+    fetch(`backend/addRemoveFriend.php?ricevente=${encodeURIComponent(username)}&action=${encodeURIComponent(action)}`)
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
+        .then(data => {
+            checkFriendship(username);
+        
+        })
+        .catch(error => console.error('Error adding/removing friend:', error));
+}
+
+function likeAction(event) {
+    const button = event.target;
+    const action = button.getAttribute('data-post');
+    addRemoveFriend(username, action)
+}
 
 
 function formatTimestamp(timestamp) {
@@ -136,15 +158,15 @@ function formatTimestamp(timestamp) {
     const diffInSeconds = Math.floor((now - postTime) / 1000);
 
     if (diffInSeconds < 60) {
-        return `${diffInSeconds} seconds ago`;
+        return `${diffInSeconds}s`;
     } else if (diffInSeconds < 3600) {
         const minutes = Math.floor(diffInSeconds / 60);
-        return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+        return `${minutes}m`;
     } else if (diffInSeconds < 86400) {
         const hours = Math.floor(diffInSeconds / 3600);
-        return `${hours} hour${hours > 1 ? 's' : ''} ago`;
+        return `${hours}h`;
     } else {
         const days = Math.floor(diffInSeconds / 86400);
-        return `${days} day${days > 1 ? 's' : ''} ago`;
+        return `${days}d`;
     }
 }

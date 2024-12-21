@@ -1,4 +1,4 @@
-<header class="navbar-sticky d-flex flex-wrap align-items-center justify-content-center justify-content-md-between shadow-lg py-3 mb-4 shadow-sm bg-blue">
+<header class="navbar-sticky d-flex flex-wrap align-items-center justify-content-center justify-content-md-between shadow-lg py-3 shadow-sm mb-3 bg-blue">
   <div class="col-md-3 mb-2 mb-md-0">
     <ul class="nav col col-md-auto mb-2 mb-md-0">
       <li><a href="<?= SITE_HOME ?>"><img class="duckNavHide ml-md-2" src="<?= CONTENT_DIR ?>/duck.png" alt="" width="30" height="30"></a></li>

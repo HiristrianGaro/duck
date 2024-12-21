@@ -68,7 +68,7 @@ function addFotoPost($AutorePostEmail, $timestamp) {
                     $allowed_file_types = ['image/jpeg', 'image/gif', 'image/png'];
 
                     if (in_array($mime_type, $allowed_file_types)) {
-                        cropImageToAspectRatioGD($files_to_upload['tmp_name'][$i], $destination, 4, 5);
+                        cropImageToAspectRatioGD($files_to_upload['tmp_name'][$i], $destination, 5, 4);
 
                         $sql = "INSERT INTO Foto (TimestampPubblicazione, AutorePostEmail, NomeFile, PosizioneFile) VALUES (?, ?, ?, ?)";
                         $stmt = $cid->prepare($sql);

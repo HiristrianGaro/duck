@@ -1,59 +1,114 @@
 <?php
-if(session_status() !== PHP_SESSION_ACTIVE) session_start();
+if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../config.php';
 include '../common/connection.php';
-error_log("Received search term: " . $_GET['term']);
-// Retrieve the search term from the AJAX request
-$querySelect = isset($_GET['term']) ? $_GET['term'] : '';
-$Ricevente = isset($_GET['ricevente']) ? $_GET['ricevente'] : '';
-$Richiedente = $_SESSION['Username'];
 
-if ($querySelect !== '') {
-    if ($querySelect == 'AddFriend') {
-        $sql = "SET @username1 = ?;
-        SET @username2 = ?;
+// Enable error reporting for debugging
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-        SET @userEmail1 = (SELECT IndirizzoEmail FROM Utente WHERE Username = @username1);
-        SET @userEmail2 = (SELECT IndirizzoEmail FROM Utente WHERE Username = @username2);
+// Retrieve parameters from the request and session
+$querySelect = $_GET['action'] ?? '';
+$Ricevente = $_GET['ricevente'] ?? '';
+$Richiedente = $_SESSION['IndirizzoEmail'] ?? '';
+$date = date('Y-m-d H:i:s');
 
-        INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
-        VALUES (@userEmail1, @userEmail2, '2023-10-10', 'In Attesa');";
-    } else if ($querySelect == 'RemoveFriend') {
-        $sql = "SET @username1 = ?;
-        SET @username2 = ?;
+// Log the action and parameters
+error_log("Action: $querySelect, Ricevente: $Ricevente, Richiedente: $Richiedente");
 
-        SET @userEmail1 = (SELECT IndirizzoEmail FROM Utente WHERE Username = @username1);
-        SET @userEmail2 = (SELECT IndirizzoEmail FROM Utente WHERE Username = @username2);
+if ($querySelect && $Richiedente) {
+    try {
+        $sql = '';
+        $params = [];
+        $types = ''; // Type string for parameter binding
 
-        DELETE FROM RichiedeAmicizia
-        WHERE (RichiedenteEmail = @userEmail1 AND RiceventeEmail = @userEmail2)
-        OR (RichiedenteEmail = @userEmail2 AND RiceventeEmail = @userEmail1);";
-    } else {
-        // Invalid search term
-        echo 'Invalid search term';
+        switch ($querySelect) {
+            
+            case 'Add':
+            // Add friend request
+            $sql = "
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+            ";
+            $types = 'sss';
+            $params = [$Richiedente, $Ricevente, $date];
+            break;
+
+
+
+
+            case 'Remove':
+            // Remove friend request
+            $sql = "
+                DELETE FROM RichiedeAmicizia
+                WHERE ((RichiedenteEmail = ?
+                    AND RiceventeEmail = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?))
+                   OR (RichiedenteEmail = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
+                       AND RiceventeEmail = ?));
+            ";
+            $types = 'ssss';
+            $params = [$Richiedente, $Ricevente, $Ricevente, $Richiedente];
+            break;
+
+
+
+
+            case 'Accept':
+            // Accept friend request
+            $sql = "
+                UPDATE RichiedeAmicizia ra
+                SET ra.Accettazione = 'Accettato',
+                ra.DataRichiesta = ?
+                WHERE ra.RichiedenteEmail = (SELECT u.IndirizzoEmail FROM Utente u WHERE u.Username = ?)
+                  AND ra.RiceventeEmail = ?;
+            ";
+            $types = 'sss';
+            $params = [$date, $Ricevente, $Richiedente];
+            break;
+
+            default:
+            throw new Exception("Invalid action: $querySelect");
+        }
+
+        // Prepare and execute the statement
+        $stmt = $cid->prepare($sql);
+        if (!$stmt) {
+            throw new Exception("Failed to prepare SQL statement: " . $cid->error);
+        }
+
+        // Bind parameters
+        $stmt->bind_param($types, ...$params);
+
+        // Log the prepared statement
+        error_log("Executing SQL: $sql with params: " . implode(', ', $params));
+
+        // Execute the statement
+        if (!$stmt->execute()) {
+            throw new Exception("Failed to execute SQL statement: " . $stmt->error);
+        }
+
+        // Close the statement
+        $stmt->close();
+
+        // Success response
+        echo json_encode(['status' => 'success', 'message' => 'Action executed successfully']);
+
+    } catch (Exception $e) {
+        // Log and return error
+        error_log("Error: " . $e->getMessage());
+        echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
     }
-    // Prepare the SQL statement with placeholders
-    
-    $stmt = $cid->prepare($sql);
 
-    // Bind parameters for all fields
-    $stmt->bind_param('ss', $Richiedente, $Ricevente);
-
-
-    // Execute the statement
-    $stmt->execute();
-
-    // Get the result
-    $result = $stmt->get_result();
-
-    // Fetch data and store it in an array
-
-    echo $result;
-
-    $stmt->close();
 } else {
-    // No search term provided
-    echo 'No search term provided';
+    // No valid action or missing Richiedente
+    error_log("Invalid request: Action or session email missing");
+    echo json_encode(['status' => 'error', 'message' => 'Invalid request']);
 }
 
 // Close the connection

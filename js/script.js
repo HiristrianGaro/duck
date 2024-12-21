@@ -119,3 +119,9 @@ function toggleButtons(targetFile) {
         $('#logout-button').hide();
     }
 }
+function showLoadingIndicator(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.innerHTML = '<p class="text-center">Loading...</p>';
+    }
+}

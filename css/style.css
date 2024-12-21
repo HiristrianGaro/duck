@@ -10,7 +10,7 @@
 }
 
 html{ 
-  height: 100%;
+  height: 100vh;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -18,8 +18,21 @@ html{
 
  
 body{
-height: 100%;
+height: 100vh;
 position: relative;
+min-width:500px;        /* Suppose you want minimum width of 500px */
+width: auto !important;  /* Firefox will set width as auto */
+width:500px;
+background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        /* bottom, image */
+        url(../assets/brand/bkgnd.png);
+  backdrop-filter: blur(2px); 
+
 }
 
 .content {
@@ -176,9 +189,6 @@ main {
   .usernameNav {
     display: none;
   }
-}
-
-@media (max-width: 767px) {
   .duckNavHide {
     display: none;
   }
@@ -451,6 +461,7 @@ main {
   margin: auto;
 }
 
+
 .text-container {
   display: flex;
 }
@@ -468,6 +479,11 @@ main {
   background-color: transparent;
 }
 
+.postP {
+  font-size: 12px;
+}
+
+
 .comment-adjust {
   padding-bottom: 4px;
 }
@@ -483,4 +499,26 @@ main {
 
 .white {
   color:white;
+}
+
+
+
+
+/* Media Query */
+@media (max-width: 992px) {
+  .rightsplit {
+      display: none !important;
+  }
+
+  .leftsplit {
+      display: none !important;
+  }
+
+  .centralsplit {
+      max-width: 100% !important; /* Make the center column full width */
+  }
+}
+
+.friends-card {
+  min-width: 400px;
 }
