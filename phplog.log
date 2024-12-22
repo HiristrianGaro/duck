@@ -1,217 +1,677 @@
-[17-Dec-2024 17:46:03 Europe/Berlin] Registering...
-[17-Dec-2024 17:46:03 Europe/Berlin] User has Started Registering in!
-[17-Dec-2024 17:46:03 Europe/Berlin] Checking if email already exists...
-[17-Dec-2024 17:46:03 Europe/Berlin] Email already exists, Please login or use another email
-[17-Dec-2024 17:46:03 Europe/Berlin] [{"status":"error","Message":"Email already exists, Please login or use another email"}]
-[17-Dec-2024 17:47:42 Europe/Berlin] Registering...
-[17-Dec-2024 17:47:42 Europe/Berlin] User has Started Registering in!
-[17-Dec-2024 17:47:42 Europe/Berlin] Checking if email already exists...
-[17-Dec-2024 17:47:42 Europe/Berlin] Email already exists, Please login or use another email
-[17-Dec-2024 17:47:42 Europe/Berlin] [{"status":"error","Message":"Email already exists, Please login or use another email"}]
-[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
-[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
-[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
-[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
-[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
-[17-Dec-2024 17:48:55 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
-[17-Dec-2024 17:48:55 Europe/Berlin] Registering...
-[17-Dec-2024 17:48:55 Europe/Berlin] User has Started Registering in!
-[17-Dec-2024 17:48:55 Europe/Berlin] Checking if email already exists...
-[17-Dec-2024 17:48:55 Europe/Berlin] Chiamata funzione checkEmailExist
-[17-Dec-2024 17:48:55 Europe/Berlin] Email already exists, Please login or use another email
-[17-Dec-2024 17:48:55 Europe/Berlin] [{"status":"error","Message":"Email already exists, Please login or use another email"}]
-[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
-[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
-[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
-[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
-[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
-[17-Dec-2024 17:49:25 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
-[17-Dec-2024 17:49:25 Europe/Berlin] Registering...
-[17-Dec-2024 17:49:25 Europe/Berlin] User has Started Registering in!
-[17-Dec-2024 17:49:25 Europe/Berlin] Checking if email already exists...
-[17-Dec-2024 17:49:25 Europe/Berlin] Chiamata funzione checkEmailExist
-[17-Dec-2024 17:49:25 Europe/Berlin] Connessione al db effettuata con successo
-[17-Dec-2024 17:49:25 Europe/Berlin] Email already exists, Please login or use another email
-[17-Dec-2024 17:49:25 Europe/Berlin] [{"status":"error","Message":"Email already exists, Please login or use another email"}]
-[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
-[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
-[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
-[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
-[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
-[17-Dec-2024 17:50:02 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
-[17-Dec-2024 17:50:02 Europe/Berlin] Registering...
-[17-Dec-2024 17:50:02 Europe/Berlin] User has Started Registering in!
-[17-Dec-2024 17:50:02 Europe/Berlin] Checking if email already exists...
-[17-Dec-2024 17:50:02 Europe/Berlin] Chiamata funzione checkEmailExist
-[17-Dec-2024 17:50:02 Europe/Berlin] Connessione al db effettuata con successo
-[17-Dec-2024 17:50:02 Europe/Berlin] 0
-[17-Dec-2024 17:50:02 Europe/Berlin] Email already exists, Please login or use another email
-[17-Dec-2024 17:50:02 Europe/Berlin] [{"status":"error","Message":"Email already exists, Please login or use another email"}]
-[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
-[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
-[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
-[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
-[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
-[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
-[17-Dec-2024 17:50:50 Europe/Berlin] Registering...
-[17-Dec-2024 17:50:50 Europe/Berlin] User has Started Registering in!
-[17-Dec-2024 17:50:50 Europe/Berlin] Checking if email already exists...
-[17-Dec-2024 17:50:50 Europe/Berlin] Chiamata funzione checkEmailExist
-[17-Dec-2024 17:50:50 Europe/Berlin] Connessione al db effettuata con successo
-[17-Dec-2024 17:50:50 Europe/Berlin] 0
-[17-Dec-2024 17:50:50 Europe/Berlin] Email does not exist. Proceeding with insertion...
-[17-Dec-2024 17:50:50 Europe/Berlin] Chiamata funzione checkUsernameExist
-[17-Dec-2024 17:50:50 Europe/Berlin] Email does not exist. Proceeding with insertion...
-[17-Dec-2024 17:50:50 Europe/Berlin] Registration successful.
-
-[17-Dec-2024 17:50:50 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
-[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:50:50 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:52:17 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:52:17 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
-[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
-[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
-[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
-[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
-[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
-[17-Dec-2024 17:52:32 Europe/Berlin] Registering...
-[17-Dec-2024 17:52:32 Europe/Berlin] User has Started Registering in!
-[17-Dec-2024 17:52:32 Europe/Berlin] afasfa
-[17-Dec-2024 17:52:32 Europe/Berlin] Checking if email already exists...
-[17-Dec-2024 17:52:32 Europe/Berlin] Chiamata funzione checkEmailExist
-[17-Dec-2024 17:52:32 Europe/Berlin] Connessione al db effettuata con successo
-[17-Dec-2024 17:52:32 Europe/Berlin] 0
-[17-Dec-2024 17:52:32 Europe/Berlin] Email does not exist. Proceeding with insertion...
-[17-Dec-2024 17:52:32 Europe/Berlin] Chiamata funzione checkUsernameExist
-[17-Dec-2024 17:52:32 Europe/Berlin] Email does not exist. Proceeding with insertion...
-[17-Dec-2024 17:52:32 Europe/Berlin] Registration successful.
-
-[17-Dec-2024 17:52:32 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
-[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:52:32 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:53:33 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:53:33 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
-[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 5
-[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 7
-[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
-[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 11
-[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 13
-[17-Dec-2024 17:54:08 Europe/Berlin] Registering...
-[17-Dec-2024 17:54:08 Europe/Berlin] User has Started Registering in!
-[17-Dec-2024 17:54:08 Europe/Berlin] Billy
-[17-Dec-2024 17:54:08 Europe/Berlin] Checking if email already exists...
-[17-Dec-2024 17:54:08 Europe/Berlin] Chiamata funzione checkEmailExist
-[17-Dec-2024 17:54:08 Europe/Berlin] Connessione al db effettuata con successo
-[17-Dec-2024 17:54:08 Europe/Berlin] 0
-[17-Dec-2024 17:54:08 Europe/Berlin] Email does not exist. Proceeding with insertion...
-[17-Dec-2024 17:54:08 Europe/Berlin] Chiamata funzione checkUsernameExist
-[17-Dec-2024 17:54:08 Europe/Berlin] Email does not exist. Proceeding with insertion...
-[17-Dec-2024 17:54:08 Europe/Berlin] Registration successful.
-
-[17-Dec-2024 17:54:08 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
-[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:08 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:31 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:31 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:35 Europe/Berlin] User has Started Logging in!
-[17-Dec-2024 17:54:35 Europe/Berlin] Checking if user exists...
-[17-Dec-2024 17:54:35 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
-[17-Dec-2024 17:54:35 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:35 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:36 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:36 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:40 Europe/Berlin] User has Started Logging in!
-[17-Dec-2024 17:54:40 Europe/Berlin] Checking if user exists...
-[17-Dec-2024 17:54:40 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
-[17-Dec-2024 17:54:40 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:40 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:54:42 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 17:54:42 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 17:54:42 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
-[17-Dec-2024 17:54:42 Europe/Berlin] Returning data: [{"OraDiPubblicazione":"22:00:00","DataDiPubblicazione":"2023-10-25","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Late-night gaming session with friends.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-28.jpg","PosizioneFile":"assets\/images\/post\/image-28.jpg"},{"OraDiPubblicazione":"20:00:00","DataDiPubblicazione":"2023-10-24","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Dinner at a new Italian restaurant.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-27.jpg","PosizioneFile":"assets\/images\/post\/image-27.jpg"},{"OraDiPubblicazione":"18:00:00","DataDiPubblicazione":"2023-10-23","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Evening walk by the river.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-26.jpg","PosizioneFile":"assets\/images\/post\/image-26.jpg"},{"OraDiPubblicazione":"15:00:00","DataDiPubblicazione":"2023-10-22","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Coding session at the university.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-25.jpg","PosizioneFile":"assets\/images\/post\/image-25.jpg"},{"OraDiPubblicazione":"12:30:00","DataDiPubblicazione":"2023-10-21","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Lunch with friends at a local cafe.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-24.jpg","PosizioneFile":"assets\/images\/post\/image-24.jpg"},{"OraDiPubblicazione":"10:00:00","DataDiPubblicazione":"2023-10-20","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Morning run in the park!","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-23.jpg","PosizioneFile":"assets\/images\/post\/image-23.jpg"}]
-[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"LucaS","fotoprofilo":"assets\/images\/profile_picture\/pfp3.jpg"},{"username":"MartinaB","fotoprofilo":"assets\/images\/profile_picture\/pfp4.jpg"}]
-[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"SuggestedEmail":"annad@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"elisag@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"chiaras@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"daviden@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"giovannir@example.com","FriendsCount":1,"MutualFriends":"lucas@example.com"}]
-[17-Dec-2024 17:54:43 Europe/Berlin] Received search term: annad@example.com
-[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"AnnaD","IndirizzoEmail":"annad@example.com","Nome":"Anna","Cognome":"De Luca","fotoprofilo":"assets\/images\/profile_picture\/pfp10.jpg","Genere":"Femmina"}]
-[17-Dec-2024 17:54:43 Europe/Berlin] Received search term: chiaras@example.com
-[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"ChiaraS","IndirizzoEmail":"chiaras@example.com","Nome":"Chiara","Cognome":"Sartori","fotoprofilo":"assets\/images\/profile_picture\/pfp12.jpg","Genere":"Femmina"}]
-[17-Dec-2024 17:54:43 Europe/Berlin] Received search term: elisag@example.com
-[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"ElisaG","IndirizzoEmail":"elisag@example.com","Nome":"Elisa","Cognome":"Greco","fotoprofilo":"assets\/images\/profile_picture\/pfp8.jpg","Genere":"Femmina"}]
-[17-Dec-2024 17:54:43 Europe/Berlin] Received search term: daviden@example.com
-[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"DavideN","IndirizzoEmail":"daviden@example.com","Nome":"Davide","Cognome":"Neri","fotoprofilo":"assets\/images\/profile_picture\/pfp13.jpg","Genere":"Maschio"}]
-[17-Dec-2024 17:54:43 Europe/Berlin] Received search term: giovannir@example.com
-[17-Dec-2024 17:54:43 Europe/Berlin] Returning data: [{"username":"GiovanniR","IndirizzoEmail":"giovannir@example.com","Nome":"Giovanni","Cognome":"Rossi","fotoprofilo":"assets\/images\/profile_picture\/pfp5.jpg","Genere":"Maschio"}]
-[17-Dec-2024 17:54:47 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 17:54:47 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 17:54:47 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
-[17-Dec-2024 17:54:47 Europe/Berlin] Returning data: [{"OraDiPubblicazione":"22:00:00","DataDiPubblicazione":"2023-10-25","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Late-night gaming session with friends.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-28.jpg","PosizioneFile":"assets\/images\/post\/image-28.jpg"},{"OraDiPubblicazione":"20:00:00","DataDiPubblicazione":"2023-10-24","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Dinner at a new Italian restaurant.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-27.jpg","PosizioneFile":"assets\/images\/post\/image-27.jpg"},{"OraDiPubblicazione":"18:00:00","DataDiPubblicazione":"2023-10-23","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Evening walk by the river.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-26.jpg","PosizioneFile":"assets\/images\/post\/image-26.jpg"},{"OraDiPubblicazione":"15:00:00","DataDiPubblicazione":"2023-10-22","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Coding session at the university.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-25.jpg","PosizioneFile":"assets\/images\/post\/image-25.jpg"},{"OraDiPubblicazione":"12:30:00","DataDiPubblicazione":"2023-10-21","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Lunch with friends at a local cafe.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-24.jpg","PosizioneFile":"assets\/images\/post\/image-24.jpg"},{"OraDiPubblicazione":"10:00:00","DataDiPubblicazione":"2023-10-20","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Morning run in the park!","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-23.jpg","PosizioneFile":"assets\/images\/post\/image-23.jpg"}]
-[17-Dec-2024 17:54:48 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 17:54:48 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 17:54:48 Europe/Berlin] Returning data: [{"OraDiPubblicazione":"22:00:00","DataDiPubblicazione":"2023-10-25","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Late-night gaming session with friends.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-28.jpg","PosizioneFile":"assets\/images\/post\/image-28.jpg"},{"OraDiPubblicazione":"20:00:00","DataDiPubblicazione":"2023-10-24","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Dinner at a new Italian restaurant.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-27.jpg","PosizioneFile":"assets\/images\/post\/image-27.jpg"},{"OraDiPubblicazione":"18:00:00","DataDiPubblicazione":"2023-10-23","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Evening walk by the river.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-26.jpg","PosizioneFile":"assets\/images\/post\/image-26.jpg"},{"OraDiPubblicazione":"15:00:00","DataDiPubblicazione":"2023-10-22","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Coding session at the university.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-25.jpg","PosizioneFile":"assets\/images\/post\/image-25.jpg"},{"OraDiPubblicazione":"12:30:00","DataDiPubblicazione":"2023-10-21","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Lunch with friends at a local cafe.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-24.jpg","PosizioneFile":"assets\/images\/post\/image-24.jpg"},{"OraDiPubblicazione":"10:00:00","DataDiPubblicazione":"2023-10-20","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Morning run in the park!","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-23.jpg","PosizioneFile":"assets\/images\/post\/image-23.jpg"}]
-[17-Dec-2024 17:54:48 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
-[17-Dec-2024 17:54:50 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 17:54:50 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 17:54:50 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
-[17-Dec-2024 17:54:50 Europe/Berlin] Returning data: [{"OraDiPubblicazione":"22:00:00","DataDiPubblicazione":"2023-10-25","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Late-night gaming session with friends.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-28.jpg","PosizioneFile":"assets\/images\/post\/image-28.jpg"},{"OraDiPubblicazione":"20:00:00","DataDiPubblicazione":"2023-10-24","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Dinner at a new Italian restaurant.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-27.jpg","PosizioneFile":"assets\/images\/post\/image-27.jpg"},{"OraDiPubblicazione":"18:00:00","DataDiPubblicazione":"2023-10-23","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Evening walk by the river.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-26.jpg","PosizioneFile":"assets\/images\/post\/image-26.jpg"},{"OraDiPubblicazione":"15:00:00","DataDiPubblicazione":"2023-10-22","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Coding session at the university.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-25.jpg","PosizioneFile":"assets\/images\/post\/image-25.jpg"},{"OraDiPubblicazione":"12:30:00","DataDiPubblicazione":"2023-10-21","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Lunch with friends at a local cafe.","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-24.jpg","PosizioneFile":"assets\/images\/post\/image-24.jpg"},{"OraDiPubblicazione":"10:00:00","DataDiPubblicazione":"2023-10-20","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"Morning run in the park!","NomeCitta":"Milan","StatoCitta":"Italy","ProvinciaCitta":"Milan","NomeFile":"image-23.jpg","PosizioneFile":"assets\/images\/post\/image-23.jpg"}]
-[17-Dec-2024 17:55:00 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 17:55:00 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:19 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:19 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:20 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:20 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:21 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:21 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:22 Europe/Berlin] User has Started Logging in!
-[17-Dec-2024 18:19:22 Europe/Berlin] Checking if user exists...
-[17-Dec-2024 18:19:22 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
-[17-Dec-2024 18:19:22 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:22 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:23 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:23 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:27 Europe/Berlin] User has Started Logging in!
-[17-Dec-2024 18:19:27 Europe/Berlin] Checking if user exists...
-[17-Dec-2024 18:19:27 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
-[17-Dec-2024 18:19:27 Europe/Berlin] PHP Warning:  include(../config.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:27 Europe/Berlin] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 2
-[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"LucaS","fotoprofilo":"assets\/images\/profile_picture\/pfp3.jpg"},{"username":"MartinaB","fotoprofilo":"assets\/images\/profile_picture\/pfp4.jpg"}]
-[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"SuggestedEmail":"annad@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"elisag@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"chiaras@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"daviden@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"giovannir@example.com","FriendsCount":1,"MutualFriends":"lucas@example.com"}]
-[17-Dec-2024 18:19:30 Europe/Berlin] Received search term: annad@example.com
-[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"AnnaD","IndirizzoEmail":"annad@example.com","Nome":"Anna","Cognome":"De Luca","fotoprofilo":"assets\/images\/profile_picture\/pfp10.jpg","Genere":"Femmina"}]
-[17-Dec-2024 18:19:30 Europe/Berlin] Received search term: elisag@example.com
-[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"ElisaG","IndirizzoEmail":"elisag@example.com","Nome":"Elisa","Cognome":"Greco","fotoprofilo":"assets\/images\/profile_picture\/pfp8.jpg","Genere":"Femmina"}]
-[17-Dec-2024 18:19:30 Europe/Berlin] Received search term: daviden@example.com
-[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"DavideN","IndirizzoEmail":"daviden@example.com","Nome":"Davide","Cognome":"Neri","fotoprofilo":"assets\/images\/profile_picture\/pfp13.jpg","Genere":"Maschio"}]
-[17-Dec-2024 18:19:30 Europe/Berlin] Received search term: giovannir@example.com
-[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"GiovanniR","IndirizzoEmail":"giovannir@example.com","Nome":"Giovanni","Cognome":"Rossi","fotoprofilo":"assets\/images\/profile_picture\/pfp5.jpg","Genere":"Maschio"}]
-[17-Dec-2024 18:19:30 Europe/Berlin] Received search term: chiaras@example.com
-[17-Dec-2024 18:19:30 Europe/Berlin] Returning data: [{"username":"ChiaraS","IndirizzoEmail":"chiaras@example.com","Nome":"Chiara","Cognome":"Sartori","fotoprofilo":"assets\/images\/profile_picture\/pfp12.jpg","Genere":"Femmina"}]
-[17-Dec-2024 18:19:33 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 18:19:33 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 18:19:33 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'DataDiPubblicazione' in 'order clause' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php on line 14
-[17-Dec-2024 18:19:33 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
-[17-Dec-2024 18:19:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php:17
+[22-Dec-2024 14:13:34 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[22-Dec-2024 14:13:34 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[22-Dec-2024 14:13:34 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 12
+[22-Dec-2024 14:13:34 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 17
+[22-Dec-2024 14:13:34 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 19
+[22-Dec-2024 14:13:34 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 21
+[22-Dec-2024 14:13:34 Europe/Berlin] PHP Warning:  Constant LOCAL_POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 23
+[22-Dec-2024 14:13:34 Europe/Berlin] Creating Post
+[22-Dec-2024 14:13:34 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'State' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/addCity.php on line 10
+[22-Dec-2024 14:13:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/addCity.php:12
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php(22): checkCity('', '', '')
+#1 /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php(8): createPost()
+#2 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/addCity.php on line 12
+[22-Dec-2024 14:13:53 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[22-Dec-2024 14:13:53 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[22-Dec-2024 14:13:53 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 12
+[22-Dec-2024 14:13:53 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 17
+[22-Dec-2024 14:13:53 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 19
+[22-Dec-2024 14:13:53 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 21
+[22-Dec-2024 14:13:53 Europe/Berlin] PHP Warning:  Constant LOCAL_POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 23
+[22-Dec-2024 14:13:53 Europe/Berlin] Creating Post
+[22-Dec-2024 14:13:53 Europe/Berlin] Executing Query
+[22-Dec-2024 14:13:53 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1452): Cannot add or update a child row: a foreign key constraint fails (`duck`.`post`, CONSTRAINT `Post_ibfk_1` FOREIGN KEY (`NomeCitta`, `StatoCitta`, `ProvinciaCitta`) REFERENCES `Citta` (`City`, `Country`, `Region`)) in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 40
+[22-Dec-2024 14:13:53 Europe/Berlin] Execute failed: Cannot add or update a child row: a foreign key constraint fails (`duck`.`post`, CONSTRAINT `Post_ibfk_1` FOREIGN KEY (`NomeCitta`, `StatoCitta`, `ProvinciaCitta`) REFERENCES `Citta` (`City`, `Country`, `Region`))
+[22-Dec-2024 14:47:27 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 14:47:27 Europe/Berlin] Returning data: []
+[22-Dec-2024 14:47:31 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 14:47:31 Europe/Berlin] Returning data: []
+[22-Dec-2024 14:47:33 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 14:47:33 Europe/Berlin] Returning data: []
+[22-Dec-2024 14:47:46 Europe/Berlin] Query: User
+[22-Dec-2024 14:47:46 Europe/Berlin] Returning data: []
+[22-Dec-2024 14:47:46 Europe/Berlin] Received search term: HiristrianGaro
+[22-Dec-2024 16:23:53 Europe/Berlin] PHP Warning:  Undefined array key "IndirizzoEmail" in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 8
+[22-Dec-2024 16:23:53 Europe/Berlin] Invalid request: Action or session email missing
+[22-Dec-2024 16:23:53 Europe/Berlin] PHP Warning:  Undefined variable $sql in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 94
+[22-Dec-2024 16:23:53 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42000/1065): Query was empty in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 94
+[22-Dec-2024 16:23:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php:97
 Stack trace:
 #0 {main}
-  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php on line 17
-[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"SuggestedEmail":"annad@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"elisag@example.com","FriendsCount":2,"MutualFriends":"lucas@example.com,martinab@example.com"},{"SuggestedEmail":"chiaras@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"daviden@example.com","FriendsCount":1,"MutualFriends":"martinab@example.com"},{"SuggestedEmail":"giovannir@example.com","FriendsCount":1,"MutualFriends":"lucas@example.com"}]
-[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"LucaS","fotoprofilo":"assets\/images\/profile_picture\/pfp3.jpg"},{"username":"MartinaB","fotoprofilo":"assets\/images\/profile_picture\/pfp4.jpg"}]
-[17-Dec-2024 18:19:34 Europe/Berlin] Received search term: elisag@example.com
-[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"ElisaG","IndirizzoEmail":"elisag@example.com","Nome":"Elisa","Cognome":"Greco","fotoprofilo":"assets\/images\/profile_picture\/pfp8.jpg","Genere":"Femmina"}]
-[17-Dec-2024 18:19:34 Europe/Berlin] Received search term: annad@example.com
-[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"AnnaD","IndirizzoEmail":"annad@example.com","Nome":"Anna","Cognome":"De Luca","fotoprofilo":"assets\/images\/profile_picture\/pfp10.jpg","Genere":"Femmina"}]
-[17-Dec-2024 18:19:34 Europe/Berlin] Received search term: giovannir@example.com
-[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"GiovanniR","IndirizzoEmail":"giovannir@example.com","Nome":"Giovanni","Cognome":"Rossi","fotoprofilo":"assets\/images\/profile_picture\/pfp5.jpg","Genere":"Maschio"}]
-[17-Dec-2024 18:19:34 Europe/Berlin] Received search term: chiaras@example.com
-[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"ChiaraS","IndirizzoEmail":"chiaras@example.com","Nome":"Chiara","Cognome":"Sartori","fotoprofilo":"assets\/images\/profile_picture\/pfp12.jpg","Genere":"Femmina"}]
-[17-Dec-2024 18:19:34 Europe/Berlin] Received search term: daviden@example.com
-[17-Dec-2024 18:19:34 Europe/Berlin] Returning data: [{"username":"DavideN","IndirizzoEmail":"daviden@example.com","Nome":"Davide","Cognome":"Neri","fotoprofilo":"assets\/images\/profile_picture\/pfp13.jpg","Genere":"Maschio"}]
-[17-Dec-2024 18:19:35 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 18:19:35 Europe/Berlin] Received search term: HiristrianGaro
-[17-Dec-2024 18:19:35 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'DataDiPubblicazione' in 'order clause' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php on line 14
-[17-Dec-2024 18:19:35 Europe/Berlin] Returning data: [{"username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","Nome":"Christian","Cognome":"","fotoprofilo":"assets\/images\/profile_picture\/pfp2.jpg","Genere":"Preferisco non rispondere"}]
-[17-Dec-2024 18:19:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php:17
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 97
+[22-Dec-2024 16:24:06 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:24:06 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:24:06 Europe/Berlin] [{"status":"error","message":"Email o password errati!"}]
+[22-Dec-2024 16:24:07 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:24:07 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:24:07 Europe/Berlin] [{"status":"error","message":"Email o password errati!"}]
+[22-Dec-2024 16:24:31 Europe/Berlin] Registering...
+[22-Dec-2024 16:24:31 Europe/Berlin] User has Started Registering in!
+[22-Dec-2024 16:24:31 Europe/Berlin] HiristrianGaro
+[22-Dec-2024 16:24:31 Europe/Berlin] Checking if email already exists...
+[22-Dec-2024 16:24:31 Europe/Berlin] Chiamata funzione checkEmailExist
+[22-Dec-2024 16:24:31 Europe/Berlin] Connessione al db effettuata con successo
+[22-Dec-2024 16:24:31 Europe/Berlin] 0
+[22-Dec-2024 16:24:31 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[22-Dec-2024 16:24:31 Europe/Berlin] Chiamata funzione checkUsernameExist
+[22-Dec-2024 16:24:31 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[22-Dec-2024 16:24:31 Europe/Berlin] Registration successful.
+
+[22-Dec-2024 16:24:31 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:24:31 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 16:24:31 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'NomeCitta' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 94
+[22-Dec-2024 16:24:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php:97
 Stack trace:
 #0 {main}
-  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getUserPosts.php on line 17
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 97
+[22-Dec-2024 16:27:36 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[22-Dec-2024 16:27:36 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[22-Dec-2024 16:27:36 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 12
+[22-Dec-2024 16:27:36 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 17
+[22-Dec-2024 16:27:36 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 19
+[22-Dec-2024 16:27:36 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 21
+[22-Dec-2024 16:27:36 Europe/Berlin] PHP Warning:  Constant LOCAL_POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 23
+[22-Dec-2024 16:27:36 Europe/Berlin] Creating Post
+[22-Dec-2024 16:27:36 Europe/Berlin] Executing Query
+[22-Dec-2024 16:27:36 Europe/Berlin] Post Created
+[22-Dec-2024 16:27:36 Europe/Berlin] Adding Foto to Post
+[22-Dec-2024 16:27:36 Europe/Berlin] Function name: imagejpeg
+[22-Dec-2024 16:27:36 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1734881256_PXL_20241102_002537252-POP_OUT.jpg
+[22-Dec-2024 16:27:36 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[22-Dec-2024 16:27:42 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:27:42 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:27:42 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:27:42 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 16:27:42 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'NomeCitta' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 94
+[22-Dec-2024 16:27:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php:97
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 97
+[22-Dec-2024 16:27:43 Europe/Berlin] Action: FriendRequests, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:27:43 Europe/Berlin] Action: SuggestedFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:27:43 Europe/Berlin] Action: CurrentFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:27:45 Europe/Berlin] Action: CurrentFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:27:45 Europe/Berlin] Action: SuggestedFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:27:45 Europe/Berlin] Action: FriendRequests, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:27:46 Europe/Berlin] Action: SuggestedFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:27:46 Europe/Berlin] Action: FriendRequests, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:27:46 Europe/Berlin] Action: CurrentFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:28:34 Europe/Berlin] Registering...
+[22-Dec-2024 16:28:34 Europe/Berlin] User has Started Registering in!
+[22-Dec-2024 16:28:34 Europe/Berlin] Juglu
+[22-Dec-2024 16:28:34 Europe/Berlin] Checking if email already exists...
+[22-Dec-2024 16:28:34 Europe/Berlin] Chiamata funzione checkEmailExist
+[22-Dec-2024 16:28:34 Europe/Berlin] Connessione al db effettuata con successo
+[22-Dec-2024 16:28:34 Europe/Berlin] 0
+[22-Dec-2024 16:28:34 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[22-Dec-2024 16:28:34 Europe/Berlin] Chiamata funzione checkUsernameExist
+[22-Dec-2024 16:28:34 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[22-Dec-2024 16:28:34 Europe/Berlin] Registration successful.
+
+[22-Dec-2024 16:28:34 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:28:34 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:28:34 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'NomeCitta' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 94
+[22-Dec-2024 16:28:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php:97
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 97
+[22-Dec-2024 16:28:36 Europe/Berlin] Action: SuggestedFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:28:36 Europe/Berlin] Action: CurrentFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:28:36 Europe/Berlin] Action: FriendRequests, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:29:09 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:09 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:09 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:11 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:11 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:11 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:12 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:12 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:12 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:12 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:12 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:16 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:16 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:17 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:17 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'Genere' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 17
+[22-Dec-2024 16:29:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php:23
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/searchUsers.php on line 23
+[22-Dec-2024 16:29:42 Europe/Berlin] Received search term: HiristrianGaro
+[22-Dec-2024 16:29:42 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:29:42 Europe/Berlin] Query: User
+[22-Dec-2024 16:29:42 Europe/Berlin] Returning data: [{"IdPost":48,"TimestampPubblicazione":"2024-12-22 16:27:36","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"","PostCountry":null,"PostState":null,"PostCity":"","IdFoto":53,"NomeFile":"1734881256_PXL_20241102_002537252-POP_OUT.jpg","PosizioneFile":"assets\/images\/post\/1734881256_PXL_20241102_002537252-POP_OUT.jpg"}]
+[22-Dec-2024 16:29:48 Europe/Berlin] Action: Add, Ricevente: HiristrianGaro, Richiedente: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:29:48 Europe/Berlin] Executing SQL: 
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+             with params: giulia.mazzotti@gmail.com, HiristrianGaro, 2024-12-22 16:29:48
+[22-Dec-2024 16:29:48 Europe/Berlin] Received search term: HiristrianGaro
+[22-Dec-2024 16:29:48 Europe/Berlin] Returning data: [{"Accettazione":"In Attesa"}]
+[22-Dec-2024 16:29:53 Europe/Berlin] Action: CurrentFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:29:53 Europe/Berlin] Action: SuggestedFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:29:53 Europe/Berlin] Action: FriendRequests, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:29:56 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:29:56 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:29:56 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:29:56 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:29:56 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'NomeCitta' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 94
+[22-Dec-2024 16:29:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php:97
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 97
+[22-Dec-2024 16:29:57 Europe/Berlin] Action: SuggestedFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:29:57 Europe/Berlin] Action: CurrentFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:29:57 Europe/Berlin] Action: FriendRequests, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:30:02 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:30:02 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:30:02 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:30:02 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 16:30:02 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'NomeCitta' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 94
+[22-Dec-2024 16:30:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php:97
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 97
+[22-Dec-2024 16:30:03 Europe/Berlin] Action: SuggestedFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:30:03 Europe/Berlin] Action: CurrentFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:30:03 Europe/Berlin] Action: FriendRequests, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:30:04 Europe/Berlin] Action: Accept, Ricevente: Juglu, Richiedente: christiangallo20@gmail.com
+[22-Dec-2024 16:30:04 Europe/Berlin] Executing SQL: 
+                UPDATE RichiedeAmicizia ra
+                SET ra.Accettazione = 'Accettato',
+                ra.DataRichiesta = ?
+                WHERE ra.RichiedenteEmail = (SELECT u.IndirizzoEmail FROM Utente u WHERE u.Username = ?)
+                  AND ra.RiceventeEmail = ?;
+             with params: 2024-12-22 16:30:04, Juglu, christiangallo20@gmail.com
+[22-Dec-2024 16:30:04 Europe/Berlin] Action: CurrentFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:30:04 Europe/Berlin] Action: FriendRequests, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:30:10 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:30:10 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:30:10 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:30:10 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:30:10 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42S22/1054): Unknown column 'NomeCitta' in 'field list' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 94
+[22-Dec-2024 16:30:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php:97
+Stack trace:
+#0 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/getPosts.php on line 97
+[22-Dec-2024 16:30:48 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:30:48 Europe/Berlin] Returning data: [{"IdPost":48,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:27:36","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:30:48 Europe/Berlin] Returning data: [{"IdFoto":53,"NomeFile":"1734881256_PXL_20241102_002537252-POP_OUT.jpg","PosizioneFile":"assets\/images\/post\/1734881256_PXL_20241102_002537252-POP_OUT.jpg"}]
+[22-Dec-2024 16:30:48 Europe/Berlin] Query: getComments for IdPost: 48
+[22-Dec-2024 16:30:48 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:31:00 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:31:00 Europe/Berlin] Returning data: [{"IdPost":48,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:27:36","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:31:00 Europe/Berlin] Returning data: [{"IdFoto":53,"NomeFile":"1734881256_PXL_20241102_002537252-POP_OUT.jpg","PosizioneFile":"assets\/images\/post\/1734881256_PXL_20241102_002537252-POP_OUT.jpg"}]
+[22-Dec-2024 16:31:00 Europe/Berlin] Query: getComments for IdPost: 48
+[22-Dec-2024 16:31:00 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:31:47 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:31:47 Europe/Berlin] Returning data: [{"IdPost":48,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:27:36","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:31:47 Europe/Berlin] Returning data: [{"IdFoto":53,"NomeFile":"1734881256_PXL_20241102_002537252-POP_OUT.jpg","PosizioneFile":"assets\/images\/post\/1734881256_PXL_20241102_002537252-POP_OUT.jpg"}]
+[22-Dec-2024 16:31:47 Europe/Berlin] Query: getComments for IdPost: 48
+[22-Dec-2024 16:31:47 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:32:45 Europe/Berlin] Received search term: Juglu
+[22-Dec-2024 16:32:45 Europe/Berlin] Query: User
+[22-Dec-2024 16:32:45 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:32:51 Europe/Berlin] Received search term: HiristrianGaro
+[22-Dec-2024 16:32:51 Europe/Berlin] Returning data: [{"Accettazione":"Accettato"}]
+[22-Dec-2024 16:32:51 Europe/Berlin] Query: User
+[22-Dec-2024 16:32:51 Europe/Berlin] Returning data: [{"IdPost":48,"TimestampPubblicazione":"2024-12-22 16:27:36","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"","PostCountry":null,"PostState":null,"PostCity":"","IdFoto":53,"NomeFile":"1734881256_PXL_20241102_002537252-POP_OUT.jpg","PosizioneFile":"assets\/images\/post\/1734881256_PXL_20241102_002537252-POP_OUT.jpg"}]
+[22-Dec-2024 16:32:59 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:32:59 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:32:59 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:33:00 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 16:33:00 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:33:33 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[22-Dec-2024 16:33:33 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[22-Dec-2024 16:33:33 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 12
+[22-Dec-2024 16:33:33 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 17
+[22-Dec-2024 16:33:33 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 19
+[22-Dec-2024 16:33:33 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 21
+[22-Dec-2024 16:33:33 Europe/Berlin] PHP Warning:  Constant LOCAL_POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 23
+[22-Dec-2024 16:33:33 Europe/Berlin] Creating Post
+[22-Dec-2024 16:33:33 Europe/Berlin] Executing Query
+[22-Dec-2024 16:33:33 Europe/Berlin] Post Created
+[22-Dec-2024 16:33:33 Europe/Berlin] Adding Foto to Post
+[22-Dec-2024 16:33:33 Europe/Berlin] Function name: imagejpeg
+[22-Dec-2024 16:33:33 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1734881613_PXL_20241102_002537252-POP_OUT.jpg
+[22-Dec-2024 16:33:34 Europe/Berlin] Function name: imagejpeg
+[22-Dec-2024 16:33:34 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1734881613_PXL_20241108_171256627.jpg
+[22-Dec-2024 16:33:34 Europe/Berlin] Function name: imagejpeg
+[22-Dec-2024 16:33:34 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1734881614_PXL_20241202_205139156.jpg
+[22-Dec-2024 16:33:35 Europe/Berlin] Function name: imagejpeg
+[22-Dec-2024 16:33:35 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1734881614_PXL_20241203_114521375.jpg
+[22-Dec-2024 16:33:35 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[22-Dec-2024 16:33:37 Europe/Berlin] Query: User
+[22-Dec-2024 16:33:37 Europe/Berlin] Returning data: [{"IdPost":49,"TimestampPubblicazione":"2024-12-22 16:33:33","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"","PostCountry":null,"PostState":null,"PostCity":"","IdFoto":54,"NomeFile":"1734881613_PXL_20241102_002537252-POP_OUT.jpg","PosizioneFile":"assets\/images\/post\/1734881613_PXL_20241102_002537252-POP_OUT.jpg"},{"IdPost":48,"TimestampPubblicazione":"2024-12-22 16:27:36","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"","PostCountry":null,"PostState":null,"PostCity":"","IdFoto":53,"NomeFile":"1734881256_PXL_20241102_002537252-POP_OUT.jpg","PosizioneFile":"assets\/images\/post\/1734881256_PXL_20241102_002537252-POP_OUT.jpg"}]
+[22-Dec-2024 16:33:37 Europe/Berlin] Received search term: HiristrianGaro
+[22-Dec-2024 16:35:14 Europe/Berlin] Received search term: HiristrianGaro
+[22-Dec-2024 16:35:14 Europe/Berlin] Query: User
+[22-Dec-2024 16:35:14 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:35:14 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 16:35:14 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:35:18 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 16:35:18 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:35:18 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 16:35:18 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:35:21 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:35:21 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:35:21 Europe/Berlin] [{"status":"error","message":"Email o password errati!"}]
+[22-Dec-2024 16:35:22 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:35:22 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:35:22 Europe/Berlin] [{"status":"error","message":"Email o password errati!"}]
+[22-Dec-2024 16:35:22 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:35:22 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:35:22 Europe/Berlin] [{"status":"error","message":"Email o password errati!"}]
+[22-Dec-2024 16:35:51 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:35:51 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:35:51 Europe/Berlin] [{"status":"error","message":"Email o password errati!"}]
+[22-Dec-2024 16:36:40 Europe/Berlin] Registering...
+[22-Dec-2024 16:36:40 Europe/Berlin] User has Started Registering in!
+[22-Dec-2024 16:36:40 Europe/Berlin] HiristrianGaro
+[22-Dec-2024 16:36:40 Europe/Berlin] Checking if email already exists...
+[22-Dec-2024 16:36:40 Europe/Berlin] Chiamata funzione checkEmailExist
+[22-Dec-2024 16:36:40 Europe/Berlin] Connessione al db effettuata con successo
+[22-Dec-2024 16:36:40 Europe/Berlin] 0
+[22-Dec-2024 16:36:40 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[22-Dec-2024 16:36:40 Europe/Berlin] Chiamata funzione checkUsernameExist
+[22-Dec-2024 16:36:40 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[22-Dec-2024 16:36:40 Europe/Berlin] Registration successful.
+
+[22-Dec-2024 16:36:40 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:36:40 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 16:36:40 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:37:17 Europe/Berlin] Registering...
+[22-Dec-2024 16:37:17 Europe/Berlin] User has Started Registering in!
+[22-Dec-2024 16:37:17 Europe/Berlin] Juglu
+[22-Dec-2024 16:37:17 Europe/Berlin] Checking if email already exists...
+[22-Dec-2024 16:37:17 Europe/Berlin] Chiamata funzione checkEmailExist
+[22-Dec-2024 16:37:17 Europe/Berlin] Connessione al db effettuata con successo
+[22-Dec-2024 16:37:17 Europe/Berlin] 0
+[22-Dec-2024 16:37:17 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[22-Dec-2024 16:37:17 Europe/Berlin] Chiamata funzione checkUsernameExist
+[22-Dec-2024 16:37:17 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[22-Dec-2024 16:37:17 Europe/Berlin] Registration successful.
+
+[22-Dec-2024 16:37:17 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:37:17 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:37:17 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:37:21 Europe/Berlin] Action: SuggestedFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:37:21 Europe/Berlin] Action: CurrentFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:37:21 Europe/Berlin] Action: FriendRequests, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:37:25 Europe/Berlin] Received search term: HiristrianGaro
+[22-Dec-2024 16:37:25 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:37:25 Europe/Berlin] Query: User
+[22-Dec-2024 16:37:25 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:37:26 Europe/Berlin] Action: Add, Ricevente: HiristrianGaro, Richiedente: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:37:26 Europe/Berlin] Executing SQL: 
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+             with params: giulia.mazzotti@gmail.com, HiristrianGaro, 2024-12-22 16:37:26
+[22-Dec-2024 16:37:26 Europe/Berlin] Received search term: HiristrianGaro
+[22-Dec-2024 16:37:26 Europe/Berlin] Returning data: [{"Accettazione":"In Attesa"}]
+[22-Dec-2024 16:37:31 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:37:31 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:37:31 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:37:31 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 16:37:31 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:37:32 Europe/Berlin] Action: FriendRequests, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:37:32 Europe/Berlin] Action: CurrentFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:37:32 Europe/Berlin] Action: SuggestedFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:37:33 Europe/Berlin] Action: Accept, Ricevente: Juglu, Richiedente: christiangallo20@gmail.com
+[22-Dec-2024 16:37:33 Europe/Berlin] Executing SQL: 
+                UPDATE RichiedeAmicizia ra
+                SET ra.Accettazione = 'Accettato',
+                ra.DataRichiesta = ?
+                WHERE ra.RichiedenteEmail = (SELECT u.IndirizzoEmail FROM Utente u WHERE u.Username = ?)
+                  AND ra.RiceventeEmail = ?;
+             with params: 2024-12-22 16:37:33, Juglu, christiangallo20@gmail.com
+[22-Dec-2024 16:37:33 Europe/Berlin] Action: FriendRequests, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:37:33 Europe/Berlin] Action: CurrentFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:38:13 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[22-Dec-2024 16:38:13 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[22-Dec-2024 16:38:13 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 12
+[22-Dec-2024 16:38:13 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 17
+[22-Dec-2024 16:38:13 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 19
+[22-Dec-2024 16:38:13 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 21
+[22-Dec-2024 16:38:13 Europe/Berlin] PHP Warning:  Constant LOCAL_POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 23
+[22-Dec-2024 16:38:13 Europe/Berlin] Creating Post
+[22-Dec-2024 16:38:13 Europe/Berlin] Executing Query
+[22-Dec-2024 16:38:13 Europe/Berlin] Post Created
+[22-Dec-2024 16:38:13 Europe/Berlin] Adding Foto to Post
+[22-Dec-2024 16:38:13 Europe/Berlin] Function name: imagejpeg
+[22-Dec-2024 16:38:13 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1734881893_PXL_20241108_171256627.jpg
+[22-Dec-2024 16:38:14 Europe/Berlin] Function name: imagejpeg
+[22-Dec-2024 16:38:14 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1734881893_PXL_20241202_205139156.jpg
+[22-Dec-2024 16:38:14 Europe/Berlin] Function name: imagejpeg
+[22-Dec-2024 16:38:15 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1734881894_PXL_20241203_114521375.jpg
+[22-Dec-2024 16:38:15 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[22-Dec-2024 16:38:21 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:38:21 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:38:21 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:38:22 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:38:22 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:38:22 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:38:22 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:38:22 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:39:32 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:39:32 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:39:32 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:39:32 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:39:32 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:39:46 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:39:46 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:39:46 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:39:46 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:39:46 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:39:52 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:39:52 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:39:52 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:39:52 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:39:52 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:41:02 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:41:02 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:41:02 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:41:02 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:41:03 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:41:18 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:41:18 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:41:19 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:41:19 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:41:19 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:41:19 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:41:19 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:41:19 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:47:36 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:47:36 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:47:36 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:47:36 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:47:36 Europe/Berlin] Returning data: [{"IdCommento":2,"IdPost":1,"IdParent":1,"TimestampPubblicazione":"2024-12-22 16:46:30","Username":"HiristrianGaro","Testo":"Di Brutto"},{"IdCommento":1,"IdPost":1,"IdParent":null,"TimestampPubblicazione":"2024-12-22 16:46:00","Username":"Juglu","Testo":"Ma che belloooo!"}]
+[22-Dec-2024 16:48:43 Europe/Berlin] Registering...
+[22-Dec-2024 16:48:43 Europe/Berlin] User has Started Registering in!
+[22-Dec-2024 16:48:43 Europe/Berlin] Luciuxx
+[22-Dec-2024 16:48:43 Europe/Berlin] Checking if email already exists...
+[22-Dec-2024 16:48:43 Europe/Berlin] Chiamata funzione checkEmailExist
+[22-Dec-2024 16:48:43 Europe/Berlin] Connessione al db effettuata con successo
+[22-Dec-2024 16:48:43 Europe/Berlin] 0
+[22-Dec-2024 16:48:43 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[22-Dec-2024 16:48:43 Europe/Berlin] Chiamata funzione checkUsernameExist
+[22-Dec-2024 16:48:43 Europe/Berlin] Email does not exist. Proceeding with insertion...
+[22-Dec-2024 16:48:43 Europe/Berlin] Registration successful.
+
+[22-Dec-2024 16:48:43 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:48:43 Europe/Berlin] Query: Friends for lucian.cojocariu@gmail.com
+[22-Dec-2024 16:48:43 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:49:15 Europe/Berlin] PHP Warning:  Constant ROOT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 3
+[22-Dec-2024 16:49:15 Europe/Berlin] PHP Warning:  Constant SITE_DOMAIN already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 9
+[22-Dec-2024 16:49:15 Europe/Berlin] PHP Warning:  Constant SITE_HOME already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 12
+[22-Dec-2024 16:49:15 Europe/Berlin] PHP Warning:  Constant SITE_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 17
+[22-Dec-2024 16:49:15 Europe/Berlin] PHP Warning:  Constant CONTENT_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 19
+[22-Dec-2024 16:49:15 Europe/Berlin] PHP Warning:  Constant POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 21
+[22-Dec-2024 16:49:15 Europe/Berlin] PHP Warning:  Constant LOCAL_POST_DIR already defined in /Applications/XAMPP/xamppfiles/htdocs/duck/config.php on line 23
+[22-Dec-2024 16:49:15 Europe/Berlin] Creating Post
+[22-Dec-2024 16:49:15 Europe/Berlin] Executing Query
+[22-Dec-2024 16:49:15 Europe/Berlin] Post Created
+[22-Dec-2024 16:49:15 Europe/Berlin] Adding Foto to Post
+[22-Dec-2024 16:49:16 Europe/Berlin] Function name: imagejpeg
+[22-Dec-2024 16:49:16 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1734882555_PXL_20241102_002537252-POP_OUT.jpg
+[22-Dec-2024 16:49:16 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[22-Dec-2024 16:49:22 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:49:22 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:49:22 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:49:22 Europe/Berlin] Query: Friends for lucian.cojocariu@gmail.com
+[22-Dec-2024 16:49:22 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:49:27 Europe/Berlin] Query: User
+[22-Dec-2024 16:49:27 Europe/Berlin] Returning data: [{"IdPost":1,"TimestampPubblicazione":"2024-12-22 16:38:13","AutorePostEmail":"christiangallo20@gmail.com","Descrizione":"","PostCountry":null,"PostState":null,"PostCity":"","IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:49:27 Europe/Berlin] Received search term: HiristrianGaro
+[22-Dec-2024 16:49:27 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:49:29 Europe/Berlin] Action: Add, Ricevente: HiristrianGaro, Richiedente: lucian.cojocariu@gmail.com
+[22-Dec-2024 16:49:29 Europe/Berlin] Executing SQL: 
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+             with params: lucian.cojocariu@gmail.com, HiristrianGaro, 2024-12-22 16:49:29
+[22-Dec-2024 16:49:29 Europe/Berlin] Received search term: HiristrianGaro
+[22-Dec-2024 16:49:29 Europe/Berlin] Returning data: [{"Accettazione":"In Attesa"}]
+[22-Dec-2024 16:49:33 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:49:33 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:49:33 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:49:33 Europe/Berlin] Query: Friends for christiangallo20@gmail.com
+[22-Dec-2024 16:49:33 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:49:34 Europe/Berlin] Action: SuggestedFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:49:34 Europe/Berlin] Action: CurrentFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:49:34 Europe/Berlin] Action: FriendRequests, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:49:35 Europe/Berlin] Action: Accept, Ricevente: Luciuxx, Richiedente: christiangallo20@gmail.com
+[22-Dec-2024 16:49:35 Europe/Berlin] Executing SQL: 
+                UPDATE RichiedeAmicizia ra
+                SET ra.Accettazione = 'Accettato',
+                ra.DataRichiesta = ?
+                WHERE ra.RichiedenteEmail = (SELECT u.IndirizzoEmail FROM Utente u WHERE u.Username = ?)
+                  AND ra.RiceventeEmail = ?;
+             with params: 2024-12-22 16:49:35, Luciuxx, christiangallo20@gmail.com
+[22-Dec-2024 16:49:35 Europe/Berlin] Action: FriendRequests, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:49:35 Europe/Berlin] Action: CurrentFriends, SearchParam: christiangallo20@gmail.com
+[22-Dec-2024 16:49:42 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:49:42 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:49:42 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:49:42 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:42 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:49:42 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:49:42 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:49:42 Europe/Berlin] Returning data: [{"IdCommento":2,"IdPost":1,"IdParent":1,"TimestampPubblicazione":"2024-12-22 16:46:30","Username":"HiristrianGaro","Testo":"Di Brutto"},{"IdCommento":1,"IdPost":1,"IdParent":null,"TimestampPubblicazione":"2024-12-22 16:46:00","Username":"Juglu","Testo":"Ma che belloooo!"}]
+[22-Dec-2024 16:49:44 Europe/Berlin] Action: SuggestedFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:44 Europe/Berlin] Action: FriendRequests, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:44 Europe/Berlin] Action: CurrentFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:45 Europe/Berlin] Action: Add, Ricevente: Luciuxx, Richiedente: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:45 Europe/Berlin] Executing SQL: 
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+             with params: giulia.mazzotti@gmail.com, Luciuxx, 2024-12-22 16:49:45
+[22-Dec-2024 16:49:45 Europe/Berlin] Action: SuggestedFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:48 Europe/Berlin] Action: Add, Ricevente: Luciuxx, Richiedente: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:48 Europe/Berlin] Executing SQL: 
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+             with params: giulia.mazzotti@gmail.com, Luciuxx, 2024-12-22 16:49:48
+[22-Dec-2024 16:49:48 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1062): Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/addRemoveFriend.php on line 92
+[22-Dec-2024 16:49:48 Europe/Berlin] Error: Failed to execute SQL statement: Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY'
+[22-Dec-2024 16:49:49 Europe/Berlin] Action: Add, Ricevente: Luciuxx, Richiedente: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:49 Europe/Berlin] Executing SQL: 
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+             with params: giulia.mazzotti@gmail.com, Luciuxx, 2024-12-22 16:49:49
+[22-Dec-2024 16:49:49 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1062): Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/addRemoveFriend.php on line 92
+[22-Dec-2024 16:49:49 Europe/Berlin] Error: Failed to execute SQL statement: Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY'
+[22-Dec-2024 16:49:50 Europe/Berlin] Action: Add, Ricevente: Luciuxx, Richiedente: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:50 Europe/Berlin] Executing SQL: 
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+             with params: giulia.mazzotti@gmail.com, Luciuxx, 2024-12-22 16:49:50
+[22-Dec-2024 16:49:50 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1062): Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/addRemoveFriend.php on line 92
+[22-Dec-2024 16:49:50 Europe/Berlin] Error: Failed to execute SQL statement: Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY'
+[22-Dec-2024 16:49:50 Europe/Berlin] Action: Add, Ricevente: Luciuxx, Richiedente: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:50 Europe/Berlin] Executing SQL: 
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+             with params: giulia.mazzotti@gmail.com, Luciuxx, 2024-12-22 16:49:50
+[22-Dec-2024 16:49:50 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1062): Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/addRemoveFriend.php on line 92
+[22-Dec-2024 16:49:50 Europe/Berlin] Error: Failed to execute SQL statement: Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY'
+[22-Dec-2024 16:49:50 Europe/Berlin] Action: Add, Ricevente: Luciuxx, Richiedente: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:50 Europe/Berlin] Executing SQL: 
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+             with params: giulia.mazzotti@gmail.com, Luciuxx, 2024-12-22 16:49:50
+[22-Dec-2024 16:49:50 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1062): Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/addRemoveFriend.php on line 92
+[22-Dec-2024 16:49:50 Europe/Berlin] Error: Failed to execute SQL statement: Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY'
+[22-Dec-2024 16:49:50 Europe/Berlin] Action: Add, Ricevente: Luciuxx, Richiedente: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:49:50 Europe/Berlin] Executing SQL: 
+                INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
+                VALUES (
+                ?,
+                (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
+                ?,
+                'In Attesa'
+                );
+             with params: giulia.mazzotti@gmail.com, Luciuxx, 2024-12-22 16:49:50
+[22-Dec-2024 16:49:50 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1062): Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY' in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/addRemoveFriend.php on line 92
+[22-Dec-2024 16:49:50 Europe/Berlin] Error: Failed to execute SQL statement: Duplicate entry 'giulia.mazzotti@gmail.com-lucian.cojocariu@gmail.com' for key 'PRIMARY'
+[22-Dec-2024 16:50:58 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:50:58 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:50:58 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:50:59 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:50:59 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:50:59 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:50:59 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:50:59 Europe/Berlin] Returning data: [{"IdCommento":2,"IdPost":1,"IdParent":1,"TimestampPubblicazione":"2024-12-22 16:46:30","Username":"HiristrianGaro","Testo":"Di Brutto"},{"IdCommento":1,"IdPost":1,"IdParent":null,"TimestampPubblicazione":"2024-12-22 16:46:00","Username":"Juglu","Testo":"Ma che belloooo!"}]
+[22-Dec-2024 16:50:59 Europe/Berlin] Action: SuggestedFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:50:59 Europe/Berlin] Action: FriendRequests, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:50:59 Europe/Berlin] Action: CurrentFriends, SearchParam: giulia.mazzotti@gmail.com
+[22-Dec-2024 16:51:04 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:51:04 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:51:04 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:51:04 Europe/Berlin] Query: Friends for lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:04 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:51:05 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:51:05 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:51:05 Europe/Berlin] Returning data: [{"IdCommento":2,"IdPost":1,"IdParent":1,"TimestampPubblicazione":"2024-12-22 16:46:30","Username":"HiristrianGaro","Testo":"Di Brutto"},{"IdCommento":1,"IdPost":1,"IdParent":null,"TimestampPubblicazione":"2024-12-22 16:46:00","Username":"Juglu","Testo":"Ma che belloooo!"}]
+[22-Dec-2024 16:51:06 Europe/Berlin] Action: SuggestedFriends, SearchParam: lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:06 Europe/Berlin] Action: CurrentFriends, SearchParam: lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:06 Europe/Berlin] Action: FriendRequests, SearchParam: lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:09 Europe/Berlin] Action: Accept, Ricevente: Juglu, Richiedente: lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:09 Europe/Berlin] Executing SQL: 
+                UPDATE RichiedeAmicizia ra
+                SET ra.Accettazione = 'Accettato',
+                ra.DataRichiesta = ?
+                WHERE ra.RichiedenteEmail = (SELECT u.IndirizzoEmail FROM Utente u WHERE u.Username = ?)
+                  AND ra.RiceventeEmail = ?;
+             with params: 2024-12-22 16:51:09, Juglu, lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:09 Europe/Berlin] Action: FriendRequests, SearchParam: lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:09 Europe/Berlin] Action: CurrentFriends, SearchParam: lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:11 Europe/Berlin] Action: SuggestedFriends, SearchParam: lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:11 Europe/Berlin] Action: CurrentFriends, SearchParam: lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:11 Europe/Berlin] Action: FriendRequests, SearchParam: lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:13 Europe/Berlin] Query: Friends for lucian.cojocariu@gmail.com
+[22-Dec-2024 16:51:13 Europe/Berlin] Returning data: [{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:51:13 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:51:13 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:51:13 Europe/Berlin] Returning data: [{"IdCommento":2,"IdPost":1,"IdParent":1,"TimestampPubblicazione":"2024-12-22 16:46:30","Username":"HiristrianGaro","Testo":"Di Brutto"},{"IdCommento":1,"IdPost":1,"IdParent":null,"TimestampPubblicazione":"2024-12-22 16:46:00","Username":"Juglu","Testo":"Ma che belloooo!"}]
+[22-Dec-2024 16:51:18 Europe/Berlin] User has Started Logging in!
+[22-Dec-2024 16:51:18 Europe/Berlin] Checking if user exists...
+[22-Dec-2024 16:51:18 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[22-Dec-2024 16:51:18 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[22-Dec-2024 16:51:18 Europe/Berlin] Returning data: [{"IdPost":2,"Username":"Luciuxx","IndirizzoEmail":"lucian.cojocariu@gmail.com","TimestampPubblicazione":"2024-12-22 16:49:15","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null},{"IdPost":1,"Username":"HiristrianGaro","IndirizzoEmail":"christiangallo20@gmail.com","TimestampPubblicazione":"2024-12-22 16:38:13","Descrizione":"","PostCity":"","PostState":null,"PostCountry":null,"fotoprofilo":null}]
+[22-Dec-2024 16:51:18 Europe/Berlin] Returning data: [{"IdFoto":4,"NomeFile":"1734882555_PXL_20241102_002537252-POP_OUT.jpg","PosizioneFile":"assets\/images\/post\/1734882555_PXL_20241102_002537252-POP_OUT.jpg"}]
+[22-Dec-2024 16:51:18 Europe/Berlin] Returning data: [{"IdFoto":3,"NomeFile":"1734881894_PXL_20241203_114521375.jpg","PosizioneFile":"assets\/images\/post\/1734881894_PXL_20241203_114521375.jpg"},{"IdFoto":2,"NomeFile":"1734881893_PXL_20241202_205139156.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241202_205139156.jpg"},{"IdFoto":1,"NomeFile":"1734881893_PXL_20241108_171256627.jpg","PosizioneFile":"assets\/images\/post\/1734881893_PXL_20241108_171256627.jpg"}]
+[22-Dec-2024 16:51:18 Europe/Berlin] Query: getComments for IdPost: 2
+[22-Dec-2024 16:51:18 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:51:20 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:51:20 Europe/Berlin] Returning data: [{"IdCommento":2,"IdPost":1,"IdParent":1,"TimestampPubblicazione":"2024-12-22 16:46:30","Username":"HiristrianGaro","Testo":"Di Brutto"},{"IdCommento":1,"IdPost":1,"IdParent":null,"TimestampPubblicazione":"2024-12-22 16:46:00","Username":"Juglu","Testo":"Ma che belloooo!"}]
+[22-Dec-2024 16:51:23 Europe/Berlin] Query: getComments for IdPost: 2
+[22-Dec-2024 16:51:23 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:51:25 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:51:25 Europe/Berlin] Returning data: [{"IdCommento":2,"IdPost":1,"IdParent":1,"TimestampPubblicazione":"2024-12-22 16:46:30","Username":"HiristrianGaro","Testo":"Di Brutto"},{"IdCommento":1,"IdPost":1,"IdParent":null,"TimestampPubblicazione":"2024-12-22 16:46:00","Username":"Juglu","Testo":"Ma che belloooo!"}]
+[22-Dec-2024 16:51:38 Europe/Berlin] Query: getComments for IdPost: 2
+[22-Dec-2024 16:51:38 Europe/Berlin] Returning data: []
+[22-Dec-2024 16:57:25 Europe/Berlin] Query: getComments for IdPost: 1
+[22-Dec-2024 16:57:25 Europe/Berlin] Returning data: [{"IdCommento":2,"IdPost":1,"IdParent":1,"TimestampPubblicazione":"2024-12-22 16:46:30","Username":"HiristrianGaro","Testo":"Di Brutto"},{"IdCommento":1,"IdPost":1,"IdParent":null,"TimestampPubblicazione":"2024-12-22 16:46:00","Username":"Juglu","Testo":"Ma che belloooo!"}]

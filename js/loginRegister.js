@@ -1,66 +1,95 @@
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
-    'use strict'
-  
+    'use strict';
+
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
-  
+    const forms = document.querySelectorAll('.needs-validation');
+
     // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
+        form.addEventListener(
+            'submit',
+            event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            },
+            false
+        );
+    });
+})();
+
+function checkIfEmailExists(){
+    const email = document.querySelector('#RegisterEmail').value.trim();
+
+    $.ajax({
+        url: 'common/funzioni.php',
+        method: 'POST',
+        data: { email: email },
+        success: function (response) {
+            console.log('Server response:', response);
+
+            if (response === 'true') {
+                alert('Email already exists. Please use a different email address.');
+            }
+        },
+        error: function () {
+            alert('An error occurred while checking the email. Please try again.');
         }
-  
-        form.classList.add('was-validated')
-      }, false)
-    })
-  })();
+    });
+}
 
-  function validateRegisterForm() {
-    var alert = document.getElementById('registerAlert');
-    const password = document.querySelector('#RegisterPassword').value;
-    const confirmPassword = document.querySelector('#ConfirmRegisterPassword').value;
+// Validate registration form
+function validateRegisterForm() {
+    const alert = document.getElementById('registerAlert');
+    const password = document.querySelector('#RegisterPassword').value.trim();
+    const confirmPassword = document.querySelector('#ConfirmRegisterPassword').value.trim();
 
-    if (password === '' || confirmPassword === '') {
+    if (!password || !confirmPassword) {
         alert.classList.add('text-danger');
-        alert.innerHTML = 'Please fill in Password and Confirm Password fields.';
+        alert.innerHTML = 'Please fill in both Password and Confirm Password fields.';
         return false;
     }
 
     if (password !== confirmPassword) {
-        var alert = document.getElementById('registerAlert');
         alert.classList.add('text-danger');
         alert.innerHTML = 'Passwords do not match.';
         return false;
-    } else {
-        alert.innerHTML = '';
     }
 
+    alert.innerHTML = ''; // Clear any existing alerts
     return true;
 }
 
-
+// Handle login form submission
 $('#loginForm').on('submit', function (e) {
     e.preventDefault(); // Prevent default form reload
+
     const formData = new FormData(this);
 
     $.ajax({
-        url: 'backend/login.php', // Your PHP backend script
+        url: 'backend/login.php', // PHP backend script
         method: 'POST',
         data: formData,
         processData: false,
         contentType: false,
         success: function (response) {
-            data = JSON.parse(response);
-            var obj = data[0];
-            if (obj['status'] == 'Success') {
-                console.log('Success!');
-                history.pushState({ targetFile: obj['redirect'] }, '', `?page=${obj['redirect']}`);
-                window.location.reload();
-            }
+            try {
+                const data = JSON.parse(response);
+                const obj = data[0];
 
+                if (obj.status === 'Success') {
+                    console.log('Login successful!');
+                    history.pushState({ targetFile: obj.redirect }, '', `?page=${obj.redirect}`);
+                    window.location.reload();
+                } else {
+                    console.error('Login failed:', obj.message || 'Unknown error');
+                }
+            } catch (err) {
+                console.error('Failed to parse login response:', err);
+            }
         },
         error: function () {
             alert('Something went wrong. Please try again.');
@@ -68,16 +97,16 @@ $('#loginForm').on('submit', function (e) {
     });
 });
 
+// Handle registration form submission
 $('#registerForm').on('submit', function (e) {
     e.preventDefault(); // Prevent default form reload
 
     if (!validateRegisterForm()) {
-        console.log('Validation failed');
+        console.log('Registration form validation failed.');
         return; // Stop if validation fails
     }
 
     const formData = new FormData(this);
-    console.log('Form Data:', formData);
 
     $.ajax({
         url: 'backend/register.php',
@@ -86,13 +115,20 @@ $('#registerForm').on('submit', function (e) {
         processData: false,
         contentType: false,
         success: function (response) {
-            const data = JSON.parse(response);
-            console.log('Data:', data);
-            const obj = data[0];
-            if (obj['status'] === 'Success') {
-                console.log('Success!');
-                history.pushState({ targetFile: obj['redirect'] }, '', `?page=${obj['redirect']}`);
-                window.location.reload();
+            try {
+                const data = JSON.parse(response);
+                console.log('Registration response data:', data);
+
+                const obj = data[0];
+                if (obj.status === 'Success') {
+                    console.log('Registration successful!');
+                    history.pushState({ targetFile: obj.redirect }, '', `?page=${obj.redirect}`);
+                    window.location.reload();
+                } else {
+                    console.error('Registration failed:', obj.message || 'Unknown error');
+                }
+            } catch (err) {
+                console.error('Failed to parse registration response:', err);
             }
         },
         error: function () {

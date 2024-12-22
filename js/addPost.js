@@ -1,63 +1,70 @@
 console.log('addPost.js loaded');
 
+
 function fileSelect(event) {
     if (window.File && window.FileReader && window.FileList && window.Blob) {
-        var files = event.target.files;
-        var result = '';
-        var file;
-    for (var i = 0; file = files[i]; i++) {
-        result += '<li>' + file.name + ' ' + file.size + ' bytes</li>';
-        }
+        const files = event.target.files;
+        const result = Array.from(files)
+            .map(file => `<li>${file.name} (${file.size} bytes)</li>`)
+            .join('');
+        console.log('Selected files:', result);
     } else {
-    alert('The File APIs are not fully supported in this browser.');
+        alert('The File APIs are not fully supported in this browser.');
     }
 }
 
-function checkErrors(response) {
-    var alert = document.getElementById('addPostAlertP');
-    alert.classList.add('text-danger');
-    alert.innerHTML = '';
-    data = JSON.parse(response);
-    console.log('Data:', data);
-    if (data.length == null){
-        console.log('Data is empty');
-        alert.innerHTML = data.message;
-    } else {
-        for (var i = 0; i < data.length; i++){
-            console.log('Array Index:', i);
-            var obj = data[i];
-            var name = obj['name'];
-            var message = obj['message'];
-            alert.innerHTML += name + ': ' + message + '<br>';
+
+function displayErrors(response) {
+    const alertElement = document.getElementById('addPostAlertP');
+    alertElement.classList.add('text-danger');
+    alertElement.innerHTML = '';
+
+    try {
+        const data = JSON.parse(response);
+        console.log('Error response data:', data);
+
+        if (!Array.isArray(data)) {
+            console.log('Single error message:', data.message);
+            alertElement.innerHTML = data.message;
+        } else {
+            data.forEach((error, index) => {
+                console.log(`Error ${index}:`, error);
+                alertElement.innerHTML += `${error.name}: ${error.message}<br>`;
+            });
         }
+    } catch (err) {
+        console.error('Failed to parse response:', err);
+        alertElement.innerHTML = 'An unexpected error occurred. Please try again.';
     }
 }
+
 
 $('#addPostForm').on('submit', function (e) {
-    e.preventDefault(); // Prevent default form reload
-
+    e.preventDefault();
     const formData = new FormData(this);
     $.ajax({
-        url: 'backend/addPost.php', // Your PHP backend script
+        url: 'backend/createPost.php',
         method: 'POST',
         data: formData,
         processData: false,
         contentType: false,
         success: function (response) {
-            if( $.isArray(response) ||  response.length > 2) {
-                console.log('Error:', response);
-                checkErrors(response);
+            console.log('Server response:', response);
+
+            if ($.isArray(response) || response.length > 2) {
+                console.error('Form submission errors:', response);
+                displayErrors(response);
             } else {
-                console.log('Success!');
-                history.pushState({ targetFile: 'frontend/pond.php' }, '', `?page=${'frontend/pond.php'}`);
+                console.log('Form submitted successfully!');
+                history.pushState({ targetFile: 'frontend/pond.php' }, '', '?page=frontend/pond.php');
                 loadPage('frontend/pond.php');
             }
-            
         },
         error: function () {
-            alert('Something went wrong. Please try again.');
+            alert('An error occurred while submitting the form. Please try again.');
         }
     });
 });
+
 
 document.getElementById('filesToUpload').addEventListener('change', fileSelect, false);

@@ -8,26 +8,22 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<?php include "common/header.php"; ?>
+<?php include "frontend/header.php"; ?>
 
 <body>
+  <main class="main content">
 
-  <main class="main" style="height: 100% !important;">
 
+    <?php include "frontend/navbar.php"; ?>
+    <?php include "frontend/items/searchCollapse.html"; ?>
 
-    <?php include "common/navbar.php"; ?>
-    <?php include "common/searchCollapse.php"; ?>
-    <div class="container" id="main-page">
-
-      
-      <?php if(!isset($_SESSION['Status'])) {include 'frontend/landingPage.html';}?>
+    <div class="container-fluid container-z-index" id="main-page">
+      <?php if(!isset($_SESSION['Status'])) {include 'frontend/items/landingPage.html';}?>
         
     </div>
     
   </main>
-  <?php include "common/footer.php"; ?>
-  <?php include("common/modalErrore.php")?>
-  <?php include("common/errorModal.php")?>
+  <?php include "frontend/footer.php"; ?>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 console.log('Script is loaded.');
 
+
 $(document).ready(function () {
     console.log('Script Started');
     console.log(window.location.pathname);
@@ -18,6 +19,10 @@ $(document).ready(function () {
         }else{
 
             history.pushState({ targetFile: targetFile }, '', `?page=${targetFile}`);
+        }
+
+        if (targetFile === 'home') {
+            loadPage(targetFile);
         }
 
         loadPage(targetFile);
@@ -70,7 +75,7 @@ window.addEventListener('popstate', function (event) {
 function hideSearchBar() { $('#SeachCollapse').collapse('hide'); }
 
 $(document).on('click', function (event) { 
-    if (!$(event.target).closest('.searchCollapse, #search-input').length) { 
+    if (!$(event.target).closest('.SearchCollapse, #search-input').length) { 
         hideSearchBar(); 
     } 
 });
@@ -113,5 +118,11 @@ function toggleButtons(targetFile) {
         $('#login-button').show();
         $('#register-button').show();
         $('#logout-button').hide();
+    }
+}
+function showLoadingIndicator(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.innerHTML = '<p class="text-center">Loading...</p>';
     }
 }

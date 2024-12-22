@@ -1,147 +1,180 @@
 console.log('Loading profilePage.js');
 
-
 $(document).ready(function () {
     const params = new URLSearchParams(window.location.search);
-    const username = params.get('username');
+    const username = sanitizeInput(params.get('username'));
     if (username) {
-        loadProfilePage(username);
-        loadProfilePosts(username);
+        initializeProfilePage(username);
     }
+    console.log('Saved Username:', localStorage.getItem('savedUsername'));
 });
-// PROFILE FUNCTIONALITY
 
-// JavaScript function to handle the dynamic search for posts
-// Function to fetch and return the HTML template as a string
+// Initialize the profile page
+function initializeProfilePage(username) {
+    showLoadingIndicator('profile-container');
 
-function getProfileData() {
-    console.log('Loading profile page for:', username); // Log the username being loaded
-    const targetFile = 'frontend/profilepage.php';
-    
-    // Use the existing loadPage function to load the profile page content
-
-    // Once the page is loaded, fetch and display the profile data for the clicked user
-    fetch('backend/searchUsers.php?term=' + encodeURIComponent(username))
-        .then(response => response.json())
-        .then(userData => {
-            console.log('Received profile data:', userData); // Log the received data
-            displayProfileResults(userData);
-            localStorage.setItem('savedUsername', username);
-        })
-        .catch(error => {
-            console.error('Error fetching profile data:', error);
-        });
-
+    loadProfilePage(username);
+    checkFriendship(username);
+    loadProfilePosts(username);
 }
 
-
-
-function getPosts() {
-    const searchTerm = document.getElementById('UserID').value;
-    console.log('Search term:', searchTerm); // Log the search term
-
-    fetch('backend/getUserPosts.php?term=' + encodeURIComponent(searchTerm))
-        .then(response => {
-            console.log('Response status:', response.status); // Log the response status
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log('Received data:', data); // Log the received data
-            // Display the received data
-            displayPostResults(data);
-        })
-        .catch(error => {
-            console.error('Error fetching search results:', error);
-        });
-}
-
-        
-async function displayProfileResults(data) {
-    const resultsDiv = document.getElementById('profile-header');
-    resultsDiv.innerHTML = ' '; // Clear previous results
-    console.log('Displaying results:', data); // Log the data being displayed
-
-    // Fetch the template
-    const template = await fetchTemplate('common/profileHead.html');
-    if (data.length > 0) {
-        data.forEach(user => {
-            // Log the username being replaced
-            console.log('Replacing {{Username}} with:', user.username);
-        
-            let userHtml = template;
-            console.log('template:', userHtml);
-            userHtml = userHtml.replace(/{{profilepicture}}/g, user.fotoprofilo)
-                               .replace(/{{Username}}/g, user.username)
-                               .replace(/{{Gender}}/g, user.gendere)
-            
-            // Log the final HTML
-        
-            const userElement = document.createElement('div');
-            userElement.innerHTML = userHtml;
-            resultsDiv.innerHTML = userElement.innerHTML;
-        });
-        
-    } else if (document.getElementById('profile-header').textContent.trim().length >= 4) {
-        resultsDiv.textContent = 'No users found.';
-        console.log('No users found'); // Log no users found case
-    }
-
-}
-
-// Function to display search results for posts using a template
-async function displayPostResults(data) {
-    const resultsDiv = document.getElementById('grid-item');
-    resultsDiv.innerHTML = ''; // Clear previous results
-    console.log('Displaying results:', data); // Log the data being displayed
-
-    // Fetch the template
-    const template = await fetchTemplate('common/postGridItem.html');
-
-    if (data.length > 0) {
-        data.forEach(post => {
-            // Populate the template with post data
-            let postHtml = template;
-            postHtml = postHtml.replace('{{postlocation}}', post.PosizioneFile);
-                                
-            
-            // Convert the populated template to a DOM element
-            const postElement = document.createElement('div');
-            postElement.innerHTML = postHtml;
-            resultsDiv.appendChild(postElement.firstChild);
-        });
-    } else {
-        resultsDiv.innerHTML = '<p class=\'text-center m-0 p-0\'>No posts found.</p>';
-        console.log('No posts found'); // Log no posts found case
-    }
-}
-
+// Fetch and display the user's profile data
 function loadProfilePage(username) {
-    
-    // Once the page is loaded, fetch and display the profile data for the clicked user
-    fetch('backend/searchUsers.php?term=' + encodeURIComponent(username))
+    fetch(`backend/searchUsers.php?term=${encodeURIComponent(username)}`)
         .then(response => response.json())
         .then(userData => {
-            console.log('Received profile data:', userData); // Log the received data
+            console.log('Received profile data:', userData);
             displayProfileResults(userData);
             localStorage.setItem('savedUsername', username);
         })
         .catch(error => {
             console.error('Error fetching profile data:', error);
+            displayErrorMessage('profile-header', 'Failed to load profile. Please try again later.');
         });
 }
 
+// Fetch and display the user's posts
 function loadProfilePosts(username) {
-    fetch('backend/getUserPosts.php?term=' + encodeURIComponent(username))
+    fetch(`backend/getPosts.php?user=${encodeURIComponent(username)}&term=User`)
         .then(response => response.json())
         .then(postData => {
-            console.log('Received post data:', postData); // Log the received data
+            console.log('Received post data:', postData);
             displayPostResults(postData);
         })
         .catch(error => {
             console.error('Error fetching post data:', error);
+            displayErrorMessage('grid-item', 'Failed to load posts. Please try again later.');
         });
 }
 
+// Check and display the friendship status
+function checkFriendship(username) {
+    fetch(`backend/checkFriendship.php?username=${encodeURIComponent(username)}`)
+        .then(response => response.json())
+        .then(followData => {
+            displayFollowResults(followData);
+        })
+        .catch(error => {
+            console.error('Error fetching follow data:', error);
+            displayErrorMessage('follow-btn', 'Unable to fetch follow status.');
+        });
+}
+
+// Display the user's profile data
+async function displayProfileResults(data) {
+    const resultsDiv = document.getElementById('profile-header');
+    resultsDiv.innerHTML = ''; // Clear previous results
+
+    if (data.length > 0) {
+        const template = await fetchTemplate('frontend/items/profileHead.html');
+        const user = data[0]; // Assuming only one user profile is fetched
+
+        const userHtml = template
+            .replace(/{{profilepicture}}/g, sanitizeInput(user.fotoprofilo))
+            .replace(/{{Username}}/g, sanitizeInput(user.username))
+            .replace(/{{Gender}}/g, sanitizeInput(user.gender));
+
+        resultsDiv.innerHTML = userHtml;
+        console.log('Profile header populated.');
+    } else {
+        resultsDiv.textContent = 'No user found.';
+        console.log('No user found.');
+    }
+}
+
+// Display the user's posts
+async function displayPostResults(data) {
+    const resultsDiv = document.getElementById('grid-item');
+    resultsDiv.innerHTML = ''; // Clear previous results
+
+    if (data.length > 0) {
+        const template = await fetchTemplate('frontend/items/postGridItem.html');
+        data.forEach(post => {
+            const postHtml = template.replace(/{{postlocation}}/g, sanitizeInput(post.PosizioneFile));
+            const postElement = document.createElement('div');
+            postElement.innerHTML = postHtml;
+            resultsDiv.appendChild(postElement.firstChild);
+        });
+        console.log('Posts grid populated.');
+    } else {
+        resultsDiv.innerHTML = "<p class='text-center m-0 p-0'>No posts found.</p>";
+        console.log('No posts found.');
+    }
+}
+
+// Display friendship status
+function displayFollowResults(data) {
+    const followBtn = document.getElementById('follow-btn');
+    followBtn.innerHTML = ''; // Clear previous content
+
+    if (data.length > 0) {
+        const status = sanitizeInput(data[0].Accettazione);
+
+        if (status === 'Accettato' || status === 'In Attesa') {
+            followBtn.textContent = 'Unfollow';
+            followBtn.className = 'btn btn-danger';
+            followBtn.setAttribute('data-action', 'Remove')
+        } else if (status === 'Self') {
+            followBtn.textContent = 'Edit Profile';
+            followBtn.className = 'btn btn-primary';
+            followBtn.removeAttribute('data-action')
+        }
+    } else {
+        followBtn.textContent = 'Follow';
+        followBtn.className = 'btn btn-primary';
+        followBtn.setAttribute('data-action', 'Add')
+    }
+    console.log('Follow button updated.');
+}
+
+function addRemoveFriend(username, action) {
+    if (!username.length) return;
+
+    fetch(`backend/addRemoveFriend.php?ricevente=${encodeURIComponent(username)}&action=${encodeURIComponent(action)}`)
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
+        .then(data => {
+            checkFriendship(username);
+        
+        })
+        .catch(error => console.error('Error adding/removing friend:', error));
+}
+
+function followAction(event) {
+    const button = event.target;
+    const params = new URLSearchParams(window.location.search);
+    const username = sanitizeInput(params.get('username'));
+    const action = button.getAttribute('data-action');
+    console.log(`${action} friend:`, username);
+    addRemoveFriend(username, action)
+}
+
+// Utility function to fetch an HTML template
+async function fetchTemplate(templatePath) {
+    try {
+        const response = await fetch(templatePath);
+        if (!response.ok) throw new Error('Failed to fetch template');
+        return await response.text();
+    } catch (error) {
+        console.error('Error fetching template:', error);
+        return '';
+    }
+}
+
+
+// Display error message
+function displayErrorMessage(elementId, message) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.innerHTML = `<p class='text-center text-danger'>${message}</p>`;
+    }
+}
+
+// Sanitize input to prevent XSS attacks
+function sanitizeInput(input) {
+    const div = document.createElement('div');
+    div.textContent = input;
+    return div.innerHTML;
+}

@@ -1,6 +1,5 @@
 <?php
-include("../config.php");
-
+include "connection.php";
 
 function checkDB($cid){
 	$check = array("msg" => "", "status" => "ok");
