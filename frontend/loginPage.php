@@ -2,8 +2,6 @@
     if(session_status() !== PHP_SESSION_ACTIVE) session_start();
     session_unset();
     require_once("../common/connection.php");
-    include("../common/modalErrore.php");
-    include("../common/errorModal.php");
 ?>
 
 <div class="d-flex justify-content-center px-lg-3">

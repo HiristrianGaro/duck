@@ -3,6 +3,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../config.php';
 include 'imagecrop.php';
 include '../common/connection.php';
+include 'addCity.php';
 
 createPost();
 error_log(POST_DIR);
@@ -12,13 +13,20 @@ function createPost() {
 
     error_log('Creating Post');
     $AutorePostEmail = $_SESSION['IndirizzoEmail'];
-    $Description = " "; // Fixed typo
+    $Description = isset($_GET['description']) ? $_GET['description'] : '';
     $timestamp = date('Y-m-d H:i:s');
-    $NomeCitta = 'Milan';
-    $StatoCitta = 'Italy';
-    $ProvinciaCitta = 'Milan';
+    $NomeCitta = isset($_GET['city']) ? $_GET['city'] : '';
+    $StatoCitta = isset($_GET['country']) ? $_GET['country'] : '';
+    $ProvinciaCitta = isset($_GET['region']) ? $_GET['region'] : '';
 
-    $sql = "INSERT INTO Post (AutorePostEmail, Descrizione, TimestampPubblicazione, NomeCitta, StatoCitta, ProvinciaCitta) VALUES (?, ?, ?, ?, ?, ?)";
+    if (!checkCity($StatoCitta, $ProvinciaCitta, $NomeCitta)){
+        error_log('City not found');
+        die('City not found');
+    }
+
+    
+
+    $sql = "INSERT INTO Post (AutorePostEmail, Descrizione, TimestampPubblicazione, PostCity, PostState, PostCountry) VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $cid->prepare($sql);
 
     if (!$stmt) {
@@ -26,7 +34,7 @@ function createPost() {
         die('Database error');
     }
 
-    $stmt->bind_param('ssssss', $AutorePostEmail, $Description, $timestamp, $NomeCitta, $StatoCitta, $ProvinciaCitta);
+    $stmt->bind_param('ssssss', $AutorePostEmail, $Description, $timestamp, $NomeCitta, $ProviciaCitta, $$StatoCitta);
 
     error_log('Executing Query');
     if (!$stmt->execute()) {
@@ -41,7 +49,7 @@ function createPost() {
 }
 
 function addFotoPost($AutorePostEmail, $timestamp) {
-    global $cid; // Ensure $cid is accessible
+    global $cid;
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if (isset($_FILES['filesToUpload'])) {

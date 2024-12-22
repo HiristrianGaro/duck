@@ -9,7 +9,6 @@ if (isset($_GET['user'])) {
 }
 $querySelect = isset($_GET['term']) ? $_GET['term'] : '';
 
-// Prepare the SQL statement with placeholders
 
 if ($querySelect && $searchParam) {
     
@@ -22,7 +21,7 @@ if ($querySelect && $searchParam) {
         switch ($querySelect) {
             case 'Friends':
                 error_log('Query: Friends for ' . $searchParam);
-                $sql = "SELECT IdPost, u.Username, IndirizzoEmail, TimestampPubblicazione, Descrizione, NomeCitta, StatoCitta, ProvinciaCitta, fotoprofilo
+                $sql = "SELECT IdPost, u.Username, IndirizzoEmail, TimestampPubblicazione, Descrizione, PostCity, PostState, PostCountry, fotoprofilo
                         FROM Post p
                         JOIN Utente u ON p.AutorePostEmail = u.IndirizzoEmail
                         JOIN RichiedeAmicizia r ON (
@@ -62,7 +61,7 @@ if ($querySelect && $searchParam) {
                 $types = 's';
                 break;
             case 'SinglePost':
-                $sql = "SELECT IdPost, u.Username, IndirizzoEmail, TimestampPubblicazione, Descrizione, NomeCitta, StatoCitta, ProvinciaCitta, fotoprofilo
+                $sql = "SELECT IdPost, u.Username, IndirizzoEmail, TimestampPubblicazione, Descrizione, PostCity, PostState, PostCountry, fotoprofilo
                         FROM Post p
                         JOIN Utente u ON p.AutorePostEmail = u.IndirizzoEmail
                         JOIN RichiedeAmicizia r ON (
@@ -79,13 +78,11 @@ if ($querySelect && $searchParam) {
                 break;
         }
     } catch (Exception $e) {
-        // Log and return error
         error_log("Error: " . $e->getMessage());
         echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
     }
 
 } else {
-    // No valid action or missing Richiedente
     error_log("Invalid request: Action or session email missing");
     echo json_encode(['status' => 'error', 'message' => 'Invalid request']);
 }
@@ -93,28 +90,22 @@ if ($querySelect && $searchParam) {
 
 $stmt = $cid->prepare($sql);
 
-        // Bind parameters for all fields
 $stmt->bind_param($types, ...$params);
 
-// Execute the statement
 $stmt->execute();
 
-// Get the result
 $result = $stmt->get_result();
 
-// Fetch data and store it in an array
 $data = array();
 while ($row = $result->fetch_assoc()) {
     $data[] = $row;
 }
 
 
-    // Return data as JSON
     header('Content-Type: application/json');
     echo json_encode($data);
     error_log("Returning data: " . json_encode($data));
 
-    // Close the statement
     $stmt->close();
     exit();
 ?>

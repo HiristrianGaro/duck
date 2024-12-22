@@ -13,7 +13,7 @@ if ($querySelect && $Richiedente) {
     try {
         $sql = '';
         $params = [];
-        $types = ''; // Type string for parameter binding
+        $types = '';
 
         switch ($querySelect) {
             case 'Add':
@@ -35,13 +35,11 @@ if ($querySelect && $Richiedente) {
         }
 
     } catch (Exception $e) {
-        // Log and return error
         error_log("Error: " . $e->getMessage());
         echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
     }
     
 } else {
-        // No valid action or missing Richiedente
         error_log("Invalid request: Action or session email missing");
         echo json_encode(['status' => 'error', 'message' => 'Invalid request']);
 }
@@ -58,5 +56,4 @@ if (!$stmt->execute()) {
     throw new Exception("Failed to execute SQL statement: " . $stmt->error);
 }
 
-// Close the statement
 $stmt->close();

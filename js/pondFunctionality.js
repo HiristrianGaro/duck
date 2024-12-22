@@ -1,14 +1,14 @@
 console.log('Pond Functionality JS Loaded');
 
 $(document).ready(() => {
-    showLoadingIndicator('LetTheEggsSwim');
     fetchFriendsPosts();
+    setupIntersectionObserver();
 });
 
 async function fetchFriendsPosts() {
     console.log('Loading friends posts');
     try {
-        const response = await fetch('backend/getFriendsPosts.php?term=Friends');
+        const response = await fetch('backend/getPosts.php?term=Friends');
         if (!response.ok) throw new Error('Network response was not ok');
 
         const data = await response.json();
@@ -16,8 +16,8 @@ async function fetchFriendsPosts() {
 
         // Fetch templates once
         const [templateHead, templateBody] = await Promise.all([
-            fetchTemplate('common/egg-head.html'),
-            fetchTemplate('common/egg-body.html'),
+            fetchTemplate('frontend/items/egg-head.html'),
+            fetchTemplate('frontend/items/egg-body.html'),
         ]);
 
         // Display all posts
@@ -32,7 +32,7 @@ async function fetchFriendsPosts() {
 async function fetchPhotosForPost(timestamp, email) {
     try {
         const response = await fetch(
-            `backend/getFotoforPost.php?Timestamp=${encodeURIComponent(timestamp)}&IndirizzoAutore=${encodeURIComponent(email)}`
+            `backend/getPostFoto.php?Timestamp=${encodeURIComponent(timestamp)}&IndirizzoAutore=${encodeURIComponent(email)}`
         );
         if (!response.ok) throw new Error('Network response was not ok');
         return await response.json();
@@ -60,6 +60,7 @@ async function displayPost(post, container, templateHead, templateBody) {
         // Create a container for the post
         const postContainer = document.createElement('div');
         postContainer.className = 'post-container';
+        postContainer.setAttribute('id', post.IdPost)
         postContainer.innerHTML = postHeader;
 
         // Locate the 'egg-body' class container
@@ -81,6 +82,31 @@ async function displayPost(post, container, templateHead, templateBody) {
     } catch (error) {
         console.error('Error displaying post:', post, error);
     }
+}
+
+async function showComments(element) {
+    try {
+        const container = document.getElementById('LeftContainer');
+        const template = await fetchTemplate('frontend/comments.html');
+
+
+        container.innerHTML = ''; // Clear previous results
+        // Format the timestamp
+        // Replace placeholders in the header template
+        const postHeader = template.replace(/{{IdPost}}/g, element);
+
+        // Create a container for the post
+        const postContainer = document.createElement('div');
+        postContainer.className = 'comment-container';
+        postContainer.setAttribute('id', element)
+        postContainer.innerHTML = postHeader;
+
+        // Append the complete post to the results container
+        container.appendChild(postContainer);
+    } catch (error) {
+        console.error('Error displaying post:', error);
+    }
+
 }
 
 // Function to populate the carousel with dynamic photos
@@ -169,4 +195,52 @@ function formatTimestamp(timestamp) {
         const days = Math.floor(diffInSeconds / 86400);
         return `${days}d`;
     }
+}
+
+let observer;
+
+function setupIntersectionObserver() {
+    const container = document.getElementById("LetTheEggsSwim");
+    if (!container) {
+        console.error("'LetTheEggsSwim' container not found");
+        return;
+    }
+
+    const options = {
+        root: container,
+        rootMargin: "0px",
+        threshold: 1, // Trigger when 50% of the element is visible
+    };
+
+    console.log("Observer Root:", container.getBoundingClientRect());
+
+    const callback = (entries) => {
+        entries.forEach((entry) => {
+            const element = entry.target.getAttribute("id");
+            if (entry.isIntersecting == true && !element.includes("carousel")) {
+                showComments(element);
+                fetchPostComments(element);
+            }
+        });
+    };
+
+    observer = new IntersectionObserver(callback, options);
+
+    // Set up MutationObserver to dynamically observe new posts
+    const mutationObserver = new MutationObserver(() => {
+        observeNewPosts(container);
+    });
+
+    mutationObserver.observe(container, { childList: true, subtree: true });
+
+    // Initial observation for existing posts
+    observeNewPosts(container);
+}
+
+function observeNewPosts(container) {
+    const newPosts = container.querySelectorAll("*[id]:not([data-observed])");
+    newPosts.forEach((post) => {
+        observer.observe(post); // Start observing the element
+        post.setAttribute("data-observed", "true"); // Mark as observed to prevent duplicate observation
+    });
 }

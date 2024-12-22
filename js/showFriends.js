@@ -47,7 +47,7 @@ async function displayFriends(data, containerId, buttonType, buttonStatus) {
     }
 
     console.time(`FetchTemplateFor${containerId}`);
-    const template = await fetchTemplate('common/friendListItem.html');
+    const template = await fetchTemplate('frontend/items/friendListItem.html');
     console.timeEnd(`FetchTemplateFor${containerId}`);
 
     const friendsHtml = await Promise.all(data.map(async user => {

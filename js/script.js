@@ -1,5 +1,6 @@
 console.log('Script is loaded.');
 
+
 $(document).ready(function () {
     console.log('Script Started');
     console.log(window.location.pathname);

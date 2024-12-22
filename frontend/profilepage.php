@@ -20,6 +20,6 @@
     </div>
     </div>
 
-<?php } else { include("../common/UnauthorizedAllert.html");} ?>
+<?php } else { include("../frontend/items/UnauthorizedAllert.html");} ?>
 
 <script src="js/profilePage.js"></script>

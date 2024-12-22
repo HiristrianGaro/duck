@@ -1,6 +1,6 @@
 console.log('addPost.js loaded');
 
-// Handle file selection and display file details
+
 function fileSelect(event) {
     if (window.File && window.FileReader && window.FileList && window.Blob) {
         const files = event.target.files;
@@ -13,7 +13,7 @@ function fileSelect(event) {
     }
 }
 
-// Display error messages from server response
+
 function displayErrors(response) {
     const alertElement = document.getElementById('addPostAlertP');
     alertElement.classList.add('text-danger');
@@ -38,13 +38,12 @@ function displayErrors(response) {
     }
 }
 
-// Handle form submission via AJAX
-$('#addPostForm').on('submit', function (e) {
-    e.preventDefault(); // Prevent default form reload
 
+$('#addPostForm').on('submit', function (e) {
+    e.preventDefault();
     const formData = new FormData(this);
     $.ajax({
-        url: 'backend/createPost.php', // PHP backend script
+        url: 'backend/createPost.php',
         method: 'POST',
         data: formData,
         processData: false,
@@ -67,5 +66,5 @@ $('#addPostForm').on('submit', function (e) {
     });
 });
 
-// Attach file select event listener
+
 document.getElementById('filesToUpload').addEventListener('change', fileSelect, false);

@@ -3,7 +3,6 @@ if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../config.php';
 include '../common/connection.php';
 
-// Retrieve the session parameter and the query type
 $searchParam = $_SESSION['IndirizzoEmail'] ?? '';
 $querySelect = $_GET['term'] ?? '';
 
@@ -13,7 +12,6 @@ if (!$searchParam) {
     exit;
 }
 
-// Log the action and parameter
 error_log("Action: $querySelect, SearchParam: $searchParam");
 
 try {
@@ -62,7 +60,7 @@ try {
             WHERE ra.Accettazione = 'Accettato'
             GROUP BY u.IndirizzoEmail
             ORDER BY FriendCount DESC
-            LIMIT 10
+            LIMIT 8
         )
         SELECT 
             MF.SuggestedFriend AS Email,
@@ -94,7 +92,6 @@ try {
         $params = [$searchParam, $searchParam, $searchParam, $searchParam, $searchParam, $searchParam];
 
     } elseif ($querySelect === 'CurrentFriends') {
-        // Current Friends Query
         $sql = "
             SELECT DISTINCT u2.Username, u2.FotoProfilo
             FROM Utente u1
@@ -113,7 +110,6 @@ try {
         $params = [$searchParam, $searchParam];
 
     } elseif ($querySelect === 'FriendRequests') {
-        // Friend Requests Query
         $sql = "
             SELECT 
                 u.Username, 
@@ -130,44 +126,37 @@ try {
         $params = [$searchParam];
 
     } else {
-        // Invalid query type
+
         throw new Exception("Invalid query type: $querySelect");
     }
 
-    // Prepare the SQL statement
+
     $stmt = $cid->prepare($sql);
     if (!$stmt) {
         throw new Exception("Failed to prepare SQL statement: " . $cid->error);
     }
 
-    // Bind parameters
     $stmt->bind_param($types, ...$params);
 
-    // Execute the query
     if (!$stmt->execute()) {
         throw new Exception("Failed to execute SQL statement: " . $stmt->error);
     }
 
-    // Fetch results
     $result = $stmt->get_result();
     $data = [];
     while ($row = $result->fetch_assoc()) {
         $data[] = $row;
     }
 
-    // Return data as JSON
     header('Content-Type: application/json');
     echo json_encode($data);
 
-    // Close the statement
     $stmt->close();
 
 } catch (Exception $e) {
-    // Log and return error
     error_log("Error: " . $e->getMessage());
     echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
 }
 
-// Close the connection
 $cid->close();
 ?>

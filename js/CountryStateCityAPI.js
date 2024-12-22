@@ -10,10 +10,11 @@ const BASE_URL = 'https://api.countrystatecity.in/v1';
  * @param {string} endpoint - The API endpoint.
  * @returns {Promise<Array>} - A promise that resolves to the data array.
  */
-const fetchData = (endpoint) => {
-    return fetch(`${BASE_URL}${endpoint}`, {
+const fetchData = async (endpoint) => {
+    const response = await fetch(`${BASE_URL}${endpoint}`, {
         headers: { 'X-CSCAPI-KEY': API_KEY },
-    }).then((response) => response.json());
+    });
+    return await response.json();
 };
 
 /**
@@ -36,6 +37,8 @@ const populateSelect = (selectElement, data, valueKey, textKey) => {
         const option = document.createElement('option');
         option.value = item[valueKey];
         option.textContent = item[textKey];
+        console.log(item[textKey]);
+        console.log(item[valueKey]);
         selectElement.appendChild(option);
     });
 

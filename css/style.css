@@ -9,12 +9,6 @@
   --bs-body-bg-secondary: #F8F8F8;
 }
 
-html{ 
-  height: 100vh;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
 
  
 body{
@@ -35,19 +29,24 @@ background:
 
 }
 
-.content {
-  flex: 1 0 auto;
-}
 
 main {
   flex-grow: 1;
   overflow: auto;
 }
 
+
+
 .navbar-sticky {
   z-index: 1030;
   position: sticky;
   top: 0;
+}
+
+.search-sticky {
+  z-index: 1000;
+  position: sticky;
+  top: 75;
 }
 .container-z-index {
   z-index: 1;
@@ -516,9 +515,45 @@ main {
 
   .centralsplit {
       max-width: 100% !important; /* Make the center column full width */
+
   }
 }
 
 .friends-card {
   min-width: 400px;
+}
+
+#LetTheEggsSwim {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#LeftContainer {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.comment {
+  margin-top: 10px;
+  padding: 15px;  
+  border-radius: 5px;
+}
+
+.replies {
+  margin-left: 20px;
+  border-left: 2px solid #f0f0f0;
+  padding-left: 15px;
+}
+
+.replies.hidden {
+  display: none;
+}
+
+.reply-form {
+  margin-top: 10px;
+}
+
+.toggle-replies .toggle-replies-btn {
+  outline: none !important;
+
 }

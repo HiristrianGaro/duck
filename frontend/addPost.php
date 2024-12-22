@@ -1,9 +1,9 @@
-<div class="d-flex justify-content-center px-lg-3 mb-3">
-    <div class="p-3 p-md-4 border rounded-3 bg-white">
+<div class="d-flex justify-content-center px-lg-3 mb-2">
+    <div class="p-2 p-md-3 border rounded-3 bg-white">
         <div class="text-center">
-        <h2 class="text-blue mb-3">Add an Egg</h2>    
+        <h2 class="text-blue mb-2">Add an Egg</h2>    
         <p class="lead">Welcome back to <span class="text-yellow fw-bold">Duck</span></p>
-        <p class="lead mb-3">Login to <span class="text-blue fw-bold">Quack</span> with your friends!</p>
+        <p class="lead mb-2">Login to <span class="text-blue fw-bold">Quack</span> with your friends!</p>
     </div>
     <hr>
     <p>Add you pictures here ⬇️</p>
@@ -21,15 +21,15 @@
         <div>
 
         <hr>
-        <div>
+        <div class="row">
             <p class="bold">Want to let people know where you took these Quakidy pictures?</p>
-            <select class='form-select mb-1' id="country">
+            <select class='col form-select' id="country">
                 <option value="" disabled selected>Select a country</option>
             </select>
-            <select class='form-select mb-1 mb-0' id="state" disabled>
+            <select class='col form-select mb-0' id="state" disabled>
                 <option value="" disabled selected>Select a state</option>
             </select>
-            <select class='form-select mb-1' id="city" disabled>
+            <select class='col form-select' id="city" disabled>
                 <option value="" disabled selected>Select a city</option>
             </select>
         </div>

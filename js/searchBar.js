@@ -32,7 +32,7 @@ async function displayUserResults(data) {
     resultsDiv.innerHTML = ''; // Clear previous results
 
     if (data.length > 0) {
-        const template = await fetchTemplate('common/searchItem.html');
+        const template = await fetchTemplate('frontend/items/searchItem.html');
         const usersHtml = data.map(user => {
             const userHtml = template
                 .replace(/{{Username}}/g, user.username)

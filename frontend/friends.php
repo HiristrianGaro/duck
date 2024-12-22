@@ -16,7 +16,6 @@ if(isset($_SESSION['Status'])) {
     </div>
     <hr>
 <div class="row">
-    <!-- Left Column -->
     <div class="leftsplit col-lg-3 d-none d-md-flex justify-content-md-start">
         <div class="flex-fill border rounded-3 shadow p-3 p-md-4 bg-white">
             <h5>Suggested Friends</h5>
@@ -24,17 +23,14 @@ if(isset($_SESSION['Status'])) {
         </div>
     </div>
 
-    <!-- Center Column -->
     <div class="centralsplit col-12 col-lg-6 d-flex justify-content-center mx-auto">
         <div class="flex-fill border rounded-3 shadow p-3 p-md-4 bg-white ">
             <div class="row">
-                <!-- Suggested Friends Column -->
                 <div class="col-6">
                     <h5>Friend Requests</h5>
                     <ul class="list-group friends-container" id="FriendRequestsListId"></ul>
                 </div>
 
-                <!-- Your Current Friends Column -->
                 <div class="col-6">
                     <h5>Your Friends</h5>
                     <ul class="list-group friends-container" id="CurrentFriendsListId"></ul>
@@ -42,15 +38,12 @@ if(isset($_SESSION['Status'])) {
             </div>
         </div>
     </div>
-
-    <!-- Right Column -->
     <div class="rightsplit col-lg-3 d-none d-md-flex justify-content-md-end">
-        <!-- Add content here if necessary -->
     </div>
 </div>
 </div>
 
 
 
-<?php } else {include("../common/UnauthorizedAllert.html");}?>
+<?php } else {include("../frontend/items/UnauthorizedAllert.html");}?>
 <script src="js/showFriends.js"></script>

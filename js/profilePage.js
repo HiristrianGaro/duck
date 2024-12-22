@@ -35,7 +35,7 @@ function loadProfilePage(username) {
 
 // Fetch and display the user's posts
 function loadProfilePosts(username) {
-    fetch(`backend/getFriendsPosts.php?user=${encodeURIComponent(username)}&term=User`)
+    fetch(`backend/getPosts.php?user=${encodeURIComponent(username)}&term=User`)
         .then(response => response.json())
         .then(postData => {
             console.log('Received post data:', postData);
@@ -66,7 +66,7 @@ async function displayProfileResults(data) {
     resultsDiv.innerHTML = ''; // Clear previous results
 
     if (data.length > 0) {
-        const template = await fetchTemplate('common/profileHead.html');
+        const template = await fetchTemplate('frontend/items/profileHead.html');
         const user = data[0]; // Assuming only one user profile is fetched
 
         const userHtml = template
@@ -88,7 +88,7 @@ async function displayPostResults(data) {
     resultsDiv.innerHTML = ''; // Clear previous results
 
     if (data.length > 0) {
-        const template = await fetchTemplate('common/postGridItem.html');
+        const template = await fetchTemplate('frontend/items/postGridItem.html');
         data.forEach(post => {
             const postHtml = template.replace(/{{postlocation}}/g, sanitizeInput(post.PosizioneFile));
             const postElement = document.createElement('div');
