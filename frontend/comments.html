@@ -1,15 +1,15 @@
 
-<div class="border rounded-3 bg-white">
+<div class="border rounded-3 bg-secondary-light opacity-25">
     <div class="m-3">
-        <h1 class="mb-4">Comment Section</h1>
+        <h2 class="h4 mb-4">Comment Section</h2>
         <div id="comments-section">
-            <!-- Comments will be dynamically appended here -->
+            
         </div>
         <form id="comment-form" class="mt-4">
             <div class="mb-3">
                 <textarea id="comment-input" class="form-control" placeholder="Write a comment..."></textarea>
             </div>
-            <button type="button" id="submit-comment" class="btn btn-primary">Submit</button>
+            <button type="button" id="submit-comment" onClick="submitComment()" class="btn btn-primary">Submit</button>
         </form>
     </div>
 </div>

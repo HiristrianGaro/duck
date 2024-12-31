@@ -7,11 +7,11 @@
 
 
 <div class="row d-flex justify-content-center">	
-    <div class="col-lg leftsplit" id="LeftContainer">
+    <div class="col-lg leftsplit">
 
     </div>
     <div class="col-8 col-lg centralsplit mx-auto" id="LetTheEggsSwim"></div>
-    <div class="col-lg rightsplit">
+    <div class="col-lg rightsplit" id="LeftContainer">
 
     </div>
     

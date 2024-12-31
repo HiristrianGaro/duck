@@ -29,7 +29,7 @@ function searchUsers() {
 
 async function displayUserResults(data) {
     const resultsDiv = document.getElementById('search-results');
-    resultsDiv.innerHTML = ''; // Clear previous results
+    resultsDiv.innerHTML = '';
 
     if (data.length > 0) {
         const template = await fetchTemplate('frontend/items/searchItem.html');
@@ -52,7 +52,7 @@ async function displayUserResults(data) {
             return userElement.firstChild;
         });
 
-        // Append all user elements to the results container
+
         usersHtml.forEach(userEl => resultsDiv.appendChild(userEl));
     } else if (document.getElementById('search-input').value.trim().length >= MIN_SEARCH_CHARS) {
         resultsDiv.textContent = 'No users found.';

@@ -1,0 +1,112 @@
+<div class="d-flex justify-content-center px-lg-3">
+    <div class="p-3 p-md-4 border rounded-3 bg-white">
+        <div class="pb-5 text-center">
+        <img class="d-block mx-auto mb-3" src="assets/brand/duck.png" alt="" width="72" height="57">
+        <h2 class="text-blue">Edit you Profile</h2>    
+        <p class="lead">Use this <span class="text-yellow fw-bold">Form</span> to change your profile data!</p>
+    </div>
+        <form method="POST" id="EditForm" enctype="text/plain" autocomplete="on" class="needs-validation" novalidate>
+            <div class="row">
+                <p class="mb-3 fw-bold">Change Profile Picture</p>
+                <div class="form-floating mb-3 col col-sm-6">
+                    <div>
+                        <img src="./assets/images/profile_picture/juglu.jpg" class="rounded-circle mr-3" alt="Profile Picture" style="width: 100px; height: 100px;">
+                        <p class="mt-2" style="font-size: 14px;">Current Profile Picture</p>   
+                    </div>
+                    
+                </div>
+            </div>
+            <hr class="mt-0">
+            <div class="row">
+                <p class="mb-3 fw-bold">Change Username:</p>
+                <div class="form-floating mb-3 col col-sm-6">
+                    <input type="text" class="form-control" id="EditUsername" name="EditUsername" autocomplete="username" placeholder="" required minlength="4">
+                    <label for="EditUsername" class="form-label mx-2">Username</label>
+                    <div class="invalid-feedback">
+                        Valid username is required.
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-0">
+            <div class="row">
+                <p class="mb-3 fw-bold">Change first and last name: </p>
+                <div class="form-floating mb-3  col-sm-6">
+                    <input type="text" class="form-control" id="EditName" name="EditName" autocomplete="given-name" placeholder="" required>
+                    <label for="EditName" class="form-label mx-2">First name</label>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="form-floating mb-3  col-sm-6">
+                    <input type="text" class="form-control" id="EditSurname" name="EditSurname" autocomplete="family-name" placeholder="" required>
+                    <label for="EditSurname" class="form-label mx-2">Last name</label>
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-0">
+            <div class="row">
+                <p class="mb-3 fw-bold">Modify pasword:</p>
+
+                <!-- Password -->
+                <div class="form-floating mb-3  col-sm-6">
+                    <input type="password" class="form-control" id="CurrentEditPassword" name="CurrentEditPassword" autocomplete="new-password" placeholder="Password123" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <label for="CurrentEditPassword" class="form-label mx-2">Current Password</label>
+                    <div class="invalid-feedback">
+                        Password is required.
+                    </div>
+                </div>
+
+                <div class="form-floating mb-3  col-sm-6">
+                    <input type="password" class="form-control" id="NewEditPassword" name="NewEditPassword" autocomplete="new-password" placeholder="Password123" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <label for="NewEditPassword" class="form-label mx-2">New Password</label>
+                    <div class="invalid-feedback">
+                        New Password is required.
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-0">
+            <div class="row">
+                <p class="mb-3 fw-bold">Change your Date of Birth:</p>
+                    <div class="form-floating mb-3  col-sm-6">
+                        <input type="date" class="form-control" name="EditDoB" id="EditDoB" autocomplete="dateofbirth">
+                        <label for="EditDoB" class="form-label mx-2">Date of Birth</label>
+                        <div class="invalid-feedback">
+                            You must be over 18 to use Duck
+                        </div>
+                    </div>
+            </div>
+            <hr class="mt-0">
+            <div class="row">
+                <p class="mb-3 fw-bold">Place of Birth:</p>
+                    <div class="form-floating mb-3 col-sm-4">
+                        <label for="CountryOption" class="form-label mx-2">Country</label>
+                        <select class='form-select' name="Country" id="country">
+                            <option id="CountryOption" value="" disabled selected></option>
+                        </select>
+                    </div>
+                    <div class="form-floating mb-3 col-sm-4">
+                        <label for="StateOption" class="form-label mx-2">State</label>
+                        <select class='form-select' name="State" id="state" disabled>
+                            <option name="State" id="StateOption" value="" disabled selected></option>
+                        </select>
+                    </div>
+                    <div class="form-floating mb-3 col-sm-4">
+                        <label for="CityOption" class="form-label mx-2">City</label>
+                        <select class='form-select' name="City" id="city" disabled>
+                            <option name="City" id="CityOption" value="" disabled selected></option>
+                        </select>
+                    </div>
+            </div>  
+            
+            <div class="text-center mt-3">
+                <button class="btn btn-primary" type="submit">Continue and Edit</button>
+                <p class="text-center mt-3" id="EditAlert"></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/loginRegister.js"></script>
+<script src="js/CountryStateCityAPI.js"></script>

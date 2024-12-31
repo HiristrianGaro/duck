@@ -9,28 +9,28 @@ async function fetchPostComments(IdPost) {
 
         const commentsSection = document.getElementById("comments-section");
         if (!commentsSection) {
-            console.error("Comments section not found!");
+            console.log("Comments section not found!");
             return;
         }
 
         renderComments(data, commentsSection);
     } catch (error) {
-        console.error("Error fetching posts:", error);
+        console.log("Error fetching posts:", error);
     }
 }
 
 async function renderComments(comments, parentElement, IdParent = null, level = 0) {
     comments
-        .filter(comment => comment.IdParent === IdParent) // Get comments with the current IdParent
+        .filter(comment => comment.IdParent === IdParent)
         .forEach(comment => {
-            const hasReplies = comments.some(c => c.IdParent === comment.IdCommento); // Check if comment has replies
-            const commentElement = createCommentElement(comment, hasReplies, level); // Pass the level to the element
+            const hasReplies = comments.some(c => c.IdParent === comment.IdCommento);
+            const commentElement = createCommentElement(comment, hasReplies, level);
 
             parentElement.appendChild(commentElement);
 
             // Render replies
             const repliesContainer = commentElement.querySelector(`#replies-${comment.IdCommento}`);
-            renderComments(comments, repliesContainer, comment.IdCommento, level + 1); // Increase the level for replies
+            renderComments(comments, repliesContainer, comment.IdCommento, level + 1);
         });
 }
 // Function to create a comment element
@@ -54,34 +54,32 @@ function createCommentElement(comment, hasReplies, level) {
     return commentDiv;
 }
 
-// Submit comment handler
+
 function submitComment() {
+    console.log("Submitting comment...");
     const commentInput = document.getElementById("comment-input");
     const commentsSection = document.getElementById("comments-section");
 
     if (!commentInput || !commentsSection) {
-        console.error("Required elements are missing!");
+        console.log("Required elements are missing!");
         return;
     }
 
     const content = commentInput.value.trim();
     if (!content) {
-        alert("Please write a comment before submitting.");
+        console.log("Please write a comment before submitting.");
         return;
     }
 
-    // Add new comment logic here
-    console.log("New comment submitted:", content);
-    commentInput.value = ""; // Clear input
+    //Da implementare la chiamata al backend per l'inserimento del commento
 }
 
-// Reply to a comment
+
 function replyToComment(commentId) {
     console.log(`Replying to comment with ID: ${commentId}`);
-    // Implement reply logic here
+    //Da implementare la chiamata al backend per l'inserimento del commento al commento
 }
 
-// Toggle replies visibility
 function toggleReplies(commentId) {
     const repliesContainer = document.getElementById(`replies-${commentId}`);
     if (repliesContainer) {
@@ -89,21 +87,4 @@ function toggleReplies(commentId) {
     }
 }
 
-function formatTimestamp(timestamp) {
-    const now = new Date();
-    const postTime = new Date(timestamp);
-    const diffInSeconds = Math.floor((now - postTime) / 1000);
-
-    if (diffInSeconds < 60) {
-        return `${diffInSeconds}s`;
-    } else if (diffInSeconds < 3600) {
-        const minutes = Math.floor(diffInSeconds / 60);
-        return `${minutes}m`;
-    } else if (diffInSeconds < 86400) {
-        const hours = Math.floor(diffInSeconds / 3600);
-        return `${hours}h`;
-    } else {
-        const days = Math.floor(diffInSeconds / 86400);
-        return `${days}d`;
-    }
-}
+getElementById("submit-comment").addEventListener("click", submitComment);

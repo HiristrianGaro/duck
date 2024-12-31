@@ -46,8 +46,7 @@ if ($querySelect && $searchParam) {
                 JOIN foto f ON f.IdFoto = (
                     SELECT MIN(f1.IdFoto)
                     FROM foto f1
-                    WHERE f1.TimestampPubblicazione = p.TimestampPubblicazione
-                      AND f1.AutorePostEmail = p.AutorePostEmail
+                    WHERE f1.IdPost = p.IdPost
                 )
                 WHERE p.AutorePostEmail = (
                     SELECT IndirizzoEmail 

@@ -1,7 +1,9 @@
 <?php
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
+session_unset();
 include("../config.php");
 include("../common/connection.php");
+
 $result = array();
     if($_SERVER["REQUEST_METHOD"]== "POST"){
         error_log('User has Started Logging in!');

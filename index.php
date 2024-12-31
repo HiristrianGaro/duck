@@ -8,10 +8,9 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<?php include "frontend/header.php"; ?>
+<?php include "frontend/header.html"; ?>
 
 <body>
-  <main class="main content">
 
 
     <?php include "frontend/navbar.php"; ?>
@@ -22,7 +21,6 @@
         
     </div>
     
-  </main>
   <?php include "frontend/footer.php"; ?>
 </body>
 

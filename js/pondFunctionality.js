@@ -1,5 +1,3 @@
-console.log('Pond Functionality JS Loaded');
-
 $(document).ready(() => {
     fetchFriendsPosts();
     setupIntersectionObserver();
@@ -29,10 +27,10 @@ async function fetchFriendsPosts() {
     }
 }
 
-async function fetchPhotosForPost(timestamp, email) {
+async function fetchPhotosForPost(IdPost) {
     try {
         const response = await fetch(
-            `backend/getPostFoto.php?Timestamp=${encodeURIComponent(timestamp)}&IndirizzoAutore=${encodeURIComponent(email)}`
+            `backend/getPostFoto.php?IdPost=${encodeURIComponent(IdPost)}`
         );
         if (!response.ok) throw new Error('Network response was not ok');
         return await response.json();
@@ -71,7 +69,7 @@ async function displayPost(post, container, templateHead, templateBody) {
         }
 
         // Fetch and process photos for the post
-        const photos = await fetchPhotosForPost(post.TimestampPubblicazione, post.IndirizzoEmail);
+        const photos = await fetchPhotosForPost(post.IdPost);
         const carouselHtml = populateCarousel(templateBody, photos);
 
         // Add the carousel inside the egg-body container
@@ -178,27 +176,6 @@ function likeAction(event) {
 }
 
 
-function formatTimestamp(timestamp) {
-    const now = new Date();
-    const postTime = new Date(timestamp);
-    const diffInSeconds = Math.floor((now - postTime) / 1000);
-
-    if (diffInSeconds < 60) {
-        return `${diffInSeconds}s`;
-    } else if (diffInSeconds < 3600) {
-        const minutes = Math.floor(diffInSeconds / 60);
-        return `${minutes}m`;
-    } else if (diffInSeconds < 86400) {
-        const hours = Math.floor(diffInSeconds / 3600);
-        return `${hours}h`;
-    } else {
-        const days = Math.floor(diffInSeconds / 86400);
-        return `${days}d`;
-    }
-}
-
-let observer;
-
 function setupIntersectionObserver() {
     const container = document.getElementById("LetTheEggsSwim");
     if (!container) {
@@ -209,7 +186,7 @@ function setupIntersectionObserver() {
     const options = {
         root: container,
         rootMargin: "0px",
-        threshold: 1, // Trigger when 50% of the element is visible
+        threshold: 1,
     };
 
     console.log("Observer Root:", container.getBoundingClientRect());
@@ -226,21 +203,19 @@ function setupIntersectionObserver() {
 
     observer = new IntersectionObserver(callback, options);
 
-    // Set up MutationObserver to dynamically observe new posts
     const mutationObserver = new MutationObserver(() => {
         observeNewPosts(container);
     });
 
     mutationObserver.observe(container, { childList: true, subtree: true });
 
-    // Initial observation for existing posts
     observeNewPosts(container);
 }
 
 function observeNewPosts(container) {
     const newPosts = container.querySelectorAll("*[id]:not([data-observed])");
     newPosts.forEach((post) => {
-        observer.observe(post); // Start observing the element
-        post.setAttribute("data-observed", "true"); // Mark as observed to prevent duplicate observation
+        observer.observe(post);
+        post.setAttribute("data-observed", "true");
     });
 }

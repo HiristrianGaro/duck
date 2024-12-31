@@ -3,6 +3,9 @@ $type = isset($_GET['type']) ? $_GET['type'] : '';
 $IdPost = isset($_GET['IdPost']) ? $_GET['IdPost'] : '';
 $IndirizzoEmail = $_SESSION['IndirizzoEmail'];
 
+//Non ammiamo ancora implementato il frontend per la parte like/dislike.
+//Verra aggiunta anche per i commenti
+
 if (!$IdPost) {
     error_log("Session parameter 'IndirizzoEmail' is missing");
     echo json_encode(['status' => 'error', 'message' => 'Invalid session data']);
@@ -43,10 +46,7 @@ if ($querySelect && $Richiedente) {
         error_log("Invalid request: Action or session email missing");
         echo json_encode(['status' => 'error', 'message' => 'Invalid request']);
 }
-
-
-$sql = "INSERT INTO Likes (IdPost, IndirizzoEmail)
-        VALUES (?, ?)";
+ 
 
 $stmt = $cid->prepare($sql);
 
