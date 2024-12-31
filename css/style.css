@@ -1,13 +1,29 @@
 :root {
-  --bs-yellow-duck: #ffcc00;
-  --bs-yellow-duck-dark: #A88410;
-  --bs-blue-duck: #0e98a4;
-  --bs-white-duck: #F8F8F8;
-  --bs-gray-duck: #A6A6A6;
-  --bs-pink-duck: #FF6F61;
-  --bs-body-bg: #F2EFEA;
-  --bs-body-bg-secondary: #F8F8F8;
+  --primary-color: #FDAD0D;
+  --primary-color-dark: #F0A202;
+  --secondary-color: #0E1428;
+  --secondary-color-light: #405BB5;
+  --bg-white: #ffffff;
+
 }
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+.bg-white {
+  background-color: var(--bg-white) !important;
+}
+
+.bg-secondary-light {
+  background-color: var(--secondary-color-light) !important;
+  
+}
+
 
 
  
@@ -17,22 +33,14 @@ position: relative;
 min-width:500px;        /* Suppose you want minimum width of 500px */
 width: auto !important;  /* Firefox will set width as auto */
 width:500px;
-background:
-        /* top, transparent black, faked with gradient */ 
-        linear-gradient(
-          rgba(0, 0, 0, 0.5), 
-          rgba(0, 0, 0, 0.5)
-        ),
-        /* bottom, image */
-        url(../assets/brand/bkgnd.png);
-  backdrop-filter: blur(2px); 
-
 }
 
 
-main {
-  flex-grow: 1;
-  overflow: auto;
+
+#main-page {
+  overflow: hidden;
+  height: calc(100vh - 92px);
+  background-color: var(--bg-white);
 }
 
 
@@ -334,59 +342,30 @@ main {
 
 .btn-primary:hover {
   color: #000000;
-  background-color: var(--bs-yellow-duck-dark);
+  background-color: var(--primary-color-dark);
 }
 
-.bg-yellow {
-  --bs-bg-opacity: 1;
-  background-color: #F8E16C!important;
-}
-
-.bg-blue {
-  --bs-bg-opacity: 1;
-  background-color: #333232!important;
-}
-
-.bg-white {
-  --bs-bg-opacity: 1;
-  background-color:#F8F8F8 !important;
-}
-
-.bg-gray {
-  --bs-bg-opacity: 1;
-  background-color: #ffffff !important;
-}
-
-.bg-pink {
-  --bs-bg-opacity: 1;
-  background-color: #FF6F61 !important;
-}
-
-.bg-black {
-  --bs-bg-opacity: 1;
-  background-color: #000000 !important;
-}
 
 .text-blue {
-  color: var(--bs-blue-duck) !important;
+  color: var(--secondary-color-light) !important;
 }
 
 .text-yellow {
-  color: var(--bs-yellow-duck)  !important;
+  color: var(--primary-color)  !important;
 }
 
 .text-yellow-dark {
-  color: var(--bs-yellow-duck-dark)  !important;
+  color: var(--primary-color-dark)  !important;
 }
 
 .border-blue {
   --bs-border-opacity: 1;
-  border-color: rgba(var(--bs-blue-duck), var(--bs-border-opacity)) !important;
+  border-color: rgba(var(--secondary-color), var(--bs-border-opacity)) !important;
 }
 
 
 .btn {
-  border-color: #000000;
+  border: transparent;
 }
 
 .lead {
@@ -482,7 +461,6 @@ main {
   font-size: 12px;
 }
 
-
 .comment-adjust {
   padding-bottom: 4px;
 }
@@ -524,13 +502,14 @@ main {
 }
 
 #LetTheEggsSwim {
+  background-color: var(--bg-white);
   height: 100vh;
   overflow-y: scroll;
 }
 
 #LeftContainer {
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .comment {

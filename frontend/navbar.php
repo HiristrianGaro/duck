@@ -1,4 +1,4 @@
-<div class="navbar-sticky d-flex flex-wrap align-items-center justify-content-center justify-content-md-between shadow-lg py-3 shadow-sm mb-3 bg-blue">
+<div class="navbar-sticky d-flex flex-wrap align-items-center justify-content-center justify-content-md-between shadow-lg py-3 shadow-sm bg-secondary mb-3">
   <div class="col-md-3 mb-2 mb-md-0">
     <ul class="nav col col-md-auto mb-2 mb-md-0">
       <li><a href="<?= SITE_HOME ?>"><img class="duckNavHide ml-md-2" src="<?= CONTENT_DIR ?>/duck.png" alt="" width="30" height="30"></a></li>
@@ -10,7 +10,7 @@
   <?php if (isset($_SESSION["Status"])) { ?>
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
       <li><a href="#" class="nav-load nav-link text-body" data-target="frontend/pond.php"><i class="bi bi-water white h4"></i></a></li>
-      <li><a href="#" data-target="frontend/addPost.php" class="nav-load"><button type="button" class="btn btn-primary btn-round"><i class="bi bi-plus-square h4"></i></button></a></li>
+      <li><a href="#" data-target="frontend/addPost.html" class="nav-load"><button type="button" class="btn btn-primary btn-round"><i class="bi bi-plus-square h4"></i></button></a></li>
       <li><a href="#" class="nav-link text-body" data-bs-toggle="collapse" data-bs-target="#SeachCollapse" aria-expanded="false" aria-controls="SeachCollapse" data-target="#"><i class="bi bi-search white h4"></i></a></li>
       <li><a href="#" class="nav-load nav-link text-body" data-target="frontend/friends.php"><i class="bi bi-activity white h4"></i></a></li>
       <li><a href="#" class="nav-load nav-link text-body" data-target="frontend/profilepage.php" data-username="<?php echo  $_SESSION["Username"];?>" ><i class="bi bi-feather white h4"></i></a></li>

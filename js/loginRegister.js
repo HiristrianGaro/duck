@@ -41,7 +41,6 @@ function checkIfEmailExists(){
     });
 }
 
-// Validate registration form
 function validateRegisterForm() {
     const alert = document.getElementById('registerAlert');
     const password = document.querySelector('#RegisterPassword').value.trim();
@@ -59,18 +58,18 @@ function validateRegisterForm() {
         return false;
     }
 
-    alert.innerHTML = ''; // Clear any existing alerts
+    alert.innerHTML = '';
     return true;
 }
 
-// Handle login form submission
+
 $('#loginForm').on('submit', function (e) {
-    e.preventDefault(); // Prevent default form reload
+    e.preventDefault();
 
     const formData = new FormData(this);
 
     $.ajax({
-        url: 'backend/login.php', // PHP backend script
+        url: 'backend/login.php',
         method: 'POST',
         data: formData,
         processData: false,
@@ -97,13 +96,13 @@ $('#loginForm').on('submit', function (e) {
     });
 });
 
-// Handle registration form submission
+
 $('#registerForm').on('submit', function (e) {
-    e.preventDefault(); // Prevent default form reload
+    e.preventDefault();
 
     if (!validateRegisterForm()) {
         console.log('Registration form validation failed.');
-        return; // Stop if validation fails
+        return;
     }
 
     const formData = new FormData(this);

@@ -25,7 +25,7 @@ const fetchData = async (endpoint) => {
  * @param {string} textKey - The key for the option text.
  */
 const populateSelect = (selectElement, data, valueKey, textKey) => {
-    selectElement.innerHTML = ''; // Clear previous options
+    selectElement.innerHTML = '';
     const defaultOption = document.createElement('option');
     defaultOption.value = '';
     defaultOption.disabled = true;
@@ -37,24 +37,22 @@ const populateSelect = (selectElement, data, valueKey, textKey) => {
         const option = document.createElement('option');
         option.value = item[valueKey];
         option.textContent = item[textKey];
-        console.log(item[textKey]);
-        console.log(item[valueKey]);
         selectElement.appendChild(option);
     });
 
-    selectElement.disabled = false; // Enable the select element
+    selectElement.disabled = false;
 };
 
-// Load countries on page load
+
 fetchData('/countries')
     .then((countries) => populateSelect(countrySelect, countries, 'iso2', 'name'))
     .catch((error) => console.error('Error loading countries:', error));
 
-// Handle country selection
+
 countrySelect.addEventListener('change', function () {
     const countryCode = this.value;
-    stateSelect.innerHTML = '<option value="" disabled selected>Select a state</option>'; // Reset states
-    citySelect.innerHTML = '<option value="" disabled selected>Select a city</option>'; // Reset cities
+    stateSelect.innerHTML = '<option value="" disabled selected>Select a state</option>';
+    citySelect.innerHTML = '<option value="" disabled selected>Select a city</option>';
     stateSelect.disabled = true;
     citySelect.disabled = true;
 
@@ -65,11 +63,11 @@ countrySelect.addEventListener('change', function () {
     }
 });
 
-// Handle state selection
+
 stateSelect.addEventListener('change', function () {
     const countryCode = countrySelect.value;
     const stateCode = this.value;
-    citySelect.innerHTML = '<option value="" disabled selected>Select a city</option>'; // Reset cities
+    citySelect.innerHTML = '<option value="" disabled selected>Select a city</option>';
     citySelect.disabled = true;
 
     if (stateCode) {

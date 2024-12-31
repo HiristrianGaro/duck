@@ -28,7 +28,7 @@ try {
                     ELSE RA.RichiedenteEmail 
                 END AS FriendEmail
             FROM RichiedeAmicizia RA
-            WHERE RA.Accettazione = 'Accettato'
+            WHERE RA.Accettazione = 'Accettato' OR RA.Accettazione = 'In Attesa'
               AND ? IN (RA.RichiedenteEmail, RA.RiceventeEmail)
         ),
         MutualFriends AS (

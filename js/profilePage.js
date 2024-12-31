@@ -9,7 +9,7 @@ $(document).ready(function () {
     console.log('Saved Username:', localStorage.getItem('savedUsername'));
 });
 
-// Initialize the profile page
+
 function initializeProfilePage(username) {
     showLoadingIndicator('profile-container');
 
@@ -18,7 +18,7 @@ function initializeProfilePage(username) {
     loadProfilePosts(username);
 }
 
-// Fetch and display the user's profile data
+
 function loadProfilePage(username) {
     fetch(`backend/searchUsers.php?term=${encodeURIComponent(username)}`)
         .then(response => response.json())
@@ -33,7 +33,7 @@ function loadProfilePage(username) {
         });
 }
 
-// Fetch and display the user's posts
+
 function loadProfilePosts(username) {
     fetch(`backend/getPosts.php?user=${encodeURIComponent(username)}&term=User`)
         .then(response => response.json())
@@ -47,7 +47,7 @@ function loadProfilePosts(username) {
         });
 }
 
-// Check and display the friendship status
+
 function checkFriendship(username) {
     fetch(`backend/checkFriendship.php?username=${encodeURIComponent(username)}`)
         .then(response => response.json())
@@ -60,7 +60,7 @@ function checkFriendship(username) {
         });
 }
 
-// Display the user's profile data
+
 async function displayProfileResults(data) {
     const resultsDiv = document.getElementById('profile-header');
     resultsDiv.innerHTML = ''; // Clear previous results
@@ -82,7 +82,7 @@ async function displayProfileResults(data) {
     }
 }
 
-// Display the user's posts
+
 async function displayPostResults(data) {
     const resultsDiv = document.getElementById('grid-item');
     resultsDiv.innerHTML = ''; // Clear previous results
@@ -102,10 +102,10 @@ async function displayPostResults(data) {
     }
 }
 
-// Display friendship status
+
 function displayFollowResults(data) {
     const followBtn = document.getElementById('follow-btn');
-    followBtn.innerHTML = ''; // Clear previous content
+    followBtn.innerHTML = '';
 
     if (data.length > 0) {
         const status = sanitizeInput(data[0].Accettazione);
@@ -151,7 +151,7 @@ function followAction(event) {
     addRemoveFriend(username, action)
 }
 
-// Utility function to fetch an HTML template
+
 async function fetchTemplate(templatePath) {
     try {
         const response = await fetch(templatePath);
@@ -164,7 +164,7 @@ async function fetchTemplate(templatePath) {
 }
 
 
-// Display error message
+
 function displayErrorMessage(elementId, message) {
     const element = document.getElementById(elementId);
     if (element) {
@@ -172,7 +172,7 @@ function displayErrorMessage(elementId, message) {
     }
 }
 
-// Sanitize input to prevent XSS attacks
+
 function sanitizeInput(input) {
     const div = document.createElement('div');
     div.textContent = input;

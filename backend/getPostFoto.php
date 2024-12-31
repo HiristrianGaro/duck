@@ -2,16 +2,15 @@
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../config.php';
 include '../common/connection.php';
-$Timestamp = isset($_GET['Timestamp']) ? $_GET['Timestamp'] : '';
-$IndirizzoAutore = isset($_GET['IndirizzoAutore']) ? $_GET['IndirizzoAutore'] : '';
+$IdPost = isset($_GET['IdPost']) ? $_GET['IdPost'] : '';
 
 $sql = "SELECT IdFoto, NomeFile, PosizioneFile FROM foto
-        WHERE TimestampPubblicazione = ? AND AutorePostEmail = ?
+        WHERE IdPost = ?
         ORDER BY IdFoto DESC;";
 
 $stmt = $cid->prepare($sql);
 
-$stmt->bind_param('ss', $Timestamp, $IndirizzoAutore);
+$stmt->bind_param('s', $IdPost);
 
 $stmt->execute();
 

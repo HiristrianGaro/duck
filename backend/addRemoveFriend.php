@@ -3,30 +3,21 @@ if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../config.php';
 include '../common/connection.php';
 
-// Enable error reporting for debugging
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-// Retrieve parameters from the request and session
 $querySelect = $_GET['action'] ?? '';
 $Ricevente = $_GET['ricevente'] ?? '';
 $Richiedente = $_SESSION['IndirizzoEmail'] ?? '';
 $date = date('Y-m-d H:i:s');
 
-// Log the action and parameters
-error_log("Action: $querySelect, Ricevente: $Ricevente, Richiedente: $Richiedente");
 
 if ($querySelect && $Richiedente) {
     try {
         $sql = '';
         $params = [];
-        $types = ''; // Type string for parameter binding
+        $types = '';
 
         switch ($querySelect) {
             
             case 'Add':
-            // Add friend request
             $sql = "
                 INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
                 VALUES (
@@ -44,7 +35,6 @@ if ($querySelect && $Richiedente) {
 
 
             case 'Remove':
-            // Remove friend request
             $sql = "
                 DELETE FROM RichiedeAmicizia
                 WHERE ((RichiedenteEmail = ?
@@ -60,7 +50,6 @@ if ($querySelect && $Richiedente) {
 
 
             case 'Accept':
-            // Accept friend request
             $sql = "
                 UPDATE RichiedeAmicizia ra
                 SET ra.Accettazione = 'Accettato',
@@ -75,8 +64,7 @@ if ($querySelect && $Richiedente) {
             default:
             throw new Exception("Invalid action: $querySelect");
         }
-
-        // Prepare and execute the statement
+        
         $stmt = $cid->prepare($sql);
         if (!$stmt) {
             throw new Exception("Failed to prepare SQL statement: " . $cid->error);

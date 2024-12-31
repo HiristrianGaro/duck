@@ -42,6 +42,7 @@ function displayErrors(response) {
 $('#addPostForm').on('submit', function (e) {
     e.preventDefault();
     const formData = new FormData(this);
+    console.log('Form data:', formData);
     $.ajax({
         url: 'backend/createPost.php',
         method: 'POST',

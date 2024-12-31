@@ -5,12 +5,11 @@ $(document).ready(function () {
     console.log('Script Started');
     console.log(window.location.pathname);
 
-    // Handle navigation clicks
     $('.nav-load').on('click', function (event) {
-        event.preventDefault(); // Prevent default link behavior
+        event.preventDefault();
 
-        const targetFile = $(this).data('target'); // Get the target file from the data attribute
-        console.log(targetFile, 'clicked'); // Log the clicked target
+        const targetFile = $(this).data('target');
+        console.log(targetFile, 'clicked');
 
         if (targetFile === 'frontend/profilepage.php') {
 
@@ -31,43 +30,34 @@ $(document).ready(function () {
 
     });
 
-    // Handle refresh or direct access
     const params = new URLSearchParams(window.location.search);
     const page = params.get('page');
     if (page) {
-        // Load the page specified in the URL
         loadPage(page);
     }
 
-    // Restore the profile page state
-
-    // Hide search bar when clicking outside
     $(document).on('click', function (event) {
         if (!$(event.target).closest('.searchCollapse, #search-input').length) {
             hideSearchBar();
         }
     });
 
-    // Hide search bar function
     function hideSearchBar() {
         $('#SeachCollapse').collapse('hide');
     }
     
     $('.noEnterSubmit').keypress(function(e){
         if ( e.which == 13 ) return false;
-        //or...
         if ( e.which == 13 ) e.preventDefault();
     });
 });
 
-// Other existing functions...
 
 
 window.addEventListener('popstate', function (event) {
     if (event.state && event.state.targetFile) {
         const targetFile = event.state.targetFile;
 
-        // Load the page from the state
         loadPage(targetFile);
     }
 });
@@ -85,8 +75,8 @@ function loadPage(targetFile) {
         url: targetFile,
         method: 'GET',
         success: function (data) {
-            $('#main-page').html(data); // Inject the content into #main-page
-            toggleButtons(targetFile); // Update buttons or UI if needed
+            $('#main-page').html(data);
+            toggleButtons(targetFile);
             console.log('Page loaded:', targetFile);
         },
         error: function () {
@@ -101,7 +91,6 @@ async function fetchTemplate(url) {
 }
 
 function toggleButtons(targetFile) {
-    // Example logic: adjust visibility based on the page
     $('#login-button').show();
     $('#signup-button').show();
     $('#logout-button').show();
@@ -124,5 +113,24 @@ function showLoadingIndicator(elementId) {
     const element = document.getElementById(elementId);
     if (element) {
         element.innerHTML = '<p class="text-center">Loading...</p>';
+    }
+}
+
+function formatTimestamp(timestamp) {
+    const now = new Date();
+    const postTime = new Date(timestamp);
+    const diffInSeconds = Math.floor((now - postTime) / 1000);
+
+    if (diffInSeconds < 60) {
+        return `${diffInSeconds}s`;
+    } else if (diffInSeconds < 3600) {
+        const minutes = Math.floor(diffInSeconds / 60);
+        return `${minutes}m`;
+    } else if (diffInSeconds < 86400) {
+        const hours = Math.floor(diffInSeconds / 3600);
+        return `${hours}h`;
+    } else {
+        const days = Math.floor(diffInSeconds / 86400);
+        return `${days}d`;
     }
 }

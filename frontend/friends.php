@@ -1,9 +1,6 @@
 
 <?php
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
-include "../common/connection.php";
-include "../common/funzioni.php";
-
 
 if(isset($_SESSION['Status'])) {
 ?>

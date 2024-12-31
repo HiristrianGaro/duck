@@ -18,10 +18,11 @@ function createPost() {
     $NomeCitta = isset($_GET['city']) ? $_GET['city'] : '';
     $StatoCitta = isset($_GET['country']) ? $_GET['country'] : '';
     $ProvinciaCitta = isset($_GET['region']) ? $_GET['region'] : '';
-
-    if (!checkCity($StatoCitta, $ProvinciaCitta, $NomeCitta)){
-        error_log('City not found');
-        die('City not found');
+    error_log(print_r($_POST, true));
+    if ($NomeCitta != NULL && $StatoCitta != NULL && $ProvinciaCitta != NULL) {
+        error_log(checkCity($StatoCitta, $ProvinciaCitta, $NomeCitta));
+    } else {
+        error_log('City not set');
     }
 
     
@@ -46,6 +47,38 @@ function createPost() {
     error_log('Post Created');
     error_log('Adding Foto to Post');
     addFotoPost($AutorePostEmail, $timestamp);
+}
+
+
+//Verrà utilizzata per ottenere l'Id del post appena creato, sostituendo TimestampPubblicazione e AutorePostEmail
+//quando cambieremo la struttura di foto rimuovendo questi ultimi
+
+function getPostId($AutorePostEmail, $timestamp) {
+    global $cid;
+
+    $sql = "SELECT IdPost FROM Post WHERE AutorePostEmail = ? AND TimestampPubblicazione = ?";
+    $stmt = $cid->prepare($sql);
+
+    if (!$stmt) {
+        error_log("Prepare failed: " . $cid->error);
+        return false;
+    }
+
+    $stmt->bind_param('ss', $AutorePostEmail, $timestamp);
+
+    if (!$stmt->execute()) {
+        error_log("Execute failed: " . $stmt->error);
+        return false;
+    }
+
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        return $row['IdPost'];
+    }
+
+    return false;
 }
 
 function addFotoPost($AutorePostEmail, $timestamp) {
