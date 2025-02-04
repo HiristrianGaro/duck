@@ -21,7 +21,6 @@
 
 .bg-secondary-light {
   background-color: var(--secondary-color-light) !important;
-  
 }
 
 
@@ -38,7 +37,7 @@ width:500px;
 
 
 #main-page {
-  overflow: hidden;
+  overflow: scroll;
   height: calc(100vh - 92px);
   background-color: var(--bg-white);
 }
@@ -52,10 +51,11 @@ width:500px;
 }
 
 .search-sticky {
-  z-index: 1000;
+  z-index: 9999;
   position: sticky;
   top: 75;
 }
+
 .container-z-index {
   z-index: 1;
 }

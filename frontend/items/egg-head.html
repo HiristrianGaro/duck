@@ -4,8 +4,8 @@
             <div class="col-3">
                 <img src="{{fotoprofilo}}" class="rounded-circle" alt="Profile Picture" style="width: 40px; height: 40px;">
             </div>
-            <div class="col-6 p-0 text-center   ">
-                <h6 class="h6 mb-1">{{Username}}</h6><p class="postP mb-0">{{citta}}, {{provincia}}, {{stato}}</p>
+            <div class="col-6 p-0 text-center">
+                <h6 class="h6 mb-1">{{Username}}</h6><p class="postP mb-0">{{citta}} {{provincia}} {{stato}}</p>
             </div>
             <div class="col-3 postP text-end">
                 <p>{{Timestamp}}</p>
@@ -15,6 +15,9 @@
     <div class="card-body egg-body p-2">
     </div>
     <div class="card-footer">
+        <div class="d-flex justify-content-start">
+        <p>{{Descrizione}}</p>
+    </div>
         <div class="row justify-content-start">
             <div class="col-2 text-container middle">
                 <button type="button" class='post-btn' data-post="{{IdPost}}"><i class="bi bi-heart h5"></i></button>

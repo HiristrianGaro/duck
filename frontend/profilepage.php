@@ -22,4 +22,5 @@
 
 <?php } else { include("../frontend/items/UnauthorizedAllert.html");} ?>
 
+
 <script src="js/profilePage.js"></script>

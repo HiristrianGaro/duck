@@ -134,3 +134,7 @@ function formatTimestamp(timestamp) {
         return `${days}d`;
     }
 }
+
+function formatLocation(City, State, Country) {
+    
+}

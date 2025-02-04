@@ -63,4 +63,45 @@ function checkUsernameExist($cid, $Username){
 	}
 }
 
+function getQuery($cid, $sql, $params, $types){
+	try {
+		if (checkDB($cid)["status"] != "ko") {
+			$stmt = $cid->prepare($sql);
+			if (!$stmt) {
+				throw new Exception("Failed to prepare SQL statement: " . $cid->error);
+			}
+			if ($stmt) {
+				$stmt->bind_param($types, ...$params);
+				if (!$stmt->execute()) {
+					throw new Exception("Failed to execute SQL statement: " . $stmt->error);
+				}
+				$result = $stmt->get_result();
+				
+				if($result){
+					$data = array();
+					while ($row = $result->fetch_assoc()) {
+						$data[] = $row;
+					}
+					return array(true, $data);
+					$stmt->close();
+				}
 
+				$stmt->close();
+			} else {
+				error_log("Errore nella preparazione dello statement: " . $cid->error);
+			}
+		} else {
+			error_log("Errore nella connessione al db");
+		}
+	} catch (Exception $e) {
+        // Log and return error
+        error_log("Error: " . $e->getMessage());
+        echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
+    }
+
+}
+
+function toJson($data){
+	header('Content-Type: application/json');
+	return json_encode($data);
+}

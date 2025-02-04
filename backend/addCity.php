@@ -7,7 +7,7 @@ include '../common/connection.php';
 
 function checkCity($Country, $State, $City) {
     global $cid;
-    error_log($Country, $State, $City);
+    error_log($Country . $State . $City);
     $sql = "SELECT COUNT(*) count FROM Location 
             WHERE Country = ? AND State =  ? AND City = ?";
 

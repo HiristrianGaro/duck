@@ -17,7 +17,7 @@
     <?php include "frontend/items/searchCollapse.html"; ?>
 
     <div class="container-fluid container-z-index" id="main-page">
-      <?php if(!isset($_SESSION['Status'])) {include 'frontend/items/landingPage.html';}?>
+      <?php if(!isset($_SESSION['Status'])) {include 'frontend/items/landingPage.html';} else {include 'frontend/items/logged.php';}?>
         
     </div>
     

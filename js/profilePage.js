@@ -147,6 +147,11 @@ function followAction(event) {
     const params = new URLSearchParams(window.location.search);
     const username = sanitizeInput(params.get('username'));
     const action = button.getAttribute('data-action');
+    if (action === null) {
+        targetFile = 'frontend/edit-profile.html';
+        history.pushState({ targetFile }, '', `?page=${targetFile}&username=${username}`);
+        loadPage(targetFile);
+    }
     console.log(`${action} friend:`, username);
     addRemoveFriend(username, action)
 }
