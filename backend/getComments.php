@@ -2,6 +2,7 @@
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../config.php';
 include '../common/connection.php';
+include '../common/funzioni.php';
 
 $IdPost = isset($_GET['IdPost']) ? $_GET['IdPost'] : '';
 $querySelect = isset($_GET['term']) ? $_GET['term'] : '';
@@ -42,9 +43,14 @@ if ($querySelect && $IdPost) {
 }
 
 
-header('Content-Type: application/json');
-echo json_encode($data);
-error_log("Returning data: " . json_encode($data));
+list($result, $data) = getQuery($cid, $sql, $params, $types);
+if (!$result) {
+    echo json_encode(['status' => 'error', 'message' => 'Failed to get Comments']);
+    error_log("Failed to get comments for post: " . $IdPost);
+    exit();
+}
+
+echo toJson($data);
 exit();
 ?>
 

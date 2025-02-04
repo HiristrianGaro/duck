@@ -91,18 +91,14 @@ async function showComments(element) {
         const template = await fetchTemplate('frontend/comments.html');
 
 
-        container.innerHTML = ''; // Clear previous results
-        // Format the timestamp
-        // Replace placeholders in the header template
+        container.innerHTML = '';
         const postHeader = template.replace(/{{IdPost}}/g, element);
 
-        // Create a container for the post
         const postContainer = document.createElement('div');
         postContainer.className = 'comment-container';
         postContainer.setAttribute('id', element)
         postContainer.innerHTML = postHeader;
 
-        // Append the complete post to the results container
         container.appendChild(postContainer);
     } catch (error) {
         console.error('Error displaying post:', error);
