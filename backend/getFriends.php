@@ -2,6 +2,7 @@
 if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../config.php';
 include '../common/connection.php';
+include '../common/funzioni.php';
 
 $searchParam = $_SESSION['IndirizzoEmail'] ?? '';
 $querySelect = $_GET['term'] ?? '';
@@ -130,28 +131,12 @@ try {
         throw new Exception("Invalid query type: $querySelect");
     }
 
+    list($result, $data) = getQuery($cid, $sql, $params, $types);
 
-    $stmt = $cid->prepare($sql);
-    if (!$stmt) {
-        throw new Exception("Failed to prepare SQL statement: " . $cid->error);
-    }
-
-    $stmt->bind_param($types, ...$params);
-
-    if (!$stmt->execute()) {
-        throw new Exception("Failed to execute SQL statement: " . $stmt->error);
-    }
-
-    $result = $stmt->get_result();
-    $data = [];
-    while ($row = $result->fetch_assoc()) {
-        $data[] = $row;
-    }
 
     header('Content-Type: application/json');
     echo json_encode($data);
 
-    $stmt->close();
 
 } catch (Exception $e) {
     error_log("Error: " . $e->getMessage());

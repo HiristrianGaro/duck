@@ -2,6 +2,7 @@
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../config.php';
 include '../common/connection.php';
+include '../common/funzioni.php';
 if (isset($_GET['user'])) {
     $searchParam = $_GET['user'];
 } else {
@@ -87,26 +88,16 @@ if ($querySelect && $searchParam) {
 }
 
 
-$stmt = $cid->prepare($sql);
-
-$stmt->bind_param($types, ...$params);
-
-$stmt->execute();
-
-$result = $stmt->get_result();
-
-$data = array();
-while ($row = $result->fetch_assoc()) {
-    $data[] = $row;
+list($result, $data) = getQuery($cid, $sql, $params, $types);
+if (!$result) {
+    echo json_encode(['status' => 'error', 'message' => 'Failed to get post foto']);
+    error_log("Failed to get post foto");
+    exit();
 }
 
+echo toJson($data);
 
-    header('Content-Type: application/json');
-    echo json_encode($data);
-    error_log("Returning data: " . json_encode($data));
-
-    $stmt->close();
-    exit();
+$cid->close();
 ?>
 
 

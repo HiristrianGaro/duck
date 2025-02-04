@@ -1,6 +1,5 @@
 <?php
 if (session_status() !== PHP_SESSION_ACTIVE) session_start();
-include '../config.php';
 include 'imagecrop.php';
 include '../common/connection.php';
 include 'addCity.php';
@@ -13,13 +12,20 @@ function createPost() {
 
     error_log('Creating Post');
     $AutorePostEmail = $_SESSION['IndirizzoEmail'];
-    $Description = isset($_GET['description']) ? $_GET['description'] : '';
+    $Description = isset($_POST['Description']) ? $_POST['Description'] : '';
     $timestamp = date('Y-m-d H:i:s');
-    $NomeCitta = isset($_GET['city']) ? $_GET['city'] : '';
-    $StatoCitta = isset($_GET['country']) ? $_GET['country'] : '';
-    $ProvinciaCitta = isset($_GET['region']) ? $_GET['region'] : '';
+    $NomeCitta = isset($_POST['City']) ? $_POST['City'] : '';
+    $StatoCitta = isset($_POST['Country']) ? $_POST['Country'] : '';
+    $ProvinciaCitta = isset($_POST['State']) ? $_POST['State'] : '';
     error_log(print_r($_POST, true));
-    if ($NomeCitta != NULL && $StatoCitta != NULL && $ProvinciaCitta != NULL) {
+    error_log('Creating Post');
+    error_log($AutorePostEmail);
+    error_log($timestamp);
+    error_log($NomeCitta);
+    error_log($StatoCitta);
+    error_log($ProvinciaCitta);
+    error_log($Description);
+    if ($StatoCitta != NULL) {
         error_log(checkCity($StatoCitta, $ProvinciaCitta, $NomeCitta));
     } else {
         error_log('City not set');
@@ -35,7 +41,7 @@ function createPost() {
         die('Database error');
     }
 
-    $stmt->bind_param('ssssss', $AutorePostEmail, $Description, $timestamp, $NomeCitta, $ProviciaCitta, $$StatoCitta);
+    $stmt->bind_param('ssssss', $AutorePostEmail, $Description, $timestamp, $NomeCitta, $ProvinciaCitta, $StatoCitta);
 
     error_log('Executing Query');
     if (!$stmt->execute()) {
@@ -82,6 +88,7 @@ function getPostId($AutorePostEmail, $timestamp) {
 }
 
 function addFotoPost($AutorePostEmail, $timestamp) {
+    $IdPost = getPostId($AutorePostEmail, $timestamp);
     global $cid;
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -111,7 +118,7 @@ function addFotoPost($AutorePostEmail, $timestamp) {
                     if (in_array($mime_type, $allowed_file_types)) {
                         cropImageToAspectRatioGD($files_to_upload['tmp_name'][$i], $destination, 5, 4);
 
-                        $sql = "INSERT INTO Foto (TimestampPubblicazione, AutorePostEmail, NomeFile, PosizioneFile) VALUES (?, ?, ?, ?)";
+                        $sql = "INSERT INTO Foto (IdPost, NomeFile, PosizioneFile) VALUES (?, ?, ?)";
                         $stmt = $cid->prepare($sql);
 
                         if (!$stmt) {
@@ -119,7 +126,7 @@ function addFotoPost($AutorePostEmail, $timestamp) {
                             continue;
                         }
 
-                        $stmt->bind_param('ssss', $timestamp, $AutorePostEmail, $sanitizedFileName, $DBdestination);
+                        $stmt->bind_param('sss', $IdPost, $sanitizedFileName, $DBdestination);
 
                         if (!$stmt->execute()) {
                             error_log("Execute failed: " . $stmt->error);

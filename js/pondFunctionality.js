@@ -42,18 +42,21 @@ async function fetchPhotosForPost(IdPost) {
 
 async function displayPost(post, container, templateHead, templateBody) {
     try {
-        container.innerHTML = ''; // Clear previous results
-        // Format the timestamp
         const formattedTimestamp = formatTimestamp(post.TimestampPubblicazione);
+
+        console.log('Displaying post:', post.IdPost);
+        console.log('Description:', post.Descrizione);
+
 
         // Replace placeholders in the header template
         const postHeader = templateHead.replace(/{{Username}}/g, post.Username)
                                        .replace(/{{fotoprofilo}}/g, post.fotoprofilo)
-                                       .replace(/{{citta}}/g, post.NomeCitta)
-                                       .replace(/{{provincia}}/g, post.ProvinciaCitta)
-                                       .replace(/{{stato}}/g, post.StatoCitta)
+                                       .replace(/{{citta}}/g, post.PostCity)
+                                       .replace(/{{provincia}}/g, post.PostState)
+                                       .replace(/{{stato}}/g, post.PostCountry)
                                        .replace(/{{Timestamp}}/g, formattedTimestamp)
                                        .replace(/{{IdPost}}/g, post.IdPost)
+                                       .replace(/{{Descrizione}}/g, post.Descrizione)
 
         // Create a container for the post
         const postContainer = document.createElement('div');

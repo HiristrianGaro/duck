@@ -42,29 +42,10 @@ if ($querySelect && $IdPost) {
 }
 
 
-$stmt = $cid->prepare($sql);
-
-
-$stmt->bind_param($types, ...$params);
-
-
-$stmt->execute();
-
-
-$result = $stmt->get_result();
-
-
-$data = array();
-while ($row = $result->fetch_assoc()) {
-    $data[] = $row;
-}
-    header('Content-Type: application/json');
-    echo json_encode($data);
-    error_log("Returning data: " . json_encode($data));
-
-
-    $stmt->close();
-    exit();
+header('Content-Type: application/json');
+echo json_encode($data);
+error_log("Returning data: " . json_encode($data));
+exit();
 ?>
 
 
