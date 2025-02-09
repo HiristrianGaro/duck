@@ -4,7 +4,7 @@ include '../errorLogging.php';
 include '../common/connection.php';
 $searchTerm = isset($_GET['term']) ? $_GET['term'] : '';
 
-//Per la ricerca tramite la searchbar
+//Per la ricerca tramite la searchbar v
 
     if ($searchTerm !== '') {
         $sql = "SELECT username, IndirizzoEmail, Nome, Cognome, PosizioneFileSystemFotoProf
@@ -39,3 +39,4 @@ $searchTerm = isset($_GET['term']) ? $_GET['term'] : '';
 
 $cid->close();
 ?>
+
