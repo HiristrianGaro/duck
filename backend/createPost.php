@@ -4,7 +4,16 @@ include 'imagecrop.php';
 include '../common/connection.php';
 include 'addCity.php';
 
-createPost();
+$files_to_upload = $_FILES['filesToUpload'];
+
+if (empty($files_to_upload['name'][0])) {
+    error_log("No files uploaded");
+    echo json_encode([
+        'status' => 'error',
+        'message' => 'No files uploaded!',
+    ]);
+    exit();
+}
 error_log(POST_DIR);
 
 function createPost() {
@@ -94,15 +103,6 @@ function addFotoPost($AutorePostEmail, $timestamp) {
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if (isset($_FILES['filesToUpload'])) {
             $files_to_upload = $_FILES['filesToUpload'];
-
-            if (empty($files_to_upload['name'][0])) {
-                error_log("No files uploaded");
-                echo json_encode([
-                    'status' => 'error',
-                    'message' => 'No files uploaded!',
-                ]);
-                exit();
-            }
 
             $errorArray = [];
             for ($i = 0; $i < count($files_to_upload['name']); $i++) {

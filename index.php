@@ -11,8 +11,6 @@
 <?php include "frontend/header.html"; ?>
 
 <body>
-
-
     <?php include "frontend/navbar.php"; ?>
     <?php include "frontend/items/searchCollapse.html"; ?>
 

@@ -33,7 +33,6 @@ async function renderComments(comments, parentElement, IdParent = null, level = 
             renderComments(comments, repliesContainer, comment.IdCommento, level + 1);
         });
 }
-// Function to create a comment element
 function createCommentElement(comment, hasReplies, level) {
     const commentDiv = document.createElement("div");
     commentDiv.className = "comment";
