@@ -42,7 +42,15 @@ function displayErrors(response) {
 $('#addPostForm').on('submit', function (e) {
     e.preventDefault();
     const formData = new FormData(this);
-    console.log('Form data:', formData);
+    
+    var country = $('#country').find(":selected").text();
+    var state = $('#state').find(":selected").text();
+    var city = $('#city').find(":selected").text();
+
+    formData.set('Country', country);
+    formData.set('State', state);
+    formData.set('City', city);
+
     $.ajax({
         url: 'backend/createPost.php',
         method: 'POST',

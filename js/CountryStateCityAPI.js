@@ -26,17 +26,17 @@ const fetchData = async (endpoint) => {
  */
 const populateSelect = (selectElement, data, valueKey, textKey) => {
     selectElement.innerHTML = '';
-    const defaultOption = document.createElement('option');
-    defaultOption.value = '';
-    defaultOption.disabled = true;
-    defaultOption.selected = true;
-    defaultOption.textContent = 'Select a country';
-    selectElement.appendChild(defaultOption);
+    const option = document.createElement('option');
+    option.value = '';
+    option.disabled = true;
+    option.selected = true;
+    selectElement.appendChild(option);
 
     data.forEach((item) => {
         const option = document.createElement('option');
         option.value = item[valueKey];
         option.textContent = item[textKey];
+        option.setAttribute('text-data', item[textKey]);
         selectElement.appendChild(option);
     });
 
