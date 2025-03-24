@@ -45,18 +45,18 @@ async function displayPost(post, container, templateHead, templateBody) {
         const formattedTimestamp = formatTimestamp(post.TimestampPubblicazione);
 
         console.log('Displaying post:', post.IdPost);
-        console.log('Description:', post.Descrizione);
+        console.log('Description:', post.testo);
 
 
         // Replace placeholders in the header template
         const postHeader = templateHead.replace(/{{Username}}/g, post.Username)
-                                       .replace(/{{fotoprofilo}}/g, post.fotoprofilo)
-                                       .replace(/{{citta}}/g, post.PostCity)
-                                       .replace(/{{provincia}}/g, post.PostState)
-                                       .replace(/{{stato}}/g, post.PostCountry)
+                                       .replace(/{{PosizioneFileSystemFotoProf}}/g, post.PosizioneFileSystemFotoProf)
+                                       .replace(/{{citta}}/g, post.Citta)
+                                       .replace(/{{provincia}}/g, post.Provincia)
+                                       .replace(/{{stato}}/g, post.Regione)
                                        .replace(/{{Timestamp}}/g, formattedTimestamp)
                                        .replace(/{{IdPost}}/g, post.IdPost)
-                                       .replace(/{{Descrizione}}/g, post.Descrizione)
+                                       .replace(/{{testo}}/g, post.testo)
 
         // Create a container for the post
         const postContainer = document.createElement('div');
@@ -128,7 +128,7 @@ function populateCarousel(templateBody, photos) {
     carouselInner.innerHTML = photos
         .map((photo, index) => 
             `<div class="carousel-item ${index === 0 ? 'active' : ''}">
-                <img src="${photo.PosizioneFile}" class="d-block w-100 rounded" alt="Slide ${index + 1}">
+                <img src="${photo.PosizioneFileSystem}" class="d-block w-100 rounded" alt="Slide ${index + 1}">
             </div>`)
         .join('');
 

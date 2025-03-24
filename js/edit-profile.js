@@ -31,8 +31,8 @@ async function displayProfileData(userData) {
     console.log('Displaying profile data:', user.Username);
 
     const profileForm = document.getElementById('EditForm');
-    console.log(user.Fotoprofilo);
-    document.getElementById['CurrentProfileImage'].src = user.Fotoprofilo;
+    console.log(user.PosizioneFileSystemFotoProf);
+    document.getElementById['CurrentProfileImage'].src = user.PosizioneFileSystemFotoProf;
     profileForm.elements['EditUsername'].value = user.Username;
     profileForm.elements['EditName'].value = user.Nome;
     profileForm.elements['EditSurname'].value = user.Cognome;

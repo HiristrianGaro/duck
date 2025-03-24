@@ -56,7 +56,7 @@ async function displayFriends(data, containerId, buttonType, buttonStatus) {
             if (friendData && friendData.length > 0) {
                 const userDetails = friendData[0];
                 return template
-                    .replace('{{fotoprofilo}}', userDetails.fotoprofilo)
+                    .replace('{{PosizioneFileSystemFotoProf}}', userDetails.PosizioneFileSystemFotoProf)
                     .replace(/{{Username}}/g, userDetails.username)
                     .replace('{{buttonType}}', buttonType)
                     .replace(/{{Status}}/g, buttonStatus);

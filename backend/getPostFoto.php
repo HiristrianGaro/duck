@@ -1,14 +1,13 @@
 <?php
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
-include '../config.php';
+include '../errorLogging.php';
 include '../common/connection.php';
 include '../common/funzioni.php';
 $IdPost = isset($_GET['IdPost']) ? $_GET['IdPost'] : '';
 $attr = array($IdPost);
 
-$sql = "SELECT IdFoto, NomeFile, PosizioneFile FROM foto
-        WHERE IdPost = ?
-        ORDER BY IdFoto DESC;";
+$sql = "SELECT PosizioneFileSystem FROM foto
+        WHERE IdPost = ?";
 
 list($result, $data) = getQuery($cid, $sql, $attr, 's');
 if ($result) {

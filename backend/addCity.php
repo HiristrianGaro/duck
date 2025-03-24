@@ -1,5 +1,5 @@
 <?php
-include '../config.php';
+include '../errorLogging.php';
 include '../common/connection.php';
 
 //Script ancora da far funzionare. Vogliamo capire come interfacciarci con l'API per prelevare le informazioni necessarie
@@ -9,7 +9,7 @@ function checkCity($Country, $State, $City) {
     global $cid;
     error_log($Country . $State . $City);
     $sql = "SELECT COUNT(*) count FROM Location 
-            WHERE Country = ? AND State =  ? AND City = ?";
+            WHERE Regione = ? AND Provincia =  ? AND Citta = ?";
 
     $stmt = $cid->prepare($sql);
 
@@ -24,7 +24,7 @@ function checkCity($Country, $State, $City) {
 
 
     if (!$result->num_rows > 0) {
-        $sql = "INSERT INTO Location (Country, State, City) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO LOCATION (Regione, Provincia, Citta) VALUES (?, ?, ?)";
 
         $stmt = $cid->prepare($sql);
 

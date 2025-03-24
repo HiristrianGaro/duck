@@ -1,13 +1,13 @@
 <?php
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
-include '../config.php';
+include '../errorLogging.php';
 include '../common/connection.php';
 $searchTerm = isset($_GET['term']) ? $_GET['term'] : '';
 
 //Per la ricerca tramite la searchbar
 
     if ($searchTerm !== '') {
-        $sql = "SELECT username, IndirizzoEmail, Nome, Cognome, fotoprofilo
+        $sql = "SELECT username, IndirizzoEmail, Nome, Cognome, PosizioneFileSystemFotoProf
                 FROM utente 
                 WHERE username LIKE ? 
                 OR IndirizzoEmail LIKE ? 

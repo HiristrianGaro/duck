@@ -1,5 +1,5 @@
 <?php
-
+include '../errorLogging.php';
 //Vogliamo estendere questa parte di image processing per poter creare thumbnails di varie dimensioni per le foto profilo
 
 function cropImageToAspectRatioGD($inputPath, $outputPath, $aspectWidth, $aspectHeight) {

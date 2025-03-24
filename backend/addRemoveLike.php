@@ -1,11 +1,11 @@
 <?php
 if (session_status() !== PHP_SESSION_ACTIVE) session_start();
-include '../config.php';
+include '../errorLogging.php';
 include '../common/funzioni.php';
 include '../common/connection.php';
 
 $querySelect = $_GET['action'] ?? '';
-$Username = $_SESSION['Username'] ?? '';
+$Username = $_SESSION['IndirizzoEmail'] ?? '';
 $PostId = $_GET['IdPost'] ?? '';
 
 error_log("querySelect: $querySelect");
@@ -21,7 +21,7 @@ if ($querySelect) {
     switch ($querySelect) {
         
         case 'AddLike':
-        $sql = "INSERT INTO PostLikes (IdPost, Username) VALUES (?, ?);";
+        $sql = "INSERT INTO PostLikes (IdPost, UtenteLikeP) VALUES (?, ?);";
         $types = 'ss';
         $params = [$PostId, $Username];
         break;
@@ -29,7 +29,7 @@ if ($querySelect) {
         case 'RemoveLike':
         $sql = "
             DELETE FROM PostLikes
-            WHERE IdPost = ? AND Username = ?;
+            WHERE IdPost = ? AND UtenteLikeP = ?;
         ";
         $types = 'ss';
         $params = [$PostId, $Username];
