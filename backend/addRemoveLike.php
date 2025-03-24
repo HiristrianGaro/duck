@@ -6,7 +6,11 @@ include '../common/connection.php';
 
 $querySelect = $_GET['action'] ?? '';
 $Username = $_SESSION['Username'] ?? '';
-$PostId = $_GET['PostId'] ?? '';
+$PostId = $_GET['IdPost'] ?? '';
+
+error_log("querySelect: $querySelect");
+error_log("Username: $Username");
+error_log("PostId: $PostId");
 
 
 if ($querySelect) {
@@ -44,7 +48,7 @@ if ($querySelect) {
 }
 
 list($result, $data) = getQuery($cid, $sql, $params, $types);
-echo json_encode($result);
+echo json_encode(['status' => 'success', 'message' => 'Successfully added or removed like!']);
 // Close the connection
 $cid->close();
 ?>

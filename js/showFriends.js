@@ -73,13 +73,13 @@ async function displayFriends(data, containerId, buttonType, buttonStatus) {
 }
 
 function displaySuggestedFriends(data) {
-    displayFriends(data, 'SuggestedFriendsListId', 'btn-success', 'Add');
+    displayFriends(data, 'SuggestedFriendsListId', 'btn-success btn-sm', 'Add');
 }
 function displayCurrentFriends(data) {
-    displayFriends(data, 'CurrentFriendsListId', 'btn-danger', 'Remove');
+    displayFriends(data, 'CurrentFriendsListId', 'btn-danger btn-sm', 'Remove');
 }
 function displayFriendRequests(data) {
-    displayFriends(data, 'FriendRequestsListId', 'btn-success', 'Accept');
+    displayFriends(data, 'FriendRequestsListId', 'btn-success btn-sm', 'Accept');
 }
 
 function navigateToUserProfile(username) {

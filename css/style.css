@@ -45,19 +45,13 @@ width:500px;
 
 
 .navbar-sticky {
-  z-index: 1030;
   position: sticky;
   top: 0;
 }
 
 .search-sticky {
-  z-index: 9999;
   position: sticky;
   top: 75;
-}
-
-.container-z-index {
-  z-index: 1;
 }
 
 
@@ -382,6 +376,7 @@ width:500px;
   height: 100%;;
 }
 
+
 .post-image {
   width: 100px;
   height: 100px;
@@ -535,4 +530,18 @@ width:500px;
 .toggle-replies .toggle-replies-btn {
   outline: none !important;
 
+}
+
+#CurrentFriendsListId {
+  display: grid;
+  grid-template-columns: minmax(0, max-content);
+}
+
+.like-button .unlike-button {
+  border-radius: 50%;
+  background-color: white;
+}
+.like-button:hover, .unlike-button:hover {
+  background-color: red;
+  color: white;
 }

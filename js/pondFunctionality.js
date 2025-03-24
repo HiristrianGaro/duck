@@ -60,7 +60,7 @@ async function displayPost(post, container, templateHead, templateBody) {
 
         // Create a container for the post
         const postContainer = document.createElement('div');
-        postContainer.className = 'post-container';
+        postContainer.className = 'post-container m-2';
         postContainer.setAttribute('id', post.IdPost)
         postContainer.innerHTML = postHeader;
 
@@ -153,26 +153,37 @@ function populateCarousel(templateBody, photos) {
     return carouselElement.outerHTML;
 }
 
-function addRemoveLike(IdPost) {
-    if (!IdPost.length) return;
+async function addRemoveLike(event) {
+    try {
+        const button = event.target;
+        const action = $(event).data('action');
+        const IdPost = $(event).data('idpost');
 
-    fetch(`backend/addRemoveFriend.php?ricevente=${encodeURIComponent(username)}&action=${encodeURIComponent(action)}`)
-        .then(response => {
-            if (!response.ok) throw new Error('Network response was not ok');
-            return response.json();
-        })
-        .then(data => {
-            checkFriendship(username);
+        console.log(this);
+
+        console.log('Adding/removing like:', IdPost, action);
+
+        const response = await fetch(`backend/addRemoveLike.php?IdPost=${encodeURIComponent(IdPost)}&action=${encodeURIComponent(action)}`);
         
-        })
-        .catch(error => console.error('Error adding/removing friend:', error));
+        if (!response.ok) throw new Error('Network response was not ok');
+        
+        const data = await response.json();
+        console.log('Like added/removed:', data);
+        event.style.display = 'none';
+        if (data.status = 'success') {
+           if (action == 'AddLike') {
+                event.nextElementSibling.style.display = 'inline';
+              } else {  
+                event.previousElementSibling.style.display= 'inline';
+              }
+        }
+    } catch (error) {
+        console.error('Error adding/removing like:', error);
+    }
 }
 
-function likeAction(event) {
-    const button = event.target;
-    const action = button.getAttribute('data-post');
-    addRemoveFriend(username, action)
-}
+
+
 
 
 function setupIntersectionObserver() {
