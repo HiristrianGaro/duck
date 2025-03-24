@@ -1,6 +1,6 @@
 <?php
 if (session_status() !== PHP_SESSION_ACTIVE) session_start();
-include '../config.php';
+include '../errorLogging.php';
 include '../common/funzioni.php';
 include '../common/connection.php';
 
@@ -19,13 +19,8 @@ if ($querySelect && $Richiedente) {
         
         case 'Add':
         $sql = "
-            INSERT INTO RichiedeAmicizia (RichiedenteEmail, RiceventeEmail, DataRichiesta, Accettazione)
-            VALUES (
-            ?,
-            (SELECT IndirizzoEmail FROM Utente WHERE Username = ?),
-            ?,
-            'In Attesa'
-            );
+            INSERT INTO richiede_amicizia (UtenteRichiedente, UtenteRicevente, DataRichiesta, DataAccettazione)
+            VALUES (?, (SELECT IndirizzoEmail FROM Utente WHERE Username = ?), ?, NULL);
         ";
         $types = 'sss';
         $params = [$Richiedente, $Ricevente, $date];
@@ -33,11 +28,11 @@ if ($querySelect && $Richiedente) {
 
         case 'Remove':
         $sql = "
-            DELETE FROM RichiedeAmicizia
-            WHERE ((RichiedenteEmail = ?
-                AND RiceventeEmail = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?))
-               OR (RichiedenteEmail = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
-                   AND RiceventeEmail = ?));
+            DELETE FROM richiede_amicizia
+            WHERE ((UtenteRichiedente = ?
+                AND UtenteRicevente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?))
+               OR (UtenteRichiedente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
+                   AND UtenteRicevente = ?));
         ";
         $types = 'ssss';
         $params = [$Richiedente, $Ricevente, $Ricevente, $Richiedente];
@@ -45,12 +40,11 @@ if ($querySelect && $Richiedente) {
 
         case 'Accept':
         $sql = "
-            UPDATE RichiedeAmicizia ra
-            SET ra.Accettazione = 'Accettato',
-            ra.DataRichiesta = ?
-            WHERE ra.RichiedenteEmail = (SELECT u.IndirizzoEmail FROM Utente u WHERE u.Username = ?)
-              AND ra.RiceventeEmail = ?;
-        ";
+            UPDATE richiede_amicizia ra
+            SET ra.DataAccettazione = '?'
+            WHERE ra.UtenteRichiedente = (SELECT u.IndirizzoEmail FROM Utente u WHERE u.Username = ?)
+              AND ra.UtenteRicevente = ?;";
+              
         $types = 'sss';
         $params = [$date, $Ricevente, $Richiedente];
         break;
@@ -69,8 +63,7 @@ if ($querySelect && $Richiedente) {
 
 list($result, $data) = getQuery($cid, $sql, $params, $types);
 if (!$result) {
-    echo json_encode(['status' => 'error', 'message' => 'Failed to get post foto']);
-    error_log("Failed to get post foto");
+    echo json_encode(['status' => 'error', 'action' => $querySelect, 'message' => 'Failed to Friends actions']);
     exit();
 }
 

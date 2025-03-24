@@ -1,5 +1,5 @@
 <?php
-include "../config.php";
+include '../errorLogging.php';
 include "connection.php";
 
 function checkDB($cid){

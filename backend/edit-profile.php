@@ -1,7 +1,7 @@
 <?php
 
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
-include '../config.php';
+include '../errorLogging.php';
 include '../common/connection.php';
 include '../common/funzioni.php';
 

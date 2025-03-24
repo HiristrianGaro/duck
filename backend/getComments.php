@@ -1,6 +1,6 @@
 <?php
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
-include '../config.php';
+include '../errorLogging.php';
 include '../common/connection.php';
 include '../common/funzioni.php';
 
@@ -19,7 +19,7 @@ if ($querySelect && $IdPost) {
         switch ($querySelect) {
             case 'getComments':
                 error_log('Query: getComments for IdPost: ' . $IdPost);
-                $sql = "SELECT * FROM commento WHERE IdPost = ? ORDER BY TimestampPubblicazione DESC;";
+                $sql = "SELECT * FROM commento WHERE IdPost = ?";
 
 
                 $params = [$IdPost];

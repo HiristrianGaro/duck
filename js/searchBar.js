@@ -36,7 +36,7 @@ async function displayUserResults(data) {
         const usersHtml = data.map(user => {
             const userHtml = template
                 .replace(/{{Username}}/g, user.username)
-                .replace(/{{profilepicture}}/g, user.fotoprofilo);
+                .replace(/{{profilepicture}}/g, user.PosizioneFileSystemFotoProf);
 
             const userElement = document.createElement('div');
             userElement.innerHTML = userHtml;

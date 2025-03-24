@@ -1,4 +1,6 @@
 <?php
+include '../errorLogging.php';
+
 $type = isset($_GET['type']) ? $_GET['type'] : '';
 $IdPost = isset($_GET['IdPost']) ? $_GET['IdPost'] : '';
 $IndirizzoEmail = $_SESSION['IndirizzoEmail'];

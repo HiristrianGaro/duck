@@ -1,6 +1,6 @@
 <?php
 if (session_status() !== PHP_SESSION_ACTIVE) session_start();
-include '../config.php';
+include '../errorLogging.php';
 include '../common/connection.php';
 include '../common/funzioni.php';
 
@@ -25,40 +25,40 @@ try {
         WITH Friends AS (
             SELECT 
                 CASE 
-                    WHEN RA.RichiedenteEmail = ? THEN RA.RiceventeEmail
-                    ELSE RA.RichiedenteEmail 
+                    WHEN RA.UtenteRichiedente = ? THEN RA.UtenteRicevente
+                    ELSE RA.UtenteRichiedente 
                 END AS FriendEmail
-            FROM RichiedeAmicizia RA
-            WHERE RA.Accettazione = 'Accettato' OR RA.Accettazione = 'In Attesa'
-              AND ? IN (RA.RichiedenteEmail, RA.RiceventeEmail)
+            FROM richiede_amicizia RA
+            WHERE RA.DataRichiesta IS NOT NULL OR RA.DataAccettazione IS NOT NULL
+              AND ? IN (RA.UtenteRichiedente, RA.UtenteRicevente)
         ),
         MutualFriends AS (
             SELECT
                 CASE 
-                    WHEN RA.RichiedenteEmail != F.FriendEmail THEN RA.RichiedenteEmail
-                    ELSE RA.RiceventeEmail
+                    WHEN RA.UtenteRichiedente != F.FriendEmail THEN RA.UtenteRichiedente
+                    ELSE RA.UtenteRicevente
                 END AS SuggestedFriend,
                 COUNT(*) AS MutualFriendCount
             FROM Friends F
-            JOIN RichiedeAmicizia RA 
-                ON (F.FriendEmail = RA.RichiedenteEmail OR F.FriendEmail = RA.RiceventeEmail)
-            WHERE RA.Accettazione = 'Accettato'
-              AND ? NOT IN (RA.RichiedenteEmail, RA.RiceventeEmail)
+            JOIN richiede_amicizia RA 
+                ON (F.FriendEmail = RA.UtenteRichiedente OR F.FriendEmail = RA.UtenteRicevente)
+            WHERE RA.DataAccettazione IS NOT NULL
+              AND ? NOT IN (RA.UtenteRichiedente, RA.UtenteRicevente)
             GROUP BY SuggestedFriend
         ),
         PopularUsers AS (
             SELECT 
                 u.IndirizzoEmail AS Email,
                 u.Username,
-                u.FotoProfilo,
+                u.PosizioneFileSystemFotoProf,
                 COUNT(CASE 
-                    WHEN ra.RichiedenteEmail = u.IndirizzoEmail THEN ra.RiceventeEmail
-                    WHEN ra.RiceventeEmail = u.IndirizzoEmail THEN ra.RichiedenteEmail
+                    WHEN ra.UtenteRichiedente = u.IndirizzoEmail THEN ra.UtenteRicevente
+                    WHEN ra.UtenteRicevente = u.IndirizzoEmail THEN ra.UtenteRichiedente
                 END) AS FriendCount
             FROM Utente u
-            LEFT JOIN RichiedeAmicizia ra 
-                ON u.IndirizzoEmail IN (ra.RichiedenteEmail, ra.RiceventeEmail)
-            WHERE ra.Accettazione = 'Accettato'
+            LEFT JOIN richiede_amicizia ra 
+                ON u.IndirizzoEmail IN (ra.UtenteRichiedente, ra.UtenteRicevente)
+            WHERE RA.DataAccettazione IS NOT NULL
             GROUP BY u.IndirizzoEmail
             ORDER BY FriendCount DESC
             LIMIT 8
@@ -71,10 +71,10 @@ try {
         JOIN Utente U ON MF.SuggestedFriend = U.IndirizzoEmail
         WHERE NOT EXISTS (
             SELECT 1
-            FROM RichiedeAmicizia RA
+            FROM richiede_amicizia RA
             WHERE (
-                (RA.RichiedenteEmail = ? AND RA.RiceventeEmail = MF.SuggestedFriend) OR
-                (RA.RichiedenteEmail = MF.SuggestedFriend AND RA.RiceventeEmail = ?)
+                (RA.UtenteRichiedente = ? AND RA.UtenteRicevente = MF.SuggestedFriend) OR
+                (RA.UtenteRichiedente = MF.SuggestedFriend AND RA.UtenteRicevente = ?)
             )
         )
         UNION
@@ -94,17 +94,17 @@ try {
 
     } elseif ($querySelect === 'CurrentFriends') {
         $sql = "
-            SELECT DISTINCT u2.Username, u2.FotoProfilo
+            SELECT DISTINCT u2.Username, u2.PosizioneFileSystemFotoProf
             FROM Utente u1
-            JOIN RichiedeAmicizia ra 
-                ON u1.IndirizzoEmail = ra.RichiedenteEmail OR u1.IndirizzoEmail = ra.RiceventeEmail
+            JOIN richiede_amicizia ra 
+                ON u1.IndirizzoEmail = ra.UtenteRichiedente OR u1.IndirizzoEmail = ra.UtenteRicevente
             JOIN Utente u2 
                 ON (
-                    (ra.RichiedenteEmail = u2.IndirizzoEmail AND ra.RiceventeEmail = u1.IndirizzoEmail)
-                    OR (ra.RiceventeEmail = u2.IndirizzoEmail AND ra.RichiedenteEmail = u1.IndirizzoEmail)
+                    (ra.UtenteRichiedente = u2.IndirizzoEmail AND ra.UtenteRicevente = u1.IndirizzoEmail)
+                    OR (ra.UtenteRicevente = u2.IndirizzoEmail AND ra.UtenteRichiedente = u1.IndirizzoEmail)
                 )
             WHERE u1.IndirizzoEmail = ?
-              AND ra.Accettazione = 'Accettato'
+              AND RA.DataAccettazione IS NOT NULL
               AND u2.IndirizzoEmail != ?;
         ";
         $types = 'ss';
@@ -114,14 +114,15 @@ try {
         $sql = "
             SELECT 
                 u.Username, 
-                u.FotoProfilo
+                u.PosizioneFileSystemFotoProf
             FROM 
-                RichiedeAmicizia ra
+                richiede_amicizia ra
             JOIN 
-                Utente u ON ra.RichiedenteEmail = u.IndirizzoEmail
+                Utente u ON ra.UtenteRichiedente = u.IndirizzoEmail
             WHERE 
-                ra.RiceventeEmail = ?
-                AND ra.Accettazione = 'In Attesa';
+                ra.UtenteRicevente = ?
+                AND RA.DataRichiesta IS NOT NULL
+                AND RA.DataAccettazione IS NULL
         ";
         $types = 's';
         $params = [$searchParam];
