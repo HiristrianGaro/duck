@@ -8,8 +8,6 @@ if (isset($_GET['user'])) {
 } else {
     $searchParam = $_SESSION['IndirizzoEmail'];
 }
-
-
 $querySelect = isset($_GET['term']) ? $_GET['term'] : '';
 
 

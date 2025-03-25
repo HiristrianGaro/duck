@@ -40,12 +40,32 @@ async function fetchPhotosForPost(IdPost) {
     }
 }
 
+function checkLikes(IdPost) {
+    fetch(`backend/checkLikes.php?IdPost=${encodeURIComponent(IdPost)}`)
+    .then(response => {
+        console.timeEnd(`fetch${type}`);
+        if (!response.ok) {
+            console.error(`Failed response for ${type}:`, response);
+            throw new Error(`Network response for ${type} was not ok`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log(`Fetched ${type} data:`, data);
+        return data.LikeStatus
+    })
+    .catch(error => console.error(`Error fetching ${type.toLowerCase()}:`, error));
+}
+
 async function displayPost(post, container, templateHead, templateBody) {
     try {
         const formattedTimestamp = formatTimestamp(post.TimestampPubblicazione);
 
         console.log('Displaying post:', post.IdPost);
         console.log('Description:', post.testo);
+
+        let LikeStatus = checkLikes(post.IdPost);
+
 
 
         // Replace placeholders in the header template
@@ -58,6 +78,7 @@ async function displayPost(post, container, templateHead, templateBody) {
                                        .replace(/{{IdPost}}/g, post.IdPost)
                                        .replace(/{{testo}}/g, post.testo)
 
+        
         // Create a container for the post
         const postContainer = document.createElement('div');
         postContainer.className = 'post-container m-2';
