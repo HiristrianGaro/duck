@@ -1,36 +1,32 @@
 <?php
-if(session_status() !== PHP_SESSION_ACTIVE) session_start();
+
 include '../errorLogging.php';
 include '../common/connection.php';
 include '../common/funzioni.php';
+if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 
 $IdPost = isset($_GET['IdPost']) ? $_GET['IdPost'] : '';
-$querySelect = isset($_GET['term']) ? $_GET['term'] : '';
+$Utente = $_SESSION['IndirizzoEmail'] ?? '';
+
+error_log('checking likes...');
 
 
-if ($querySelect && $IdPost) {
+if ($IdPost) {
     
     try {
 
-        $sql = '';
-        $params = [];
-        $types = '';
-
-        switch ($querySelect) {
-            case 'getComments':
-                error_log('Query: getComments for IdPost: ' . $IdPost);
-                $sql = "SELECT * FROM commento WHERE IdPost = ?";
+        $sql = "SELECT
+            CASE WHEN EXISTS (
+            SELECT * FROM PostLikes WHERE IdPost = ? AND UtenteLikeP = ?)
+            THEN 'TRUE'
+            ELSE 'FALSE'
+            END AS LikeStatus";
 
 
-                $params = [$IdPost];
-                $types = 's';
-                break;
+        $params = [$IdPost, $Utente];
+        $types = "ss";
 
-            default:
-            error_log('Query: Default');
-                $data = ['ciaoo'];
-                break;
-        }
+
     } catch (Exception $e) {
 
         error_log("Error: " . $e->getMessage());

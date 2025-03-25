@@ -1,6 +1,6 @@
 <?php
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
-include '../config.php';
+include '../errorLogging.php';
 include '../common/connection.php';
 include '../common/funzioni.php';
 if (isset($_GET['user'])) {
@@ -22,15 +22,15 @@ if ($querySelect && $searchParam) {
         switch ($querySelect) {
             case 'Friends':
                 error_log('Query: Friends for ' . $searchParam);
-                $sql = "SELECT IdPost, u.Username, IndirizzoEmail, TimestampPubblicazione, Descrizione, PostCity, PostState, PostCountry, fotoprofilo
+                $sql = "SELECT IdPost, u.Username, IndirizzoEmail, TimestampPubblicazione, testo, PostCitta, PostProvincia, PostRegione, PosizioneFileSystemFotoProf
                         FROM Post p
-                        JOIN Utente u ON p.AutorePostEmail = u.IndirizzoEmail
-                        JOIN RichiedeAmicizia r ON (
-                            (r.RichiedenteEmail = ? AND r.RiceventeEmail = u.IndirizzoEmail)
+                        JOIN Utente u ON p.Utente = u.IndirizzoEmail
+                        JOIN richiede_amicizia r ON (
+                            (r.UtenteRichiedente = ? AND r.UtenteRicevente = u.IndirizzoEmail)
                             OR
-                            (r.RiceventeEmail = ? AND r.RichiedenteEmail = u.IndirizzoEmail)
+                            (r.UtenteRicevente = ? AND r.UtenteRichiedente = u.IndirizzoEmail)
                         )
-                        WHERE r.Accettazione = 'Accettato'
+                        WHERE r.DataAccettazione IS NOT NULL
                         ORDER BY p.TimestampPubblicazione DESC;";
 
 
@@ -49,7 +49,7 @@ if ($querySelect && $searchParam) {
                     FROM foto f1
                     WHERE f1.IdPost = p.IdPost
                 )
-                WHERE p.AutorePostEmail = (
+                WHERE p.Utente = (
                     SELECT IndirizzoEmail 
                     FROM utente 
                     WHERE username = ?
@@ -61,15 +61,15 @@ if ($querySelect && $searchParam) {
                 $types = 's';
                 break;
             case 'SinglePost':
-                $sql = "SELECT IdPost, u.Username, IndirizzoEmail, TimestampPubblicazione, Descrizione, PostCity, PostState, PostCountry, fotoprofilo
+                $sql = "SELECT IdPost, u.Username, IndirizzoEmail, TimestampPubblicazione, testo, PostCitta, PostProvincia, PostRegione, PosizioneFileSystemFotoProf
                         FROM Post p
-                        JOIN Utente u ON p.AutorePostEmail = u.IndirizzoEmail
-                        JOIN RichiedeAmicizia r ON (
-                            (r.RichiedenteEmail = ? AND r.RiceventeEmail = u.IndirizzoEmail)
+                        JOIN Utente u ON p.Utente = u.IndirizzoEmail
+                        JOIN richiede_amicizia r ON (
+                            (r.UtenteRichiedente = ? AND r.UtenteRicevente = u.IndirizzoEmail)
                             OR
-                            (r.RiceventeEmail = ? AND r.RichiedenteEmail = u.IndirizzoEmail)
+                            (r.UtenteRicevente = ? AND r.UtenteRichiedente = u.IndirizzoEmail)
                         )
-                        WHERE r.Accettazione = 'Accettato'
+                        WHERE r.DataAccettazione IS NOT NULL
                         ORDER BY p.TimestampPubblicazione DESC;";
 
             default:

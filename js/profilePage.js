@@ -70,7 +70,7 @@ async function displayProfileResults(data) {
         const user = data[0]; // Assuming only one user profile is fetched
 
         const userHtml = template
-            .replace(/{{profilepicture}}/g, sanitizeInput(user.fotoprofilo))
+            .replace(/{{profilepicture}}/g, sanitizeInput(user.PosizioneFileSystemFotoProf))
             .replace(/{{Username}}/g, sanitizeInput(user.username))
             .replace(/{{Gender}}/g, sanitizeInput(user.gender));
 

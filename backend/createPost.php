@@ -1,5 +1,6 @@
 <?php
 if (session_status() !== PHP_SESSION_ACTIVE) session_start();
+include '../errorLogging.php';
 include 'imagecrop.php';
 include '../common/connection.php';
 include 'addCity.php';
@@ -20,7 +21,7 @@ function createPost() {
     global $cid; // Ensure $cid is accessible
 
     error_log('Creating Post');
-    $AutorePostEmail = $_SESSION['IndirizzoEmail'];
+    $Utente = $_SESSION['IndirizzoEmail'];
     $Description = isset($_POST['Description']) ? $_POST['Description'] : '';
     $timestamp = date('Y-m-d H:i:s');
     $NomeCitta = isset($_POST['City']) ? $_POST['City'] : '';
@@ -28,7 +29,7 @@ function createPost() {
     $ProvinciaCitta = isset($_POST['State']) ? $_POST['State'] : '';
     error_log(print_r($_POST, true));
     error_log('Creating Post');
-    error_log($AutorePostEmail);
+    error_log($Utente);
     error_log($timestamp);
     error_log($NomeCitta);
     error_log($StatoCitta);
@@ -42,7 +43,7 @@ function createPost() {
 
     
 
-    $sql = "INSERT INTO Post (AutorePostEmail, Descrizione, TimestampPubblicazione, PostCity, PostState, PostCountry) VALUES (?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO Post (Utente, testo, TimestampPubblicazione, Citta, Provincia, Regione) VALUES (?, ?, ?, ?, ?, ?)";
     $stmt = $cid->prepare($sql);
 
     if (!$stmt) {
@@ -50,7 +51,7 @@ function createPost() {
         die('Database error');
     }
 
-    $stmt->bind_param('ssssss', $AutorePostEmail, $Description, $timestamp, $NomeCitta, $ProvinciaCitta, $StatoCitta);
+    $stmt->bind_param('ssssss', $Utente, $Description, $timestamp, $NomeCitta, $ProvinciaCitta, $StatoCitta);
 
     error_log('Executing Query');
     if (!$stmt->execute()) {
@@ -61,17 +62,17 @@ function createPost() {
     $stmt->close();
     error_log('Post Created');
     error_log('Adding Foto to Post');
-    addFotoPost($AutorePostEmail, $timestamp);
+    addFotoPost($Utente, $timestamp);
 }
 
 
-//Verrà utilizzata per ottenere l'Id del post appena creato, sostituendo TimestampPubblicazione e AutorePostEmail
+//Verrà utilizzata per ottenere l'Id del post appena creato, sostituendo TimestampPubblicazione e Utente
 //quando cambieremo la struttura di foto rimuovendo questi ultimi
 
-function getPostId($AutorePostEmail, $timestamp) {
+function getPostId($Utente, $timestamp) {
     global $cid;
 
-    $sql = "SELECT IdPost FROM Post WHERE AutorePostEmail = ? AND TimestampPubblicazione = ?";
+    $sql = "SELECT IdPost FROM Post WHERE Utente = ? AND TimestampPubblicazione = ?";
     $stmt = $cid->prepare($sql);
 
     if (!$stmt) {
@@ -79,7 +80,7 @@ function getPostId($AutorePostEmail, $timestamp) {
         return false;
     }
 
-    $stmt->bind_param('ss', $AutorePostEmail, $timestamp);
+    $stmt->bind_param('ss', $Utente, $timestamp);
 
     if (!$stmt->execute()) {
         error_log("Execute failed: " . $stmt->error);
@@ -96,8 +97,8 @@ function getPostId($AutorePostEmail, $timestamp) {
     return false;
 }
 
-function addFotoPost($AutorePostEmail, $timestamp) {
-    $IdPost = getPostId($AutorePostEmail, $timestamp);
+function addFotoPost($Utente, $timestamp) {
+    $IdPost = getPostId($Utente, $timestamp);
     global $cid;
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {

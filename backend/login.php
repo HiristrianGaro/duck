@@ -1,7 +1,7 @@
 <?php
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 session_unset();
-include("../config.php");
+include '../errorLogging.php';
 include("../common/connection.php");
 
 $result = array();

@@ -1,6 +1,6 @@
 <?php
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
-include '../config.php';
+include '../errorLogging.php';
 include '../common/connection.php';
 error_log("Received search term: " . $_GET['username']);
 $CurrentUser = $_SESSION['Username'];
@@ -14,11 +14,11 @@ if ($UserToCheck === $CurrentUser) {
     exit();
 }
 
-$sql = "SELECT Accettazione FROM RichiedeAmicizia 
-        WHERE (RichiedenteEmail = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
-        AND RiceventeEmail = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)) 
-        OR (RichiedenteEmail = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
-        AND RiceventeEmail = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?))";
+$sql = "SELECT Accettazione FROM richiede_amicizia 
+        WHERE (UtenteRichiedente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
+        AND UtenteRicevente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)) 
+        OR (UtenteRichiedente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
+        AND UtenteRicevente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?))";
 
 $stmt = $cid->prepare($sql);
 

@@ -86,4 +86,4 @@ function toggleReplies(commentId) {
     }
 }
 
-getElementById("submit-comment").addEventListener("click", submitComment);
+// getElementById("submit-comment").addEventListener("click", submitComment);

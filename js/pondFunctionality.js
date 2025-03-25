@@ -40,27 +40,48 @@ async function fetchPhotosForPost(IdPost) {
     }
 }
 
+function checkLikes(IdPost) {
+    fetch(`backend/checkLikes.php?IdPost=${encodeURIComponent(IdPost)}`)
+    .then(response => {
+        console.timeEnd(`fetch${type}`);
+        if (!response.ok) {
+            console.error(`Failed response for ${type}:`, response);
+            throw new Error(`Network response for ${type} was not ok`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log(`Fetched ${type} data:`, data);
+        return data.LikeStatus
+    })
+    .catch(error => console.error(`Error fetching ${type.toLowerCase()}:`, error));
+}
+
 async function displayPost(post, container, templateHead, templateBody) {
     try {
         const formattedTimestamp = formatTimestamp(post.TimestampPubblicazione);
 
         console.log('Displaying post:', post.IdPost);
-        console.log('Description:', post.Descrizione);
+        console.log('Description:', post.testo);
+
+        let LikeStatus = checkLikes(post.IdPost);
+
 
 
         // Replace placeholders in the header template
         const postHeader = templateHead.replace(/{{Username}}/g, post.Username)
-                                       .replace(/{{fotoprofilo}}/g, post.fotoprofilo)
-                                       .replace(/{{citta}}/g, post.PostCity)
-                                       .replace(/{{provincia}}/g, post.PostState)
-                                       .replace(/{{stato}}/g, post.PostCountry)
+                                       .replace(/{{PosizioneFileSystemFotoProf}}/g, post.PosizioneFileSystemFotoProf)
+                                       .replace(/{{citta}}/g, post.Citta)
+                                       .replace(/{{provincia}}/g, post.Provincia)
+                                       .replace(/{{stato}}/g, post.Regione)
                                        .replace(/{{Timestamp}}/g, formattedTimestamp)
                                        .replace(/{{IdPost}}/g, post.IdPost)
-                                       .replace(/{{Descrizione}}/g, post.Descrizione)
+                                       .replace(/{{testo}}/g, post.testo)
 
+        
         // Create a container for the post
         const postContainer = document.createElement('div');
-        postContainer.className = 'post-container';
+        postContainer.className = 'post-container m-2';
         postContainer.setAttribute('id', post.IdPost)
         postContainer.innerHTML = postHeader;
 
@@ -128,7 +149,7 @@ function populateCarousel(templateBody, photos) {
     carouselInner.innerHTML = photos
         .map((photo, index) => 
             `<div class="carousel-item ${index === 0 ? 'active' : ''}">
-                <img src="${photo.PosizioneFile}" class="d-block w-100 rounded" alt="Slide ${index + 1}">
+                <img src="${photo.PosizioneFileSystem}" class="d-block w-100 rounded" alt="Slide ${index + 1}">
             </div>`)
         .join('');
 
@@ -153,26 +174,37 @@ function populateCarousel(templateBody, photos) {
     return carouselElement.outerHTML;
 }
 
-function addRemoveLike(IdPost) {
-    if (!IdPost.length) return;
+async function addRemoveLike(event) {
+    try {
+        const button = event.target;
+        const action = $(event).data('action');
+        const IdPost = $(event).data('idpost');
 
-    fetch(`backend/addRemoveFriend.php?ricevente=${encodeURIComponent(username)}&action=${encodeURIComponent(action)}`)
-        .then(response => {
-            if (!response.ok) throw new Error('Network response was not ok');
-            return response.json();
-        })
-        .then(data => {
-            checkFriendship(username);
+        console.log(this);
+
+        console.log('Adding/removing like:', IdPost, action);
+
+        const response = await fetch(`backend/addRemoveLike.php?IdPost=${encodeURIComponent(IdPost)}&action=${encodeURIComponent(action)}`);
         
-        })
-        .catch(error => console.error('Error adding/removing friend:', error));
+        if (!response.ok) throw new Error('Network response was not ok');
+        
+        const data = await response.json();
+        console.log('Like added/removed:', data);
+        event.style.display = 'none';
+        if (data.status = 'success') {
+           if (action == 'AddLike') {
+                event.nextElementSibling.style.display = 'inline';
+              } else {  
+                event.previousElementSibling.style.display= 'inline';
+              }
+        }
+    } catch (error) {
+        console.error('Error adding/removing like:', error);
+    }
 }
 
-function likeAction(event) {
-    const button = event.target;
-    const action = button.getAttribute('data-post');
-    addRemoveFriend(username, action)
-}
+
+
 
 
 function setupIntersectionObserver() {

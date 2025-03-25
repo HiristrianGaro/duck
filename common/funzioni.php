@@ -1,4 +1,5 @@
 <?php
+include '../errorLogging.php';
 include "connection.php";
 
 function checkDB($cid){
@@ -86,6 +87,35 @@ function getQuery($cid, $sql, $params, $types){
 					$stmt->close();
 				}
 
+				$stmt->close();
+			} else {
+				error_log("Errore nella preparazione dello statement: " . $cid->error);
+			}
+		} else {
+			error_log("Errore nella connessione al db");
+		}
+	} catch (Exception $e) {
+        // Log and return error
+        error_log("Error: " . $e->getMessage());
+        echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
+    }
+
+}
+
+function postQuery($cid, $sql, $params, $types){
+	try {
+		if (checkDB($cid)["status"] != "ko") {
+			$stmt = $cid->prepare($sql);
+			if (!$stmt) {
+				throw new Exception("Failed to prepare SQL statement: " . $cid->error);
+			}
+			if ($stmt) {
+				$stmt->bind_param($types, ...$params);
+				if (!$stmt->execute()) {
+					throw new Exception("Failed to execute SQL statement: " . $stmt->error);
+				}
+				$result = $stmt->get_result();
+				return $result;
 				$stmt->close();
 			} else {
 				error_log("Errore nella preparazione dello statement: " . $cid->error);

@@ -22,10 +22,6 @@ define('POST_DIR', __DIR__ . '/assets/images/post');
 
 define('LOCAL_POST_DIR', 'assets/images/post');
 
-ini_set("log_errors", 1); 
-
-ini_set('error_log', '/Applications/XAMPP/xamppfiles/htdocs/duck/phplog.log');
-
 
 // if (function_exists('gd_info')) {
 //     $gdInfo = gd_info();
