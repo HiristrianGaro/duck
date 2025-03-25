@@ -1,6 +1,7 @@
 <?php
 if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 include '../errorLogging.php';
+include '../config.php';
 include 'imagecrop.php';
 include '../common/connection.php';
 include 'addCity.php';
@@ -17,16 +18,18 @@ if (empty($files_to_upload['name'][0])) {
 }
 error_log(POST_DIR);
 
-function createPost() {
     global $cid; // Ensure $cid is accessible
 
     error_log('Creating Post');
     $Utente = $_SESSION['IndirizzoEmail'];
     $Description = isset($_POST['Description']) ? $_POST['Description'] : '';
     $timestamp = date('Y-m-d H:i:s');
-    $NomeCitta = isset($_POST['City']) ? $_POST['City'] : '';
-    $StatoCitta = isset($_POST['Country']) ? $_POST['Country'] : '';
-    $ProvinciaCitta = isset($_POST['State']) ? $_POST['State'] : '';
+    // $NomeCitta = isset($_POST['City']) ? $_POST['City'] : '';
+    // $StatoCitta = isset($_POST['Country']) ? $_POST['Country'] : '';
+    // $ProvinciaCitta = isset($_POST['State']) ? $_POST['State'] : '';
+    $NomeCitta = "Caluso";
+    $StatoCitta = "Piemonte";
+    $ProvinciaCitta = "Torino";
     error_log(print_r($_POST, true));
     error_log('Creating Post');
     error_log($Utente);
@@ -35,15 +38,16 @@ function createPost() {
     error_log($StatoCitta);
     error_log($ProvinciaCitta);
     error_log($Description);
-    if ($StatoCitta != NULL) {
-        error_log(checkCity($StatoCitta, $ProvinciaCitta, $NomeCitta));
-    } else {
-        error_log('City not set');
-    }
+    // if ($StatoCitta != NULL) {
+    //     error_log(checkCity($StatoCitta, $ProvinciaCitta, $NomeCitta));
+    // } else {
+    //     error_log('City not set');
+    // }
 
     
 
-    $sql = "INSERT INTO Post (Utente, testo, TimestampPubblicazione, Citta, Provincia, Regione) VALUES (?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO post (IdPost, Utente, TimestampPubblicazione, Testo, PostCitta, PostProvincia, PostRegione)
+    VALUES (UUID(), ?, ?, ?, ?, ?, ?);";
     $stmt = $cid->prepare($sql);
 
     if (!$stmt) {
@@ -51,7 +55,7 @@ function createPost() {
         die('Database error');
     }
 
-    $stmt->bind_param('ssssss', $Utente, $Description, $timestamp, $NomeCitta, $ProvinciaCitta, $StatoCitta);
+    $stmt->bind_param('ssssss', $Utente, $timestamp, $Description, $NomeCitta, $ProvinciaCitta, $StatoCitta);
 
     error_log('Executing Query');
     if (!$stmt->execute()) {
@@ -63,7 +67,6 @@ function createPost() {
     error_log('Post Created');
     error_log('Adding Foto to Post');
     addFotoPost($Utente, $timestamp);
-}
 
 
 //Verrà utilizzata per ottenere l'Id del post appena creato, sostituendo TimestampPubblicazione e Utente
@@ -91,6 +94,7 @@ function getPostId($Utente, $timestamp) {
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
+        error_log($row['IdPost']);
         return $row['IdPost'];
     }
 
@@ -106,7 +110,9 @@ function addFotoPost($Utente, $timestamp) {
             $files_to_upload = $_FILES['filesToUpload'];
 
             $errorArray = [];
+            error_log('Images Number: ' . count($files_to_upload['name']));
             for ($i = 0; $i < count($files_to_upload['name']); $i++) {
+                error_log('Loop Number: ' . $i);
                 $originalName = basename($files_to_upload['name'][$i]);
                 $sanitizedFileName = time() . '_' . preg_replace('/[^a-zA-Z0-9._-]/', '_', $originalName);
                 $DBdestination = LOCAL_POST_DIR . '/' . $sanitizedFileName;
@@ -119,7 +125,7 @@ function addFotoPost($Utente, $timestamp) {
                     if (in_array($mime_type, $allowed_file_types)) {
                         cropImageToAspectRatioGD($files_to_upload['tmp_name'][$i], $destination, 5, 4);
 
-                        $sql = "INSERT INTO Foto (IdPost, NomeFile, PosizioneFile) VALUES (?, ?, ?)";
+                        $sql = "INSERT INTO Foto (IdPost, PosizioneFileSystem, Ordine) VALUES (?, ?, ?)";
                         $stmt = $cid->prepare($sql);
 
                         if (!$stmt) {
@@ -127,7 +133,7 @@ function addFotoPost($Utente, $timestamp) {
                             continue;
                         }
 
-                        $stmt->bind_param('sss', $IdPost, $sanitizedFileName, $DBdestination);
+                        $stmt->bind_param('ssi', $IdPost, $DBdestination, $i);
 
                         if (!$stmt->execute()) {
                             error_log("Execute failed: " . $stmt->error);
