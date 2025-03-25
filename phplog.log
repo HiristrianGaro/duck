@@ -1,21 +1,19 @@
-[24-Mar-2025 17:52:15 Europe/Berlin] Query: Friends for arianna.moronetti@gmail.com
-[24-Mar-2025 17:52:15 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-7.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-70.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-71.jpg"}]
-[24-Mar-2025 17:52:15 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-65.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-66.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-67.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-68.jpg"}]
-[24-Mar-2025 17:52:15 Europe/Berlin] Returning data: []
-[24-Mar-2025 17:52:15 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-90.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-91.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-92.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-93.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-94.jpg"}]
-[24-Mar-2025 17:52:15 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440010
-[24-Mar-2025 17:52:15 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440011
-[24-Mar-2025 17:54:05 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440011
-[24-Mar-2025 17:54:16 Europe/Berlin] Query: Friends for arianna.moronetti@gmail.com
-[24-Mar-2025 17:54:16 Europe/Berlin] Returning data: []
-[24-Mar-2025 17:54:16 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-7.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-70.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-71.jpg"}]
-[24-Mar-2025 17:54:16 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-65.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-66.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-67.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-68.jpg"}]
-[24-Mar-2025 17:54:16 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-90.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-91.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-92.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-93.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-94.jpg"}]
-[24-Mar-2025 17:54:16 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440012
-[24-Mar-2025 17:54:16 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440011
-[24-Mar-2025 17:54:17 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440012
-[24-Mar-2025 17:54:19 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440010
-[24-Mar-2025 17:54:20 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440003
-[24-Mar-2025 17:54:21 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440010
-[24-Mar-2025 17:54:21 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440011
-[24-Mar-2025 17:54:21 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440012
+[24-Mar-2025 18:29:12 Europe/Berlin] checking likes...
+[24-Mar-2025 18:32:55 Europe/Berlin] Query: Friends for arianna.moronetti@gmail.com
+[24-Mar-2025 18:32:55 Europe/Berlin] Returning data: []
+[24-Mar-2025 18:32:55 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-7.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-70.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-71.jpg"}]
+[24-Mar-2025 18:32:55 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-65.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-66.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-67.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-68.jpg"}]
+[24-Mar-2025 18:32:55 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-90.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-91.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-92.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-93.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-94.jpg"}]
+[24-Mar-2025 18:32:55 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440012
+[24-Mar-2025 18:32:55 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440011
+[24-Mar-2025 18:32:56 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440010
+[24-Mar-2025 18:32:56 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440010
+[24-Mar-2025 18:32:56 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440011
+[24-Mar-2025 18:32:56 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440012
+[24-Mar-2025 18:53:03 Europe/Berlin] checking likes...
+[24-Mar-2025 18:53:03 Europe/Berlin] PHP Warning:  mysqli::prepare(): (42000/1064): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS Result FROM PostLikes WHERE IdPost = ? AND UtenteLikeP = ?)
+            TH...' at line 3 in /Applications/XAMPP/xamppfiles/htdocs/duck/common/funzioni.php on line 70
+[24-Mar-2025 18:53:03 Europe/Berlin] Error: Failed to prepare SQL statement: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AS Result FROM PostLikes WHERE IdPost = ? AND UtenteLikeP = ?)
+            TH...' at line 3
+[24-Mar-2025 18:53:03 Europe/Berlin] Failed to get comments for post: 550e8400-e29b-41d4-a716-446655440001
+[24-Mar-2025 18:53:46 Europe/Berlin] checking likes...
