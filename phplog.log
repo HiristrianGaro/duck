@@ -1,21 +1,21 @@
-[24-Mar-2025 17:52:15 Europe/Berlin] Query: Friends for arianna.moronetti@gmail.com
-[24-Mar-2025 17:52:15 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-7.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-70.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-71.jpg"}]
-[24-Mar-2025 17:52:15 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-65.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-66.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-67.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-68.jpg"}]
-[24-Mar-2025 17:52:15 Europe/Berlin] Returning data: []
-[24-Mar-2025 17:52:15 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-90.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-91.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-92.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-93.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-94.jpg"}]
-[24-Mar-2025 17:52:15 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440010
-[24-Mar-2025 17:52:15 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440011
-[24-Mar-2025 17:54:05 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440011
-[24-Mar-2025 17:54:16 Europe/Berlin] Query: Friends for arianna.moronetti@gmail.com
-[24-Mar-2025 17:54:16 Europe/Berlin] Returning data: []
-[24-Mar-2025 17:54:16 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-7.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-70.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-71.jpg"}]
-[24-Mar-2025 17:54:16 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-65.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-66.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-67.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-68.jpg"}]
-[24-Mar-2025 17:54:16 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-90.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-91.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-92.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-93.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-94.jpg"}]
-[24-Mar-2025 17:54:16 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440012
-[24-Mar-2025 17:54:16 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440011
-[24-Mar-2025 17:54:17 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440012
-[24-Mar-2025 17:54:19 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440010
-[24-Mar-2025 17:54:20 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440003
-[24-Mar-2025 17:54:21 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440010
-[24-Mar-2025 17:54:21 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440011
-[24-Mar-2025 17:54:21 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440012
+[24-Mar-2025 18:08:17 Europe/Berlin] Action: SuggestedFriends, SearchParam: arianna.moronetti@gmail.com
+[24-Mar-2025 18:08:19 Europe/Berlin] Query: Friends for arianna.moronetti@gmail.com
+[24-Mar-2025 18:08:19 Europe/Berlin] Returning data: []
+[24-Mar-2025 18:08:19 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-65.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-66.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-67.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-68.jpg"}]
+[24-Mar-2025 18:08:19 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-7.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-70.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-71.jpg"}]
+[24-Mar-2025 18:08:19 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-90.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-91.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-92.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-93.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-94.jpg"}]
+[24-Mar-2025 18:08:19 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440012
+[24-Mar-2025 18:08:19 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440010
+[24-Mar-2025 18:08:20 Europe/Berlin] Query: Friends for arianna.moronetti@gmail.com
+[24-Mar-2025 18:08:20 Europe/Berlin] Returning data: []
+[24-Mar-2025 18:08:20 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-65.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-66.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-67.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907857_image-68.jpg"}]
+[24-Mar-2025 18:08:20 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-7.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-70.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907866_image-71.jpg"}]
+[24-Mar-2025 18:08:20 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-90.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-91.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-92.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-93.jpg"},{"PosizioneFileSystem":"assets\/images\/post\/1734907579_image-94.jpg"}]
+[24-Mar-2025 18:08:20 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440010
+[24-Mar-2025 18:08:20 Europe/Berlin] Query: getComments for IdPost: 550e8400-e29b-41d4-a716-446655440012
+[24-Mar-2025 18:08:22 Europe/Berlin] querySelect: AddLike
+[24-Mar-2025 18:08:22 Europe/Berlin] Username: arianna.moronetti@gmail.com
+[24-Mar-2025 18:08:22 Europe/Berlin] PostId: 550e8400-e29b-41d4-a716-446655440012
+[24-Mar-2025 18:08:23 Europe/Berlin] querySelect: RemoveLike
+[24-Mar-2025 18:08:23 Europe/Berlin] Username: arianna.moronetti@gmail.com
+[24-Mar-2025 18:08:23 Europe/Berlin] PostId: 550e8400-e29b-41d4-a716-446655440012
