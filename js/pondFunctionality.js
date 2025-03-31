@@ -40,22 +40,27 @@ async function fetchPhotosForPost(IdPost) {
     }
 }
 
-function checkLikes(IdPost) {
-    fetch(`backend/checkLikes.php?IdPost=${encodeURIComponent(IdPost)}`)
-    .then(response => {
-        console.timeEnd(`fetch${type}`);
-        if (!response.ok) {
-            console.error(`Failed response for ${type}:`, response);
-            throw new Error(`Network response for ${type} was not ok`);
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log(`Fetched ${type} data:`, data);
-        return data.LikeStatus
-    })
-    .catch(error => console.error(`Error fetching ${type.toLowerCase()}:`, error));
+async function checkLikes(IdPost) {
+    console.time(`fetchLikes${IdPost}`);  // Use a unique label for timing
+    return fetch(`backend/checkLikes.php?IdPost=${encodeURIComponent(IdPost)}`)
+        .then(response => {
+            console.timeEnd(`fetchLikes${IdPost}`);  // End the timer for the specific IdPost
+            if (!response.ok) {
+                console.error(`Failed response for IdPost ${IdPost}:`, response);
+                throw new Error(`Network response for IdPost ${IdPost} was not ok`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(`Fetched LikeStatus data for IdPost ${IdPost}:`, data);
+            return data.LikeStatus;  // Return the LikeStatus from the response
+        })
+        .catch(error => {
+            console.error(`Error fetching LikeStatus for IdPost ${IdPost}:`, error);
+        });
 }
+
+
 
 async function displayPost(post, container, templateHead, templateBody) {
     try {
@@ -70,11 +75,6 @@ async function displayPost(post, container, templateHead, templateBody) {
         const parser = new DOMParser();
         const PostHead = parser.parseFromString(templateHead, 'text/html');
 
-        // if (LikeStatus == true) {
-        //     PostHead.getElementById('unlike-button').style.display = 'none';
-        // } else {
-        //     PostHead.getElementById('like-button').style.display = 'none';
-        // }
         
         const usernameElement = PostHead.getElementById("PostUsername");
         if (usernameElement) {
@@ -99,12 +99,20 @@ async function displayPost(post, container, templateHead, templateBody) {
         const unlikeButton = PostHead.getElementById("unlike-button");
         if (unlikeButton) {
             unlikeButton.setAttribute('data-idPost', post.IdPost);
+            if (LikeStatus == 'true') {
+                unlikeButton.style.display = 'inline';
+                likeButton.style.display = 'none';
+            }
             unlikeButton.style.display = LikeStatus ? 'inline' : 'none';
         }
 
         const likeButton = PostHead.getElementById("like-button");
         if (likeButton) {
             likeButton.setAttribute('data-idPost', post.IdPost);
+            if (LikeStatus == 'false') {
+                unlikeButton.style.display = 'inline';
+                likeButton.style.display = 'none';
+            }
             likeButton.style.display = LikeStatus ? 'none' : 'inline';
         }
 
@@ -113,22 +121,16 @@ async function displayPost(post, container, templateHead, templateBody) {
             postTextElement.innerText = post.testo;
         }
 
-        // var image = document.getElementsByClassName("PostProfileImage");
-        // image.src = post.PosizioneFileSystem;
-        // PostHead.getElementById("PostLocation").innerText = locationString;
-        // PostHead.getElementById("PostTimestamp").innerText = formattedTimestamp;
-        // PostHead.getElementById("unlike-button").setAttribute('data-idPost', post.IdPost);
-        // PostHead.getElementById("like-button").setAttribute('data-idPost', post.IdPost);
-        // PostHead.getElementById("PostTesto").innerText = post.testo;
 
         // Create a container for the post
         const postContainer = document.createElement('div');
         postContainer.className = 'post-container m-2';
-        postContainer.setAttribute('id', post.IdPost)
-        postContainer.innerHTML = PostHead;
+        postContainer.setAttribute('data-PID', post.IdPost);
+        postContainer.innerHTML = PostHead.body.innerHTML;
+
 
         // Locate the 'egg-body' class container
-        const eggBody = postContainer.querySelector('.egg-body');
+        const eggBody = PostHead.getElementById('egg-body'); // Assuming 'egg-body' is the ID
         if (!eggBody) {
             console.error("Could not find 'egg-body' in the template.");
             return;
@@ -136,6 +138,7 @@ async function displayPost(post, container, templateHead, templateBody) {
 
         // Fetch and process photos for the post
         const photos = await fetchPhotosForPost(post.IdPost);
+        console.log(JSON.stringify(photos));
         const carouselHtml = populateCarousel(templateBody, photos);
 
         // Add the carousel inside the egg-body container
@@ -283,7 +286,7 @@ function setupIntersectionObserver() {
 
     const callback = (entries) => {
         entries.forEach((entry) => {
-            const element = entry.target.getAttribute("id");
+            const element = entry.target.getAttribute("data-PID");
             if (entry.isIntersecting == true && !element.includes("carousel")) {
                 showComments(element);
                 fetchPostComments(element);

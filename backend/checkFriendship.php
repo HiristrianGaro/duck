@@ -14,7 +14,7 @@ if ($UserToCheck === $CurrentUser) {
     exit();
 }
 
-$sql = "SELECT Accettazione FROM richiede_amicizia 
+$sql = "SELECT DataAccettazione FROM richiede_amicizia 
         WHERE (UtenteRichiedente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
         AND UtenteRicevente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)) 
         OR (UtenteRichiedente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
