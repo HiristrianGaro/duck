@@ -60,30 +60,72 @@ function checkLikes(IdPost) {
 async function displayPost(post, container, templateHead, templateBody) {
     try {
         const formattedTimestamp = formatTimestamp(post.TimestampPubblicazione);
+        const locationString = formatLocation(post.Citta, post.Provincia, post.Regione);
 
         console.log('Displaying post:', post.IdPost);
         console.log('Description:', post.testo);
 
-        let LikeStatus = checkLikes(post.IdPost);
+        const LikeStatus = checkLikes(post.IdPost);
 
+        const parser = new DOMParser();
+        const PostHead = parser.parseFromString(templateHead, 'text/html');
 
-
-        // Replace placeholders in the header template
-        const postHeader = templateHead.replace(/{{Username}}/g, post.Username)
-                                       .replace(/{{PosizioneFileSystemFotoProf}}/g, post.PosizioneFileSystemFotoProf)
-                                       .replace(/{{citta}}/g, post.Citta)
-                                       .replace(/{{provincia}}/g, post.Provincia)
-                                       .replace(/{{stato}}/g, post.Regione)
-                                       .replace(/{{Timestamp}}/g, formattedTimestamp)
-                                       .replace(/{{IdPost}}/g, post.IdPost)
-                                       .replace(/{{testo}}/g, post.testo)
-
+        // if (LikeStatus == true) {
+        //     PostHead.getElementById('unlike-button').style.display = 'none';
+        // } else {
+        //     PostHead.getElementById('like-button').style.display = 'none';
+        // }
         
+        const usernameElement = PostHead.getElementById("PostUsername");
+        if (usernameElement) {
+            usernameElement.innerText = post.Username;
+        }
+
+        const profileImage = PostHead.getElementsByClassName("PostProfileImage")[0];
+        if (profileImage) {
+            profileImage.src = post.PosizioneFileSystemFotoProf;
+        }
+
+        const locationElement = PostHead.getElementById("PostLocation");
+        if (locationElement) {
+            locationElement.innerText = locationString;
+        }
+
+        const timestampElement = PostHead.getElementById("PostTimestamp");
+        if (timestampElement) {
+            timestampElement.innerText = formattedTimestamp;
+        }
+
+        const unlikeButton = PostHead.getElementById("unlike-button");
+        if (unlikeButton) {
+            unlikeButton.setAttribute('data-idPost', post.IdPost);
+            unlikeButton.style.display = LikeStatus ? 'inline' : 'none';
+        }
+
+        const likeButton = PostHead.getElementById("like-button");
+        if (likeButton) {
+            likeButton.setAttribute('data-idPost', post.IdPost);
+            likeButton.style.display = LikeStatus ? 'none' : 'inline';
+        }
+
+        const postTextElement = PostHead.getElementById("PostTesto");
+        if (postTextElement) {
+            postTextElement.innerText = post.testo;
+        }
+
+        // var image = document.getElementsByClassName("PostProfileImage");
+        // image.src = post.PosizioneFileSystem;
+        // PostHead.getElementById("PostLocation").innerText = locationString;
+        // PostHead.getElementById("PostTimestamp").innerText = formattedTimestamp;
+        // PostHead.getElementById("unlike-button").setAttribute('data-idPost', post.IdPost);
+        // PostHead.getElementById("like-button").setAttribute('data-idPost', post.IdPost);
+        // PostHead.getElementById("PostTesto").innerText = post.testo;
+
         // Create a container for the post
         const postContainer = document.createElement('div');
         postContainer.className = 'post-container m-2';
         postContainer.setAttribute('id', post.IdPost)
-        postContainer.innerHTML = postHeader;
+        postContainer.innerHTML = PostHead;
 
         // Locate the 'egg-body' class container
         const eggBody = postContainer.querySelector('.egg-body');
@@ -125,6 +167,23 @@ async function showComments(element) {
         console.error('Error displaying post:', error);
     }
 
+}
+
+function formatLocation(Citta, Provincia, Regione) {
+    var locationString = "";
+    if (Citta != null) {
+        locationString = locationString + Citta + ",";
+    }
+
+    if (Citta != null) {
+        locationString = locationString + Provincia + ",";
+    }
+
+    if (Citta != null) {
+        locationString = locationString + Regione;
+    }
+
+    return locationString;
 }
 
 // Function to populate the carousel with dynamic photos

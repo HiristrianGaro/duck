@@ -44,8 +44,8 @@ if ($querySelect && $searchParam) {
                 error_log('Query: User');
                 $sql = "SELECT p.*, f.*
                 FROM post p
-                JOIN foto f ON f.IdFoto = (
-                    SELECT MIN(f1.IdFoto)
+                JOIN foto f ON f.Ordine = (
+                    SELECT MIN(f1.Ordine)
                     FROM foto f1
                     WHERE f1.IdPost = p.IdPost
                 )
