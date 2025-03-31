@@ -2,14 +2,14 @@
     <div class="card-header">
         <div class="row align-items-center">
             <div class="col-3">
-                <img src="{{PosizioneFileSystemFotoProf}}" class="rounded-circle" alt="Profile Picture" style="width: 40px; height: 40px;">
+                <img id="PostProfileImage" class="rounded-circle" alt="Profile Picture" style="width: 40px; height: 40px;">
             </div>
             <div class="col-6 p-0 text-center">
-                <h6 class="mb-1">{{Username}}</h6>
-                <p class="postP mb-0">{{citta}} {{provincia}} {{stato}}</p>
+                <h6 id="PostUsername" class="mb-1"></h6>
+                <p id="PostLocation" class="postP mb-0"></p>
             </div>
             <div class="col-3 postP text-end">
-                <p>{{Timestamp}}</p>
+                <p id="PostTimestamp"></p>
             </div>
         </div>
     </div>
@@ -18,12 +18,12 @@
     </div>
     <div class="card-footer">
         <div class="d-flex justify-content-start">
-            <p>{{testo}}</p>
+            <p id="PostTesto"></p>
         </div>
         <div class="row justify-content-start">
             <div class="col-2 text-container middle">
-                <button class="btn like-button" onclick="addRemoveLike(this)" data-action="AddLike" data-idpost="{{IdPost}}"><i class="bi bi-heart"></i></button>
-                <button class="btn unlike-button" style="display: none;" onclick="addRemoveLike(this)" data-action="RemoveLike" data-idpost="{{IdPost}}"><i class="bi bi-heart-fill"></i></button>
+                <button id="like-button" class="btn like-button" onclick="addRemoveLike(this)" data-action="AddLike"><i class="bi bi-heart"></i></button>
+                <button id="unlike-button" class="btn unlike-button" onclick="addRemoveLike(this)" data-action="RemoveLike"><i class="bi bi-heart-fill"></i></button>
             </div>
             <div class="col text-container right">
                 <button type="button" class="post-btn"><i class="bi bi-share"></i></button>

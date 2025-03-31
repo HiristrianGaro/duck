@@ -135,6 +135,23 @@ function formatTimestamp(timestamp) {
     }
 }
 
+function formatLocation(Citta, Provincia, Regione) {
+    var locationString = "";
+    if (Citta != null) {
+        locationString = locationString + Citta + ",";
+    }
+
+    if (Citta != null) {
+        locationString = locationString + Provincia + ",";
+    }
+
+    if (Citta != null) {
+        locationString = locationString + Regione;
+    }
+
+    return locationString;
+}
+
 function formatLocation(City, State, Country) {
     
 }

@@ -90,7 +90,7 @@ async function displayPostResults(data) {
     if (data.length > 0) {
         const template = await fetchTemplate('frontend/items/postGridItem.html');
         data.forEach(post => {
-            const postHtml = template.replace(/{{postlocation}}/g, sanitizeInput(post.PosizioneFile));
+            const postHtml = template.replace(/{{postlocation}}/g, sanitizeInput(post.PosizioneFileSystem));
             const postElement = document.createElement('div');
             postElement.innerHTML = postHtml;
             resultsDiv.appendChild(postElement.firstChild);
