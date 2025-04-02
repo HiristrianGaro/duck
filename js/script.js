@@ -86,7 +86,7 @@ function loadPage(targetFile) {
 }
 
 async function fetchTemplate(url) {
-    const response = await fetch(url);
+    const response = await fetch(url, {cache: "no-store"});
     return response.text();
 }
 

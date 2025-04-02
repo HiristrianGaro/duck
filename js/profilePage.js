@@ -108,13 +108,13 @@ function displayFollowResults(data) {
     followBtn.innerHTML = '';
 
     if (data.length > 0) {
-        const status = sanitizeInput(data[0].Accettazione);
+        const Accettato = sanitizeInput(data[0].DataAccettazione);
 
-        if (status === 'Accettato' || status === 'In Attesa') {
+        if (Accettato != null) { // || status === 'In Attesa'
             followBtn.textContent = 'Unfollow';
             followBtn.className = 'btn btn-danger';
             followBtn.setAttribute('data-action', 'Remove')
-        } else if (status === 'Self') {
+        } else if (Acce === 'Self') {
             followBtn.textContent = 'Edit Profile';
             followBtn.className = 'btn btn-primary';
             followBtn.removeAttribute('data-action')

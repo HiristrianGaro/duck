@@ -18,8 +18,8 @@ if ($IdPost) {
         $sql = "SELECT
             CASE WHEN EXISTS (
             SELECT * FROM PostLikes WHERE IdPost = ? AND UtenteLikeP = ?)
-            THEN 'TRUE'
-            ELSE 'FALSE'
+            THEN 'true'
+            ELSE 'false'
             END AS LikeStatus";
 
 
