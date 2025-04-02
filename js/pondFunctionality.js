@@ -122,7 +122,6 @@ async function displayPost(post, container, templateHead, templateBody) {
             postTextElement.innerText = post.testo;
         }
 
-
         // Create a container for the post
         const postContainer = document.createElement('div');
         postContainer.className = 'post-container m-2';
