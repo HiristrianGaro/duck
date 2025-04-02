@@ -41,10 +41,8 @@ async function fetchPhotosForPost(IdPost) {
 }
 
 async function checkLikes(IdPost) {
-    console.time(`fetchLikes${IdPost}`);  // Use a unique label for timing
     return fetch(`backend/checkLikes.php?IdPost=${encodeURIComponent(IdPost)}`)
         .then(response => {
-            console.timeEnd(`fetchLikes${IdPost}`);  // End the timer for the specific IdPost
             if (!response.ok) {
                 console.error(`Failed response for IdPost ${IdPost}:`, response);
                 throw new Error(`Network response for IdPost ${IdPost} was not ok`);
@@ -53,7 +51,10 @@ async function checkLikes(IdPost) {
         })
         .then(data => {
             console.log(`Fetched LikeStatus data for IdPost ${IdPost}:`, data);
-            return data.LikeStatus;  // Return the LikeStatus from the response
+            if (data[0].LikeStatus == 'true') {
+                return true;
+            }
+            return false;
         })
         .catch(error => {
             console.error(`Error fetching LikeStatus for IdPost ${IdPost}:`, error);
@@ -70,7 +71,7 @@ async function displayPost(post, container, templateHead, templateBody) {
         console.log('Displaying post:', post.IdPost);
         console.log('Description:', post.testo);
 
-        const LikeStatus = checkLikes(post.IdPost);
+        const LikeStatus = await checkLikes(post.IdPost);
 
         const parser = new DOMParser();
         const PostHead = parser.parseFromString(templateHead, 'text/html');
@@ -81,7 +82,7 @@ async function displayPost(post, container, templateHead, templateBody) {
             usernameElement.innerText = post.Username;
         }
 
-        const profileImage = PostHead.getElementsByClassName("PostProfileImage")[0];
+        const profileImage = PostHead.getElementById("PostProfileImage");
         if (profileImage) {
             profileImage.src = post.PosizioneFileSystemFotoProf;
         }
@@ -126,12 +127,11 @@ async function displayPost(post, container, templateHead, templateBody) {
         const postContainer = document.createElement('div');
         postContainer.className = 'post-container m-2';
         postContainer.setAttribute('data-PID', post.IdPost);
-        postContainer.innerHTML = PostHead.body.innerHTML;
 
 
         // Locate the 'egg-body' class container
-        const eggBody = PostHead.getElementById('egg-body'); // Assuming 'egg-body' is the ID
-        if (!eggBody) {
+        const eggbody = PostHead.getElementById('egg-body'); // Assuming 'egg-body' is the ID
+        if (!eggbody) {
             console.error("Could not find 'egg-body' in the template.");
             return;
         }
@@ -141,8 +141,11 @@ async function displayPost(post, container, templateHead, templateBody) {
         console.log(JSON.stringify(photos));
         const carouselHtml = populateCarousel(templateBody, photos);
 
+
         // Add the carousel inside the egg-body container
-        eggBody.innerHTML += carouselHtml;
+        eggbody.innerHTML += carouselHtml;
+
+        postContainer.innerHTML = PostHead.body.innerHTML;
 
         // Append the complete post to the results container
         container.appendChild(postContainer);
@@ -287,7 +290,7 @@ function setupIntersectionObserver() {
     const callback = (entries) => {
         entries.forEach((entry) => {
             const element = entry.target.getAttribute("data-PID");
-            if (entry.isIntersecting == true && !element.includes("carousel")) {
+            if (entry.isIntersecting && element && !element.includes("carousel")) {
                 showComments(element);
                 fetchPostComments(element);
             }
