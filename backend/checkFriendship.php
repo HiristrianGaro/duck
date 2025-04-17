@@ -8,13 +8,13 @@ $CurrentUser = $_SESSION['Username'];
 $UserToCheck = isset($_GET['username']) ? $_GET['username'] : '';
 
 if ($UserToCheck === $CurrentUser) {
-    $result = ['Accettazione' => 'Self'];
+    $result = ['DataAccettazione' => 'Self'];
     $data[] = $result;
     echo json_encode($data);
     exit();
 }
 
-$sql = "SELECT DataAccettazione FROM richiede_amicizia 
+$sql = "SELECT DataAccettazione, DataRichiesta FROM richiede_amicizia 
         WHERE (UtenteRichiedente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
         AND UtenteRicevente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)) 
         OR (UtenteRichiedente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)
