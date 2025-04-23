@@ -41,7 +41,7 @@ if ($querySelect && $Richiedente) {
         case 'Accept':
         $sql = "
             UPDATE richiede_amicizia ra
-            SET ra.DataAccettazione = '?'
+            SET ra.DataAccettazione = ?
             WHERE ra.UtenteRichiedente = (SELECT u.IndirizzoEmail FROM Utente u WHERE u.Username = ?)
               AND ra.UtenteRicevente = ?;";
               
