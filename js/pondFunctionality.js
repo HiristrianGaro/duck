@@ -80,11 +80,19 @@ async function displayPost(post, container, templateHead, templateBody) {
         const usernameElement = PostHead.getElementById("PostUsername");
         if (usernameElement) {
             usernameElement.innerText = post.Username;
+            usernameElement.addEventListener('click', event => {
+                event.preventDefault();
+                navigateToUserProfile(post.Username);
+            });
         }
 
         const profileImage = PostHead.getElementById("PostProfileImage");
         if (profileImage) {
             profileImage.src = post.PosizioneFileSystemFotoProf;
+            profileImage.addEventListener('click', event => {
+                event.preventDefault();
+                navigateToUserProfile(post.Username);
+            });
         }
 
         const locationElement = PostHead.getElementById("PostLocation");

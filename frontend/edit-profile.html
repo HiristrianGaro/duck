@@ -5,13 +5,16 @@
         <h2 class="text-blue">Edit you Profile</h2>    
         <p class="lead">Use this <span class="text-yellow fw-bold">Form</span> to change your profile data!</p>
     </div>
-        <form method="POST" id="EditForm" enctype="text/plain" autocomplete="on" class="needs-validation" novalidate>
+        <form method="POST" id="EditForm" enctype="multipart/form-data" autocomplete="on" class="needs-validation" novalidate>
             <div class="row">
                 <p class="mb-3 fw-bold">Change Profile Picture</p>
                 <div class="form-floating mb-3 col col-sm-6">
                     <div>
                         <img id="CurrentProfileImage" src="" class="rounded-circle mr-3" alt="Profile Picture" style="width: 100px; height: 100px;">
-                        <p class="mt-2" style="font-size: 14px;">Current Profile Picture</p>   
+                        <p id='imgstatus' class="mt-2" style="font-size: 14px;">Current Profile Picture</p>   
+                    </div>
+                    <div>
+                        <input type="file" class="form-control" id="EditProfileImage" name="EditProfileImage" accept="image/*" onchange="previewImage(event)" required>
                     </div>
                     
                 </div>

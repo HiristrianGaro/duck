@@ -108,21 +108,25 @@ function displayFollowResults(data) {
     followBtn.innerHTML = '';
 
     if (data.length > 0) {
-        const Accettato = sanitizeInput(data[0].DataAccettazione);
-        console.log('Follow status:', Accettato);
-        const status = sanitizeInput(data[0].Status);
+        const DataAccettazione = sanitizeInput(data[0].DataAccettazione);
+        const DataRichiesta = sanitizeInput(data[0].DataRichiesta)
 
-        if (Accettato === 'Self') { // || status === 'In Attesa'
+        console.log(DataAccettazione == 'Self');
+
+        if (DataAccettazione == 'Self') {
             followBtn.textContent = 'Edit Profile';
             followBtn.className = 'btn btn-primary';
             followBtn.removeAttribute('data-action')
-        } else if (Accettato != null) {
+        }
+
+        if (DataAccettazione != null && DataAccettazione != "Self") { // || status === 'In Attesa'
             followBtn.textContent = 'Unfollow';
             followBtn.className = 'btn btn-danger';
             followBtn.setAttribute('data-action', 'Remove')
-            followBtn.textContent = 'Edit Profile';
+        } else if (DataRichiesta != null && DataAccettazione == null){
+            followBtn.textContent = 'Pending';
             followBtn.className = 'btn btn-primary';
-            followBtn.removeAttribute('data-action')
+            followBtn.setAttribute('data-action', 'Remove')
         }
     } else {
         followBtn.textContent = 'Follow';
