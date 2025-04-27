@@ -51,9 +51,10 @@ if ($querySelect && $searchParam) {
                 )
                 WHERE p.Utente = (
                     SELECT IndirizzoEmail 
-                    FROM utente 
+                    FROM UTENTE 
                     WHERE username = ?
                 )
+                AND p.IdPost = f.IdPost
                 ORDER BY p.TimestampPubblicazione DESC;
                 ";
 

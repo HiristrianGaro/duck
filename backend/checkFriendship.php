@@ -7,7 +7,11 @@ $CurrentUser = $_SESSION['Username'];
 
 $UserToCheck = isset($_GET['username']) ? $_GET['username'] : '';
 
+error_log("Current user: " . $CurrentUser);
+error_log("User to check: " . $UserToCheck);
+
 if ($UserToCheck === $CurrentUser) {
+    error_log('User is self');
     $result = ['DataAccettazione' => 'Self'];
     $data[] = $result;
     echo json_encode($data);

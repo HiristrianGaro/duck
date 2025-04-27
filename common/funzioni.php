@@ -135,3 +135,29 @@ function toJson($data){
 	header('Content-Type: application/json');
 	return json_encode($data);
 }
+
+function checkAdmin($cid, $Email){
+	error_log("Chiamata funzione checkAdmin");
+	if (checkDB($cid)["status"] != "ko") {
+		$stmt = $cid->prepare("SELECT 
+		CASE 
+		  WHEN EXISTS (
+			SELECT * FROM UTENTE WHERE IndirizzoEmail = '$Email' AND AdminBool = '1'
+		  ) 
+		  THEN 1 
+		  ELSE 0 
+		END AS IsAdmin;");
+		if ($stmt) {
+			$stmt->execute();
+			$res = $stmt->get_result();
+
+			if ($res->num_rows > 0) {
+				return true;
+			} else {
+				return false;
+			}
+
+			$stmt->close();
+		}
+	}
+}
