@@ -117,9 +117,22 @@ async function displayPost(post, container, templateHead, templateBody) {
             likeButton.style.display = LikeStatus ? 'none' : 'inline';
         }
 
+        const commentButton = PostHead.getElementById("comment-button");
+
+        if (commentButton) {
+            commentButton.setAttribute('data-idPost', post.IdPost);
+        }
+
         const postTextElement = PostHead.getElementById("PostTesto");
         if (postTextElement) {
             postTextElement.innerText = post.testo;
+        }
+
+        
+        if (checkAdmin()) {
+            const blockbuttonhtml = '<button type="button" class="post-btn"><i class="bi bi-ban" style="color: red;"></i></i></button>';
+            const blockbtn = PostHead.getElementById("blockbtn");
+            blockbtn.innerHTML = blockbuttonhtml;
         }
 
 
@@ -154,21 +167,43 @@ async function displayPost(post, container, templateHead, templateBody) {
     }
 }
 
+async function checkAdmin() {
+    try {
+        const response = await fetch('backend/checkAdmin.php');
+        if (!response.ok) throw new Error('Network response was not ok');
+
+        const data = await response.json();
+        console.log('hello!', data);
+        if (data[0].IsAdmin == '1') {
+            return true;
+        }
+        return false;
+
+    } catch (error) {
+        console.error('Error checking admin status:', error);
+    }
+}
+
 async function showComments(element) {
     try {
-        const container = document.getElementById('LeftContainer');
+        const modal = document.createElement('div');
+        modal.classList.add('modal');
+        modal.id = 'modal';
+        modal.setAttribute('tabindex', '-1');
+        modal.setAttribute('idPost', element);
+        modal.hidden = true;
         const template = await fetchTemplate('frontend/comments.html');
 
 
-        container.innerHTML = '';
-        const postHeader = template.replace(/{{IdPost}}/g, element);
+        modal.innerHTML = '';
 
         const postContainer = document.createElement('div');
         postContainer.className = 'comment-container';
         postContainer.setAttribute('id', element)
-        postContainer.innerHTML = postHeader;
+        postContainer.innerHTML = modal;
 
-        container.appendChild(postContainer);
+        modal.appendChild(postContainer);
+        modal.querySelector('.close').addEventListener('click', () => { modal.hidden = true; });
     } catch (error) {
         console.error('Error displaying post:', error);
     }
@@ -269,49 +304,58 @@ async function addRemoveLike(event) {
 }
 
 
-
-
-
-function setupIntersectionObserver() {
-    const container = document.getElementById("LetTheEggsSwim");
-    if (!container) {
-        console.error("'LetTheEggsSwim' container not found");
-        return;
-    }
-
-    const options = {
-        root: container,
-        rootMargin: "0px",
-        threshold: 1,
-    };
-
-    console.log("Observer Root:", container.getBoundingClientRect());
-
-    const callback = (entries) => {
-        entries.forEach((entry) => {
-            const element = entry.target.getAttribute("data-PID");
-            if (entry.isIntersecting && element && !element.includes("carousel")) {
-                showComments(element);
-                fetchPostComments(element);
-            }
-        });
-    };
-
-    observer = new IntersectionObserver(callback, options);
-
-    const mutationObserver = new MutationObserver(() => {
-        observeNewPosts(container);
-    });
-
-    mutationObserver.observe(container, { childList: true, subtree: true });
-
-    observeNewPosts(container);
+function openComments(element) {
+    const postId = element.getAttribute('data-idPost');
+    console.log('Opening comments for post:', postId);
+    showComments(postId);
+    fetchPostComments(postId)
 }
 
-function observeNewPosts(container) {
-    const newPosts = container.querySelectorAll("*[id]:not([data-observed])");
-    newPosts.forEach((post) => {
-        observer.observe(post);
-        post.setAttribute("data-observed", "true");
-    });
-}
+
+
+
+
+// function setupIntersectionObserver() {
+//     const container = document.getElementById("LetTheEggsSwim");
+//     if (!container) {
+//         console.error("'LetTheEggsSwim' container not found");
+//         return;
+//     }
+
+//     const options = {
+//         root: container,
+//         rootMargin: "0px",
+//         threshold: 1,
+//     };
+
+//     console.log("Observer Root:", container.getBoundingClientRect());
+
+//     const callback = (entries) => {
+//         entries.forEach((entry) => {
+//             const element = entry.target.getAttribute("data-PID");
+//             if (entry.isIntersecting && element && !element.includes("carousel")) {
+//                 console.log('siamo dentro');
+                // showComments(element);
+                // fetchPostComments(element);
+//             }
+//         });
+//     };
+
+//     observer = new IntersectionObserver(callback, options);
+
+//     const mutationObserver = new MutationObserver(() => {
+//         observeNewPosts(container);
+//     });
+
+//     mutationObserver.observe(container, { childList: true, subtree: true });
+
+//     observeNewPosts(container);
+// }
+
+// function observeNewPosts(container) {
+//     const newPosts = container.querySelectorAll("*[id]:not([data-observed])");
+//     newPosts.forEach((post) => {
+//         observer.observe(post);
+//         post.setAttribute("data-observed", "true");
+//     });
+// }

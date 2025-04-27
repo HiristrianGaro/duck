@@ -102,8 +102,10 @@ function addRemoveFriend(friendName, action) {
             if (data != null)
             if (action == 'Add') {
                 fetchFriendsData('SuggestedFriends', displaySuggestedFriends);
+                fetchFriendsData('CurrentFriends', displayCurrentFriends);
             } else if (action == 'Remove') {
                 fetchFriendsData('CurrentFriends', displayCurrentFriends);
+                fetchFriendsData('SuggestedFriends', displaySuggestedFriends);
             } else if (action == 'Accept') {
                 fetchFriendsData('FriendRequests', displayFriendRequests);
                 fetchFriendsData('CurrentFriends', displayCurrentFriends);

@@ -109,12 +109,17 @@ function displayFollowResults(data) {
 
     if (data.length > 0) {
         const Accettato = sanitizeInput(data[0].DataAccettazione);
+        console.log('Follow status:', Accettato);
+        const status = sanitizeInput(data[0].Status);
 
-        if (Accettato != null) { // || status === 'In Attesa'
+        if (Accettato === 'Self') { // || status === 'In Attesa'
+            followBtn.textContent = 'Edit Profile';
+            followBtn.className = 'btn btn-primary';
+            followBtn.removeAttribute('data-action')
+        } else if (Accettato != null) {
             followBtn.textContent = 'Unfollow';
             followBtn.className = 'btn btn-danger';
             followBtn.setAttribute('data-action', 'Remove')
-        } else if (Acce === 'Self') {
             followBtn.textContent = 'Edit Profile';
             followBtn.className = 'btn btn-primary';
             followBtn.removeAttribute('data-action')
