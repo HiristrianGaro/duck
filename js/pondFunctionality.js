@@ -160,7 +160,7 @@ async function displayPost(post, container, templateHead, templateBody) {
     }
 
     // Locate the 'egg-body' class container
-    const eggbody = PostHead.getElementById("egg-body");
+    const eggbody = PostHead.getElementById("egg-body"); 
     if (!eggbody) {
       console.error("Could not find 'egg-body' in the template.");
       return;
