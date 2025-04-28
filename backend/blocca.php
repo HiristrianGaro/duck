@@ -2,6 +2,7 @@
 if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 include "../common/connection.php";
 include "../common/funzioni.php";
+include "./checkAdmin.php";
 
 $Email = $_SESSION['IndirizzoEmail'];
 error_log($_SESSION['IndirizzoEmail']);

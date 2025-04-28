@@ -10,19 +10,7 @@ $(document).ready(() => {
 
 
 function fetchProfileData(username) {
-    fetch(`backend/edit-profile.php?term=${encodeURIComponent(username)}`)
-        .then(response => response.json())
-        .then(userData => {
-            console.log('Received profile data:', userData);
-            displayProfileData(userData);
-        })
-        .catch(error => {
-            console.error('Error fetching profile data:', error);
-        });
-}
-
-function postProfileData(username) {
-    fetch(`backend/edit-profile.php?term=${encodeURIComponent(username)}`)
+    fetch(`backend/getCurrentUserInfo.php?term=${encodeURIComponent(username)}`)
         .then(response => response.json())
         .then(userData => {
             console.log('Received profile data:', userData);
@@ -93,3 +81,22 @@ document.getElementById("EditForm").onsubmit = function(event) {
         alert('Error updating profile. Please try again.');
     });
 }
+
+// function validateForm() {
+//     const form = document.getElementById('EditForm');
+//     const username = form.elements['EditUsername'].value;
+//     const profileimg = form.elements['EditProfileImage'].files[0];
+//     const name = form.elements['EditName'].value;
+//     const surname = form.elements['EditSurname'].value;
+//     const dob = form.elements['EditDoB'].value;
+
+//     const currentpsw = form.elements['CurrentEditPassword'].value;
+//     const newpsw = form.elements['NewEditPassword'].value;
+//     const confpsw = form.elements['ConfirmNewEditPassword'].value;
+//     if (!username || !name || !surname || !dob) {
+//         alert('Please fill in all fields.');
+//         return false;
+//     }
+
+//     return true;
+// }

@@ -1,34 +1,622 @@
-[27-Apr-2025 11:31:38 Europe/Berlin] Received search term: Juglu
-[27-Apr-2025 11:31:38 Europe/Berlin] Current user: Juglu
-[27-Apr-2025 11:31:38 Europe/Berlin] User to check: Juglu
-[27-Apr-2025 11:31:38 Europe/Berlin] Query: User
-[27-Apr-2025 11:32:39 Europe/Berlin] Received search term: Juglu
-[27-Apr-2025 11:32:39 Europe/Berlin] Current user: Juglu
-[27-Apr-2025 11:32:39 Europe/Berlin] User to check: Juglu
-[27-Apr-2025 11:32:39 Europe/Berlin] User is self
-[27-Apr-2025 11:32:39 Europe/Berlin] Query: User
-[27-Apr-2025 11:33:42 Europe/Berlin] Received search term: Juglu
-[27-Apr-2025 11:33:42 Europe/Berlin] Current user: Juglu
-[27-Apr-2025 11:33:42 Europe/Berlin] User to check: Juglu
-[27-Apr-2025 11:33:42 Europe/Berlin] User is self
-[27-Apr-2025 11:33:42 Europe/Berlin] Query: User
-[27-Apr-2025 11:35:28 Europe/Berlin] Received search term: Juglu
-[27-Apr-2025 11:35:28 Europe/Berlin] Current user: Juglu
-[27-Apr-2025 11:35:28 Europe/Berlin] User to check: Juglu
-[27-Apr-2025 11:35:28 Europe/Berlin] User is self
-[27-Apr-2025 11:35:28 Europe/Berlin] Query: User
-[27-Apr-2025 11:35:30 Europe/Berlin] Invalid action: null
-[27-Apr-2025 11:35:30 Europe/Berlin] Received search term: Juglu
-[27-Apr-2025 11:35:30 Europe/Berlin] Current user: Juglu
-[27-Apr-2025 11:35:30 Europe/Berlin] User to check: Juglu
-[27-Apr-2025 11:35:30 Europe/Berlin] User is self
-[27-Apr-2025 11:35:32 Europe/Berlin] Received search term: Juglu
-[27-Apr-2025 11:35:32 Europe/Berlin] Current user: Juglu
-[27-Apr-2025 11:35:32 Europe/Berlin] User to check: Juglu
-[27-Apr-2025 11:35:32 Europe/Berlin] User is self
-[27-Apr-2025 11:35:32 Europe/Berlin] Query: User
-[27-Apr-2025 11:35:33 Europe/Berlin] Invalid action: null
-[27-Apr-2025 11:35:33 Europe/Berlin] Received search term: Juglu
-[27-Apr-2025 11:35:33 Europe/Berlin] Current user: Juglu
-[27-Apr-2025 11:35:33 Europe/Berlin] User to check: Juglu
-[27-Apr-2025 11:35:33 Europe/Berlin] User is self
+[28-Apr-2025 17:40:51 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:40:52 Europe/Berlin] Action: Provinces
+[28-Apr-2025 17:40:52 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:40:57 Europe/Berlin] Action: Cities
+[28-Apr-2025 17:40:57 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:40:57 Europe/Berlin] Province: 
+[28-Apr-2025 17:42:23 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:42:23 Europe/Berlin] Error: Invalid query type: Regions
+[28-Apr-2025 17:42:51 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:42:51 Europe/Berlin] Error: Invalid query type: Regions
+[28-Apr-2025 17:43:43 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:43:45 Europe/Berlin] Action: Provinces
+[28-Apr-2025 17:43:45 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:43:47 Europe/Berlin] Action: Cities
+[28-Apr-2025 17:43:47 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:43:47 Europe/Berlin] Province: Milano
+[28-Apr-2025 17:43:55 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 17:43:55 Europe/Berlin] checking likes...
+[28-Apr-2025 17:43:55 Europe/Berlin] checking likes...
+[28-Apr-2025 17:43:55 Europe/Berlin] checking likes...
+[28-Apr-2025 17:43:55 Europe/Berlin] checking likes...
+[28-Apr-2025 17:43:55 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:43:55 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:43:55 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:43:55 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:43:55 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 17:43:55 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:43:55 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:43:55 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 17:43:55 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:43:55 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:43:55 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 17:43:55 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 17:43:56 Europe/Berlin] Query: User
+[28-Apr-2025 17:43:56 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:43:56 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:43:56 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:43:56 Europe/Berlin] User is self
+[28-Apr-2025 17:43:57 Europe/Berlin] Invalid action: null
+[28-Apr-2025 17:43:57 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:43:57 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:43:57 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:43:57 Europe/Berlin] User is self
+[28-Apr-2025 17:45:05 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:45:08 Europe/Berlin] Action: Provinces
+[28-Apr-2025 17:45:08 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:45:10 Europe/Berlin] Action: Cities
+[28-Apr-2025 17:45:10 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:45:10 Europe/Berlin] Province: Bergamo
+[28-Apr-2025 17:45:14 Europe/Berlin] Action: Provinces
+[28-Apr-2025 17:45:14 Europe/Berlin] Region: Piemonte
+[28-Apr-2025 17:45:16 Europe/Berlin] Action: Cities
+[28-Apr-2025 17:45:16 Europe/Berlin] Region: Piemonte
+[28-Apr-2025 17:45:16 Europe/Berlin] Province: Asti
+[28-Apr-2025 17:46:11 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:46:14 Europe/Berlin] Action: Provinces
+[28-Apr-2025 17:46:14 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:46:15 Europe/Berlin] Action: Cities
+[28-Apr-2025 17:46:15 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:46:15 Europe/Berlin] Province: Bergamo
+[28-Apr-2025 17:46:22 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:46:24 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:46:26 Europe/Berlin] Action: Provinces
+[28-Apr-2025 17:46:26 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:46:32 Europe/Berlin] Action: Cities
+[28-Apr-2025 17:46:32 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:46:32 Europe/Berlin] Province: Brescia
+[28-Apr-2025 17:46:39 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 17:46:39 Europe/Berlin] checking likes...
+[28-Apr-2025 17:46:39 Europe/Berlin] checking likes...
+[28-Apr-2025 17:46:39 Europe/Berlin] checking likes...
+[28-Apr-2025 17:46:39 Europe/Berlin] checking likes...
+[28-Apr-2025 17:46:39 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:46:39 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:46:39 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:46:39 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:46:39 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 17:46:39 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:46:39 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:46:39 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 17:46:39 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:46:39 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:46:39 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 17:46:39 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 17:47:04 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:47:07 Europe/Berlin] Action: Provinces
+[28-Apr-2025 17:47:07 Europe/Berlin] Region: Piemonte
+[28-Apr-2025 17:47:08 Europe/Berlin] Action: Cities
+[28-Apr-2025 17:47:08 Europe/Berlin] Region: Piemonte
+[28-Apr-2025 17:47:08 Europe/Berlin] Province: Asti
+[28-Apr-2025 17:47:10 Europe/Berlin] Action: Provinces
+[28-Apr-2025 17:47:10 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:47:12 Europe/Berlin] Action: Cities
+[28-Apr-2025 17:47:12 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:47:12 Europe/Berlin] Province: Bergamo
+[28-Apr-2025 17:47:13 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:47:23 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:47:28 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 17:47:28 Europe/Berlin] checking likes...
+[28-Apr-2025 17:47:28 Europe/Berlin] checking likes...
+[28-Apr-2025 17:47:28 Europe/Berlin] checking likes...
+[28-Apr-2025 17:47:28 Europe/Berlin] checking likes...
+[28-Apr-2025 17:47:28 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:47:28 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:47:28 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:47:28 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:47:28 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 17:47:28 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:47:28 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:47:28 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 17:47:28 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:47:28 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:47:28 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 17:47:28 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 17:47:32 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 17:47:32 Europe/Berlin] checking likes...
+[28-Apr-2025 17:47:32 Europe/Berlin] checking likes...
+[28-Apr-2025 17:47:32 Europe/Berlin] checking likes...
+[28-Apr-2025 17:47:32 Europe/Berlin] checking likes...
+[28-Apr-2025 17:47:32 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:47:32 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:47:32 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:47:32 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:47:32 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 17:47:32 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:47:32 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:47:32 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 17:47:32 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:47:32 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:47:32 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 17:47:32 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 17:47:37 Europe/Berlin] Query: User
+[28-Apr-2025 17:47:37 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:47:37 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:47:37 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:47:37 Europe/Berlin] User is self
+[28-Apr-2025 17:47:38 Europe/Berlin] Invalid action: null
+[28-Apr-2025 17:47:38 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:47:38 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:47:38 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:47:38 Europe/Berlin] User is self
+[28-Apr-2025 17:52:33 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:52:34 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 17:52:34 Europe/Berlin] checking likes...
+[28-Apr-2025 17:52:34 Europe/Berlin] checking likes...
+[28-Apr-2025 17:52:34 Europe/Berlin] checking likes...
+[28-Apr-2025 17:52:34 Europe/Berlin] checking likes...
+[28-Apr-2025 17:52:34 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:52:34 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:52:34 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:52:34 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:52:34 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 17:52:34 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:52:34 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:52:34 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 17:52:34 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:52:34 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:52:34 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 17:52:34 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 17:54:45 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 17:54:45 Europe/Berlin] checking likes...
+[28-Apr-2025 17:54:45 Europe/Berlin] checking likes...
+[28-Apr-2025 17:54:45 Europe/Berlin] checking likes...
+[28-Apr-2025 17:54:45 Europe/Berlin] checking likes...
+[28-Apr-2025 17:54:45 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:54:45 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:54:45 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:54:45 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:54:45 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 17:54:45 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:54:45 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:54:45 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 17:54:45 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:54:45 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:54:45 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 17:54:45 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 17:54:48 Europe/Berlin] Query: User
+[28-Apr-2025 17:54:48 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:54:48 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:54:48 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:54:48 Europe/Berlin] User is self
+[28-Apr-2025 17:54:49 Europe/Berlin] Invalid action: null
+[28-Apr-2025 17:54:50 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:54:50 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:54:50 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:54:50 Europe/Berlin] User is self
+[28-Apr-2025 17:56:30 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 17:56:30 Europe/Berlin] checking likes...
+[28-Apr-2025 17:56:30 Europe/Berlin] checking likes...
+[28-Apr-2025 17:56:30 Europe/Berlin] checking likes...
+[28-Apr-2025 17:56:30 Europe/Berlin] checking likes...
+[28-Apr-2025 17:56:30 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:56:30 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:56:30 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:56:30 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:56:30 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 17:56:30 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:56:30 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:56:30 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 17:56:30 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:56:30 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:56:30 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 17:56:30 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 17:56:31 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:56:31 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:56:31 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:56:31 Europe/Berlin] User is self
+[28-Apr-2025 17:56:31 Europe/Berlin] Query: User
+[28-Apr-2025 17:58:08 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 17:58:08 Europe/Berlin] checking likes...
+[28-Apr-2025 17:58:08 Europe/Berlin] checking likes...
+[28-Apr-2025 17:58:08 Europe/Berlin] checking likes...
+[28-Apr-2025 17:58:08 Europe/Berlin] checking likes...
+[28-Apr-2025 17:58:08 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:58:08 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:58:08 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:58:08 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:58:08 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 17:58:08 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:58:08 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:58:08 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 17:58:08 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:58:08 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:58:08 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 17:58:08 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 17:58:09 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:58:09 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:58:09 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:58:09 Europe/Berlin] User is self
+[28-Apr-2025 17:58:09 Europe/Berlin] Query: User
+[28-Apr-2025 17:58:43 Europe/Berlin] Action: SuggestedFriends, SearchParam: christian.gallo@gmail.com
+[28-Apr-2025 17:58:43 Europe/Berlin] Action: FriendRequests, SearchParam: christian.gallo@gmail.com
+[28-Apr-2025 17:58:43 Europe/Berlin] Action: CurrentFriends, SearchParam: christian.gallo@gmail.com
+[28-Apr-2025 17:58:44 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:58:44 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:58:44 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:58:44 Europe/Berlin] User is self
+[28-Apr-2025 17:58:44 Europe/Berlin] Query: User
+[28-Apr-2025 17:58:44 Europe/Berlin] Invalid action: null
+[28-Apr-2025 17:58:44 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:58:44 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:58:44 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:58:44 Europe/Berlin] User is self
+[28-Apr-2025 17:59:03 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:59:14 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 17:59:14 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:14 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:14 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:14 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:14 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:59:14 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:59:14 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:59:14 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:59:14 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 17:59:14 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:59:14 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:59:14 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 17:59:14 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:59:14 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:59:14 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 17:59:14 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 17:59:21 Europe/Berlin] Action: Regions
+[28-Apr-2025 17:59:22 Europe/Berlin] Action: Provinces
+[28-Apr-2025 17:59:22 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:59:24 Europe/Berlin] Action: Cities
+[28-Apr-2025 17:59:24 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 17:59:24 Europe/Berlin] Province: Bergamo
+[28-Apr-2025 17:59:38 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[28-Apr-2025 17:59:38 Europe/Berlin] Creating Post
+[28-Apr-2025 17:59:38 Europe/Berlin] Array
+(
+    [Description] => Bella zio
+    [Region] => Lombardia
+    [Province] => Bergamo
+    [City] => Adrara San Rocco
+    [Country] => 
+    [State] => 
+)
+
+[28-Apr-2025 17:59:38 Europe/Berlin] Creating Post
+[28-Apr-2025 17:59:38 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:59:38 Europe/Berlin] 2025-04-28 17:59:38
+[28-Apr-2025 17:59:38 Europe/Berlin] Caluso
+[28-Apr-2025 17:59:38 Europe/Berlin] Piemonte
+[28-Apr-2025 17:59:38 Europe/Berlin] Torino
+[28-Apr-2025 17:59:38 Europe/Berlin] Bella zio
+[28-Apr-2025 17:59:38 Europe/Berlin] Executing Query
+[28-Apr-2025 17:59:38 Europe/Berlin] Post Created
+[28-Apr-2025 17:59:38 Europe/Berlin] Adding Foto to Post
+[28-Apr-2025 17:59:38 Europe/Berlin] c989d748-2449-11f0-8caa-3af9d37fba49
+[28-Apr-2025 17:59:38 Europe/Berlin] Images Number: 1
+[28-Apr-2025 17:59:38 Europe/Berlin] Loop Number: 0
+[28-Apr-2025 17:59:38 Europe/Berlin] Function name: imagejpeg
+[28-Apr-2025 17:59:38 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1745855978_Ciao.jpg
+[28-Apr-2025 17:59:40 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 17:59:40 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:40 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:40 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:40 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:40 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:59:40 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:59:40 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:59:40 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:59:40 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 17:59:40 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:59:40 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:59:40 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 17:59:40 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 17:59:40 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 17:59:40 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 17:59:40 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 17:59:41 Europe/Berlin] Query: User
+[28-Apr-2025 17:59:41 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 17:59:41 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 17:59:41 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 17:59:41 Europe/Berlin] User is self
+[28-Apr-2025 17:59:47 Europe/Berlin] User has Started Logging in!
+[28-Apr-2025 17:59:47 Europe/Berlin] Checking if user exists...
+[28-Apr-2025 17:59:47 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[28-Apr-2025 17:59:47 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:47 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:47 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:47 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:47 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:47 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:47 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:47 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745855978_Ciao.jpg"}]
+[28-Apr-2025 17:59:47 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745421918_Ciao.jpg"}]
+[28-Apr-2025 17:59:48 Europe/Berlin] Action: CurrentFriends, SearchParam: giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:48 Europe/Berlin] Action: FriendRequests, SearchParam: giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:48 Europe/Berlin] Action: SuggestedFriends, SearchParam: giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:50 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:50 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:50 Europe/Berlin] checking likes...
+[28-Apr-2025 17:59:50 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:50 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:50 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:50 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 17:59:50 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745855978_Ciao.jpg"}]
+[28-Apr-2025 17:59:50 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745421918_Ciao.jpg"}]
+[28-Apr-2025 18:00:03 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[28-Apr-2025 18:00:03 Europe/Berlin] checking likes...
+[28-Apr-2025 18:00:03 Europe/Berlin] checking likes...
+[28-Apr-2025 18:00:03 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:00:03 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 18:00:03 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:00:03 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 18:00:03 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745855978_Ciao.jpg"}]
+[28-Apr-2025 18:00:03 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745421918_Ciao.jpg"}]
+[28-Apr-2025 18:02:30 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[28-Apr-2025 18:02:30 Europe/Berlin] checking likes...
+[28-Apr-2025 18:02:30 Europe/Berlin] checking likes...
+[28-Apr-2025 18:02:30 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:02:30 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 18:02:30 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:02:30 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 18:02:30 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745421918_Ciao.jpg"}]
+[28-Apr-2025 18:02:30 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745855978_Ciao.jpg"}]
+[28-Apr-2025 18:02:46 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[28-Apr-2025 18:02:46 Europe/Berlin] checking likes...
+[28-Apr-2025 18:02:46 Europe/Berlin] checking likes...
+[28-Apr-2025 18:02:46 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:02:46 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 18:02:46 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:02:46 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 18:02:46 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745855978_Ciao.jpg"}]
+[28-Apr-2025 18:02:46 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745421918_Ciao.jpg"}]
+[28-Apr-2025 18:06:44 Europe/Berlin] Query: Friends for giulia.mazzotti@gmail.com
+[28-Apr-2025 18:06:44 Europe/Berlin] checking likes...
+[28-Apr-2025 18:06:44 Europe/Berlin] checking likes...
+[28-Apr-2025 18:06:44 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:06:44 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 18:06:44 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:06:44 Europe/Berlin] Checking if user is admin...giulia.mazzotti@gmail.com
+[28-Apr-2025 18:06:44 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745421918_Ciao.jpg"}]
+[28-Apr-2025 18:06:44 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745855978_Ciao.jpg"}]
+[28-Apr-2025 18:06:45 Europe/Berlin] Action: Regions
+[28-Apr-2025 18:06:51 Europe/Berlin] No files uploaded
+[28-Apr-2025 18:07:09 Europe/Berlin] Action: Provinces
+[28-Apr-2025 18:07:09 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 18:07:10 Europe/Berlin] Action: Cities
+[28-Apr-2025 18:07:10 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 18:07:10 Europe/Berlin] Province: Bergamo
+[28-Apr-2025 18:07:12 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[28-Apr-2025 18:07:12 Europe/Berlin] Creating Post
+[28-Apr-2025 18:07:12 Europe/Berlin] Array
+(
+    [Description] => ciao
+    [Region] => Lombardia
+    [Province] => Bergamo
+    [City] => Adrara San Martino
+    [Country] => 
+    [State] => 
+)
+
+[28-Apr-2025 18:07:12 Europe/Berlin] Creating Post
+[28-Apr-2025 18:07:12 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:07:12 Europe/Berlin] 2025-04-28 18:07:12
+[28-Apr-2025 18:07:12 Europe/Berlin] 
+[28-Apr-2025 18:07:12 Europe/Berlin] 
+[28-Apr-2025 18:07:12 Europe/Berlin] 
+[28-Apr-2025 18:07:12 Europe/Berlin] ciao
+[28-Apr-2025 18:07:12 Europe/Berlin] Executing Query
+[28-Apr-2025 18:07:12 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1452): Cannot add or update a child row: a foreign key constraint fails (`duck-official`.`post`, CONSTRAINT `post_ibfk_2` FOREIGN KEY (`PostRegione`, `PostProvincia`, `PostCitta`) REFERENCES `LOCATION` (`Regione`, `Provincia`, `Citta`) ON DELETE CASCADE ON UPDATE C) in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 58
+[28-Apr-2025 18:07:12 Europe/Berlin] Execute failed: Cannot add or update a child row: a foreign key constraint fails (`duck-official`.`post`, CONSTRAINT `post_ibfk_2` FOREIGN KEY (`PostRegione`, `PostProvincia`, `PostCitta`) REFERENCES `LOCATION` (`Regione`, `Provincia`, `Citta`) ON DELETE CASCADE ON UPDATE C)
+[28-Apr-2025 18:08:34 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[28-Apr-2025 18:08:34 Europe/Berlin] Creating Post
+[28-Apr-2025 18:08:34 Europe/Berlin] Array
+(
+    [Description] => ciao
+    [Region] => Lombardia
+    [Province] => Bergamo
+    [City] => Adrara San Martino
+    [Country] => 
+    [State] => 
+)
+
+[28-Apr-2025 18:08:34 Europe/Berlin] Creating Post
+[28-Apr-2025 18:08:34 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:08:34 Europe/Berlin] 2025-04-28 18:08:34
+[28-Apr-2025 18:08:34 Europe/Berlin] 
+[28-Apr-2025 18:08:34 Europe/Berlin] 
+[28-Apr-2025 18:08:34 Europe/Berlin] 
+[28-Apr-2025 18:08:34 Europe/Berlin] ciao
+[28-Apr-2025 18:08:34 Europe/Berlin] Executing Query
+[28-Apr-2025 18:08:34 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1452): Cannot add or update a child row: a foreign key constraint fails (`duck-official`.`post`, CONSTRAINT `post_ibfk_2` FOREIGN KEY (`PostRegione`, `PostProvincia`, `PostCitta`) REFERENCES `LOCATION` (`Regione`, `Provincia`, `Citta`) ON DELETE CASCADE ON UPDATE C) in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 58
+[28-Apr-2025 18:08:34 Europe/Berlin] Execute failed: Cannot add or update a child row: a foreign key constraint fails (`duck-official`.`post`, CONSTRAINT `post_ibfk_2` FOREIGN KEY (`PostRegione`, `PostProvincia`, `PostCitta`) REFERENCES `LOCATION` (`Regione`, `Provincia`, `Citta`) ON DELETE CASCADE ON UPDATE C)
+[28-Apr-2025 18:08:47 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[28-Apr-2025 18:08:47 Europe/Berlin] Creating Post
+[28-Apr-2025 18:08:47 Europe/Berlin] Array
+(
+    [Description] => ciao
+    [Region] => Lombardia
+    [Province] => Bergamo
+    [City] => Adrara San Martino
+    [Country] => 
+    [State] => 
+)
+
+[28-Apr-2025 18:08:47 Europe/Berlin] Creating Post
+[28-Apr-2025 18:08:47 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:08:47 Europe/Berlin] 2025-04-28 18:08:47
+[28-Apr-2025 18:08:47 Europe/Berlin] 
+[28-Apr-2025 18:08:47 Europe/Berlin] 
+[28-Apr-2025 18:08:47 Europe/Berlin] 
+[28-Apr-2025 18:08:47 Europe/Berlin] ciao
+[28-Apr-2025 18:08:47 Europe/Berlin] Executing Query
+[28-Apr-2025 18:08:47 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1452): Cannot add or update a child row: a foreign key constraint fails (`duck-official`.`post`, CONSTRAINT `post_ibfk_2` FOREIGN KEY (`PostRegione`, `PostProvincia`, `PostCitta`) REFERENCES `LOCATION` (`Regione`, `Provincia`, `Citta`) ON DELETE CASCADE ON UPDATE C) in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 58
+[28-Apr-2025 18:08:47 Europe/Berlin] Execute failed: Cannot add or update a child row: a foreign key constraint fails (`duck-official`.`post`, CONSTRAINT `post_ibfk_2` FOREIGN KEY (`PostRegione`, `PostProvincia`, `PostCitta`) REFERENCES `LOCATION` (`Regione`, `Provincia`, `Citta`) ON DELETE CASCADE ON UPDATE C)
+[28-Apr-2025 18:11:50 Europe/Berlin] Action: Regions
+[28-Apr-2025 18:11:56 Europe/Berlin] Action: Provinces
+[28-Apr-2025 18:11:56 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 18:12:04 Europe/Berlin] Action: Cities
+[28-Apr-2025 18:12:04 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 18:12:04 Europe/Berlin] Province: Milano
+[28-Apr-2025 18:12:08 Europe/Berlin] PHP Warning:  include(addCity.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 7
+[28-Apr-2025 18:12:08 Europe/Berlin] PHP Warning:  include(): Failed opening 'addCity.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 7
+[28-Apr-2025 18:12:08 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[28-Apr-2025 18:12:08 Europe/Berlin] Creating Post
+[28-Apr-2025 18:12:08 Europe/Berlin] PHP Warning:  Undefined array key "ountry" in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 28
+[28-Apr-2025 18:12:08 Europe/Berlin] Array
+(
+    [Description] => cascjbasc
+    [Region] => Lombardia
+    [Province] => Milano
+    [City] => Arese
+    [region] => Lombardia
+    [province] => Milano
+    [city] => Arese
+)
+
+[28-Apr-2025 18:12:08 Europe/Berlin] Creating Post
+[28-Apr-2025 18:12:08 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:12:08 Europe/Berlin] 2025-04-28 18:12:08
+[28-Apr-2025 18:12:08 Europe/Berlin] 
+[28-Apr-2025 18:12:08 Europe/Berlin] Milano
+[28-Apr-2025 18:12:08 Europe/Berlin] Arese
+[28-Apr-2025 18:12:08 Europe/Berlin] cascjbasc
+[28-Apr-2025 18:12:08 Europe/Berlin] Executing Query
+[28-Apr-2025 18:12:08 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1048): Column 'PostRegione' cannot be null in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 53
+[28-Apr-2025 18:12:08 Europe/Berlin] Execute failed: Column 'PostRegione' cannot be null
+[28-Apr-2025 18:13:57 Europe/Berlin] Action: Regions
+[28-Apr-2025 18:14:03 Europe/Berlin] Action: Provinces
+[28-Apr-2025 18:14:03 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 18:14:05 Europe/Berlin] Action: Cities
+[28-Apr-2025 18:14:05 Europe/Berlin] Region: Lombardia
+[28-Apr-2025 18:14:05 Europe/Berlin] Province: Milano
+[28-Apr-2025 18:14:08 Europe/Berlin] PHP Warning:  include(addCity.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 7
+[28-Apr-2025 18:14:08 Europe/Berlin] PHP Warning:  include(): Failed opening 'addCity.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 7
+[28-Apr-2025 18:14:08 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[28-Apr-2025 18:14:08 Europe/Berlin] Creating Post
+[28-Apr-2025 18:14:08 Europe/Berlin] PHP Warning:  Undefined array key "ountry" in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 28
+[28-Apr-2025 18:14:08 Europe/Berlin] Array
+(
+    [Description] => asdsadas
+    [region] => Lombardia
+    [province] => Milano
+    [city] => Arese
+)
+
+[28-Apr-2025 18:14:08 Europe/Berlin] Creating Post
+[28-Apr-2025 18:14:08 Europe/Berlin] giulia.mazzotti@gmail.com
+[28-Apr-2025 18:14:08 Europe/Berlin] 2025-04-28 18:14:08
+[28-Apr-2025 18:14:08 Europe/Berlin] 
+[28-Apr-2025 18:14:08 Europe/Berlin] Milano
+[28-Apr-2025 18:14:08 Europe/Berlin] Arese
+[28-Apr-2025 18:14:08 Europe/Berlin] asdsadas
+[28-Apr-2025 18:14:08 Europe/Berlin] Executing Query
+[28-Apr-2025 18:14:08 Europe/Berlin] PHP Warning:  mysqli_stmt::execute(): (23000/1048): Column 'PostRegione' cannot be null in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 53
+[28-Apr-2025 18:14:08 Europe/Berlin] Execute failed: Column 'PostRegione' cannot be null
+[28-Apr-2025 18:15:59 Europe/Berlin] PHP Warning:  include(addCity.php): Failed to open stream: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 7
+[28-Apr-2025 18:15:59 Europe/Berlin] PHP Warning:  include(): Failed opening 'addCity.php' for inclusion (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in /Applications/XAMPP/xamppfiles/htdocs/duck/backend/createPost.php on line 7
+[28-Apr-2025 18:15:59 Europe/Berlin] /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post
+[28-Apr-2025 18:15:59 Europe/Berlin] Creating Post
+[28-Apr-2025 18:15:59 Europe/Berlin] Array
+(
+    [Description] => asdsadas
+    [region] => Lombardia
+    [province] => Milano
+    [city] => Arese
+)
+
+[28-Apr-2025 18:15:59 Europe/Berlin] Executing Query
+[28-Apr-2025 18:15:59 Europe/Berlin] Post Created
+[28-Apr-2025 18:15:59 Europe/Berlin] Adding Foto to Post
+[28-Apr-2025 18:15:59 Europe/Berlin] 1279ab84-244c-11f0-8caa-3af9d37fba49
+[28-Apr-2025 18:15:59 Europe/Berlin] Images Number: 1
+[28-Apr-2025 18:15:59 Europe/Berlin] Loop Number: 0
+[28-Apr-2025 18:15:59 Europe/Berlin] Function name: imagejpeg
+[28-Apr-2025 18:15:59 Europe/Berlin] Image cropped and saved to /Applications/XAMPP/xamppfiles/htdocs/duck/assets/images/post/1745856959_PXL_20241116_144535844_2.jpg
+[28-Apr-2025 18:16:06 Europe/Berlin] User has Started Logging in!
+[28-Apr-2025 18:16:06 Europe/Berlin] Checking if user exists...
+[28-Apr-2025 18:16:06 Europe/Berlin] [{"status":"Success","redirect":"frontend\/pond.php"}]
+[28-Apr-2025 18:16:06 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] checking likes...
+[28-Apr-2025 18:16:06 Europe/Berlin] checking likes...
+[28-Apr-2025 18:16:06 Europe/Berlin] checking likes...
+[28-Apr-2025 18:16:06 Europe/Berlin] checking likes...
+[28-Apr-2025 18:16:06 Europe/Berlin] checking likes...
+[28-Apr-2025 18:16:06 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745856959_PXL_20241116_144535844_2.jpg"}]
+[28-Apr-2025 18:16:06 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 18:16:06 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 18:16:06 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:16:06 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 18:16:06 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 18:17:59 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] checking likes...
+[28-Apr-2025 18:17:59 Europe/Berlin] checking likes...
+[28-Apr-2025 18:17:59 Europe/Berlin] checking likes...
+[28-Apr-2025 18:17:59 Europe/Berlin] checking likes...
+[28-Apr-2025 18:17:59 Europe/Berlin] checking likes...
+[28-Apr-2025 18:17:59 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745856959_PXL_20241116_144535844_2.jpg"}]
+[28-Apr-2025 18:17:59 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 18:17:59 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 18:17:59 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:17:59 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 18:17:59 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 18:18:13 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 18:18:13 Europe/Berlin] checking likes...
+[28-Apr-2025 18:18:13 Europe/Berlin] checking likes...
+[28-Apr-2025 18:18:13 Europe/Berlin] checking likes...
+[28-Apr-2025 18:18:13 Europe/Berlin] checking likes...
+[28-Apr-2025 18:18:14 Europe/Berlin] checking likes...
+[28-Apr-2025 18:18:14 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:18:14 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:18:14 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:18:14 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:18:14 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745856959_PXL_20241116_144535844_2.jpg"}]
+[28-Apr-2025 18:18:14 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:18:14 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:18:14 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 18:18:14 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:18:14 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:18:14 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 18:18:14 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:18:14 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:18:14 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 18:18:14 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]
+[28-Apr-2025 18:18:15 Europe/Berlin] Received search term: HiristrianGaro
+[28-Apr-2025 18:18:15 Europe/Berlin] Current user: HiristrianGaro
+[28-Apr-2025 18:18:15 Europe/Berlin] User to check: HiristrianGaro
+[28-Apr-2025 18:18:15 Europe/Berlin] User is self
+[28-Apr-2025 18:18:15 Europe/Berlin] Query: User
+[28-Apr-2025 18:18:17 Europe/Berlin] Query: Friends for christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] checking likes...
+[28-Apr-2025 18:18:17 Europe/Berlin] checking likes...
+[28-Apr-2025 18:18:17 Europe/Berlin] checking likes...
+[28-Apr-2025 18:18:17 Europe/Berlin] checking likes...
+[28-Apr-2025 18:18:17 Europe/Berlin] checking likes...
+[28-Apr-2025 18:18:17 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745856959_PXL_20241116_144535844_2.jpg"}]
+[28-Apr-2025 18:18:17 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417207_Ciao.jpg"}]
+[28-Apr-2025 18:18:17 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745417215_Muori.png"}]
+[28-Apr-2025 18:18:17 Europe/Berlin] christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] Checking if user is admin...christian.gallo@gmail.com
+[28-Apr-2025 18:18:17 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416631_Muori.png"}]
+[28-Apr-2025 18:18:17 Europe/Berlin] Returning data: [{"PosizioneFileSystem":"assets\/images\/post\/1745416618_Ciao.jpg"}]

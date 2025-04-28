@@ -1,6 +1,5 @@
 $(document).ready(() => {
     fetchFriendsPosts();
-    setupIntersectionObserver();
 });
 
 async function fetchFriendsPosts() {
@@ -65,8 +64,9 @@ async function checkLikes(IdPost) {
 
 async function displayPost(post, container, templateHead, templateBody) {
     try {
+        console.log('location: ', formatLocation(post.Citta, post.Provincia, post.Regione));
         const formattedTimestamp = formatTimestamp(post.TimestampPubblicazione);
-        const locationString = formatLocation(post.Citta, post.Provincia, post.Regione);
+        const locationString = formatLocation(post.PostCitta, post.PostProvincia, post.PostRegione);
 
         console.log('Displaying post:', post.IdPost);
         console.log('Description:', post.testo);
@@ -136,11 +136,23 @@ async function displayPost(post, container, templateHead, templateBody) {
             postTextElement.innerText = post.testo;
         }
 
-        
-        if (checkAdmin()) {
-            const blockbuttonhtml = '<button type="button" class="post-btn"><i class="bi bi-ban" style="color: red;"></i></i></button>';
+        const data = await checkAdmin();
+        console.log('Admin data:', data.IsAdmin);
+        if (data.IsAdmin == '1') {
+            const blockbuttonhtml = `<div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="bi bi-ban" style="color: red;"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>`;
             const blockbtn = PostHead.getElementById("blockbtn");
             blockbtn.innerHTML = blockbuttonhtml;
+        } else {
+            console.log('User is not an admin');
         }
 
 
@@ -177,15 +189,11 @@ async function displayPost(post, container, templateHead, templateBody) {
 
 async function checkAdmin() {
     try {
-        const response = await fetch('backend/checkAdmin.php');
+        const response = await fetch('./backend/checkAdmin.php');
         if (!response.ok) throw new Error('Network response was not ok');
 
         const data = await response.json();
-        console.log('hello!', data);
-        if (data[0].IsAdmin == '1') {
-            return true;
-        }
-        return false;
+        return data;
 
     } catch (error) {
         console.error('Error checking admin status:', error);

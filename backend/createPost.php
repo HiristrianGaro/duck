@@ -24,25 +24,11 @@ error_log(POST_DIR);
     $Utente = $_SESSION['IndirizzoEmail'];
     $Description = isset($_POST['Description']) ? $_POST['Description'] : '';
     $timestamp = date('Y-m-d H:i:s');
-    // $NomeCitta = isset($_POST['City']) ? $_POST['City'] : '';
-    // $StatoCitta = isset($_POST['Country']) ? $_POST['Country'] : '';
-    // $ProvinciaCitta = isset($_POST['State']) ? $_POST['State'] : '';
-    $NomeCitta = "Caluso";
-    $StatoCitta = "Piemonte";
-    $ProvinciaCitta = "Torino";
+    $city = isset($_POST['city']) ? $_POST['city'] : '';
+    $region = isset($_POST['region']) ? $_POST['region'] : '';
+    $province = isset($_POST['province']) ? $_POST['province'] : '';
     error_log(print_r($_POST, true));
-    error_log('Creating Post');
-    error_log($Utente);
-    error_log($timestamp);
-    error_log($NomeCitta);
-    error_log($StatoCitta);
-    error_log($ProvinciaCitta);
-    error_log($Description);
-    // if ($StatoCitta != NULL) {
-    //     error_log(checkCity($StatoCitta, $ProvinciaCitta, $NomeCitta));
-    // } else {
-    //     error_log('City not set');
-    // }
+
 
     
 
@@ -55,7 +41,7 @@ error_log(POST_DIR);
         die('Database error');
     }
 
-    $stmt->bind_param('ssssss', $Utente, $timestamp, $Description, $NomeCitta, $ProvinciaCitta, $StatoCitta);
+    $stmt->bind_param('ssssss', $Utente, $timestamp, $Description, $city, $province, $region);
 
     error_log('Executing Query');
     if (!$stmt->execute()) {
