@@ -43,13 +43,13 @@ $('#addPostForm').on('submit', function (e) {
     e.preventDefault();
     const formData = new FormData(this);
     
-    var country = $('#country').find(":selected").text();
-    var state = $('#state').find(":selected").text();
+    var region = $('#region').find(":selected").text();
+    var province = $('#province').find(":selected").text();
     var city = $('#city').find(":selected").text();
 
-    formData.set('Country', country);
-    formData.set('State', state);
-    formData.set('City', city);
+    formData.set('region', region);
+    formData.set('province', province);
+    formData.set('city', city);
 
     $.ajax({
         url: 'backend/createPost.php',
@@ -65,7 +65,7 @@ $('#addPostForm').on('submit', function (e) {
                 displayErrors(response);
             } else {
                 console.log('Form submitted successfully!');
-                history.pushState({ targetFile: 'frontend/pond.php' }, '', '?page=frontend/pond.php');
+                history.pushprovince({ targetFile: 'frontend/pond.php' }, '', '?page=frontend/pond.php');
                 loadPage('frontend/pond.php');
             }
         },

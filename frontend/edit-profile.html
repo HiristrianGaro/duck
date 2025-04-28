@@ -5,7 +5,7 @@
         <h2 class="text-blue">Edit you Profile</h2>    
         <p class="lead">Use this <span class="text-yellow fw-bold">Form</span> to change your profile data!</p>
     </div>
-        <form method="POST" id="EditForm" enctype="multipart/form-data" autocomplete="on" class="needs-validation" novalidate>
+        <form method="POST" action="./backend/edit-profile.php" id="EditForm" enctype="multipart/form-data" autocomplete="on" class="needs-validation">
             <div class="row">
                 <p class="mb-3 fw-bold">Change Profile Picture</p>
                 <div class="form-floating mb-3 col col-sm-6">
@@ -14,7 +14,7 @@
                         <p id='imgstatus' class="mt-2" style="font-size: 14px;">Current Profile Picture</p>   
                     </div>
                     <div>
-                        <input type="file" class="form-control" id="EditProfileImage" name="EditProfileImage" accept="image/*" onchange="previewImage(event)" required>
+                        <input type="file" class="form-control" id="EditProfileImage" name="EditProfileImage" accept="image/*" onchange="previewImage(event)">
                     </div>
                     
                 </div>
@@ -68,12 +68,20 @@
                         New Password is required.
                     </div>
                 </div>
+
+                <div class="form-floating mb-3  col-sm-6">
+                    <input type="password" class="form-control" id="ConfNewEditPassword" name="ConfNewEditPassword" autocomplete="new-password" placeholder="Password123" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    <label for="ConfNewEditPassword" class="form-label mx-2">Confirm New Password</label>
+                    <div class="invalid-feedback">
+                        New Password is required.
+                    </div>
+                </div>
             </div>
             <hr class="mt-0">
             <div class="row">
                 <p class="mb-3 fw-bold">Change your Date of Birth:</p>
                     <div class="form-floating mb-3  col-sm-6">
-                        <input type="date" class="form-control" name="EditDoB" id="EditDoB" autocomplete="dateofbirth">
+                        <input type="date" class="form-control" name="EditDoB" id="EditDoB" autocomplete="dateofbirth" required>
                         <label for="EditDoB" class="form-label mx-2">Date of Birth</label>
                         <div class="invalid-feedback">
                             You must be over 18 to use Duck
@@ -81,26 +89,17 @@
                     </div>
             </div>
             <hr class="mt-0">
-            <div class="row">
+            <div class="row" id="location">
                 <p class="mb-3 fw-bold">Place of Birth:</p>
-                    <div class="form-floating mb-3 col-sm-4">
-                        <label for="CountryOption" class="form-label mx-2">Country</label>
-                        <select class='form-select' name="Country" id="country">
-                            <option id="CountryOption" value="" disabled selected></option>
-                        </select>
-                    </div>
-                    <div class="form-floating mb-3 col-sm-4">
-                        <label for="StateOption" class="form-label mx-2">State</label>
-                        <select class='form-select' name="State" id="state" disabled>
-                            <option name="State" id="StateOption" value="" disabled selected></option>
-                        </select>
-                    </div>
-                    <div class="form-floating mb-3 col-sm-4">
-                        <label for="CityOption" class="form-label mx-2">City</label>
-                        <select class='form-select' name="City" id="city" disabled>
-                            <option name="City" id="CityOption" value="" disabled selected></option>
-                        </select>
-                    </div>
+                <select class='col form-select' name="Region" id="region">
+                    <option id="regionOption" value="" disabled selected></option>
+                </select>
+                <select class='col form-select mb-0' name="Province" id="province" disabled>
+                    <option name="Province" id="provinceOption" value="" disabled selected></option>
+                </select>
+                <select class='col form-select' name="City" id="city" disabled>
+                    <option name="City" id="CityOption" value="" disabled selected></option>
+                </select>
             </div>  
             
             <div class="text-center mt-3">
@@ -112,4 +111,4 @@
 </div>
 
 <script src="js/edit-profile.js"></script>
-<script src="js/CountryStateCityAPI.js"></script>
+<script src="js/location.js"></script>
