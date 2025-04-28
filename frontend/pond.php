@@ -1,7 +1,7 @@
 <?php    
     if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 
-    if(isset($_SESSION['Status'])) { include '../common/postContent.php' ?>
+    if(isset($_SESSION['Status'])) {?>
 
 
 
@@ -26,5 +26,4 @@
     }
 ?>
 
-<script src="js/pondFunctionality.js"></script>
-<script src="js/comment_section.js"></script>
+

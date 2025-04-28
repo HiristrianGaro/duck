@@ -23,11 +23,4 @@ define('POST_DIR', __DIR__ . '/assets/images/post');
 define('LOCAL_POST_DIR', 'assets/images/post');
 
 
-// if (function_exists('gd_info')) {
-//     $gdInfo = gd_info();
-//     print_r($gdInfo);
-// } else {
-//     echo "GD library is not enabled.";
-// }
-
 ?>

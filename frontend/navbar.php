@@ -2,28 +2,34 @@
   <div class="col-md-3 mb-2 mb-md-0">
     <ul class="nav col col-md-auto mb-2 mb-md-0">
       <li><a href="<?= SITE_HOME ?>"><img class="duckNavHide ml-md-2" src="<?= CONTENT_DIR ?>/duck.png" alt="" width="30" height="30"></a></li>
-      <li><p class="usernameNav text-yellow fw-bold col ml-md-1 mb-0 "><?php if (isset($_SESSION["Username"])) { echo  $_SESSION["Username"];}?></p></li>
-    </ul>
+      <li>
+        <p class="usernameNav text-yellow fw-bold col ml-md-1 mb-0 "><?php if (isset($_SESSION["Username"])) {
+                                                                        echo  $_SESSION["Username"];
+                                                                      } ?></p>
+      </li>
+      <?php if (isset($_SESSION["Status"]) && isset($_SESSION["Admin"]) && $_SESSION["Admin"] === 'true') { ?>
+        <span class="usernameNav text-yellow fw-bold col ml-md-1 mb-0" id="adminBadge">(ADMIN)</span>
+      <?php } ?>
   </div>
 
 
   <?php if (isset($_SESSION["Status"])) { ?>
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
       <li><a href="#" class="nav-load nav-link text-body" data-target="frontend/pond.php"><i class="bi bi-water white h4"></i></a></li>
-      <li><a href="#" data-target="frontend/addPost.html" class="nav-load"><button type="button" class="btn btn-primary btn-round"><i class="bi bi-plus-square h4"></i></button></a></li>
+      <li><a href="#" class="nav-load nav-link text-body" data-target="frontend/addPost.html"><button type="button" class="btn btn-primary btn-round"><i class="bi bi-plus-square h4"></i></button></a></li>
       <li><a href="#" class="nav-link text-body" data-bs-toggle="collapse" data-bs-target="#SeachCollapse" aria-expanded="false" aria-controls="SeachCollapse" data-target="#"><i class="bi bi-search white h4"></i></a></li>
       <li><a href="#" class="nav-load nav-link text-body" data-target="frontend/friends.php"><i class="bi bi-activity white h4"></i></a></li>
-      <li><a href="#" class="nav-load nav-link text-body" data-target="frontend/profilepage.php" data-username="<?php echo  $_SESSION["Username"];?>" ><i class="bi bi-feather white h4"></i></a></li>
+      <li><a href="#" id='nameNavbar' class="nav-load nav-link text-body" data-target="frontend/profilepage.php" data-username="<?php echo  $_SESSION["Username"]; ?>"><i class="bi bi-feather white h4"></i></a></li>
 
     </ul>
 
     <div class="col-sm-3 text-sm-end mr-sm-3">
-      <a href="<?= SITE_DOMAIN?>/backend/logout.php"><button type="button" class="btn btn-primary btn-round ">Logout</button></a>
+      <a href="<?= SITE_DOMAIN ?>/backend/logout.php"><button type="button" id="logout-button" class="btn btn-primary btn-round ">Logout</button></a>
     </div>
 
   <?php } else { ?>
 
-      <ul class="nav col col-md-auto mb-2 justify-content-center mb-md-0">
+    <ul class="nav col col-md-auto mb-2 justify-content-center mb-md-0">
     </ul>
 
     <div class="col-md-3 ml-1 text-end">
@@ -32,12 +38,12 @@
     </div>
 
 
-    <?php } ?>
+  <?php } ?>
 
-  </div>
-  
+</div>
 
-  </div>
+
+</div>
 </div>
 
 

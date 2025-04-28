@@ -61,7 +61,7 @@ function validateRegisterForm() {
     alert.innerHTML = '';
     return true;
 }
-
+ 
 
 $('#loginForm').on('submit', function (e) {
     e.preventDefault();

@@ -12,7 +12,7 @@ if ($UserToCheck === $CurrentUser) {
     $data[] = $result;
     echo json_encode($data);
     exit();
-}
+} 
 
 $sql = "SELECT DataAccettazione FROM richiede_amicizia 
         WHERE (UtenteRichiedente = (SELECT IndirizzoEmail FROM Utente WHERE Username = ?)

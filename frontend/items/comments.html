@@ -1,0 +1,20 @@
+<div class="comment mb-3" data-comment-id="{{comment_id}}">
+    <div class="comment-header d-flex align-items-center mb-1">
+        <img class="rounded-circle me-2" src="{{comment_profile_image_url}}" alt="Profile Picture" style="width: 30px; height: 30px;">
+        <div class="d-flex flex-column">
+             <div class="d-flex align-items-center">
+                <h6 class="comment-username mb-0 me-2">{{comment_username}}</h6>
+                <small class="comment-timestamp text-muted">{{comment_timestamp}}</small>
+             </div>
+             </div>
+    </div>
+
+    <div class="comment-body-actions">
+        <p class="comment-text mb-1">{{comment_text}}</p>
+        <div class="comment-actions d-flex align-items-center">
+            <button class="btn btn-sm btn-link comment-like-button p-0 me-2" data-comment-id="{{comment_id}}" onclick="addRemoveCommentLike(this)">
+                <i class="bi bi-heart"></i> </button>
+            <span class="comment-likes-count small text-muted">{{comment_likes_count}} Like</span>
+        </div>
+    </div>
+</div>

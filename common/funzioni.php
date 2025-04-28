@@ -135,3 +135,29 @@ function toJson($data){
 	header('Content-Type: application/json');
 	return json_encode($data);
 }
+
+
+function checkAdmin ($cid, $CurrentUser){
+
+    $sql = "SELECT AdminBool FROM UTENTE WHERE IndirizzoEmail = ?";
+
+    $stmt = $cid->prepare($sql);
+
+    $stmt->bind_param('s', $CurrentUser);
+
+    $stmt->execute();
+
+    $result = $stmt->get_result();
+
+    $data = array();
+
+    while ($row = $result->fetch_assoc()) {
+        $data[] = $row;
+    }
+    return $data;
+}
+
+
+
+
+?>
